@@ -1,0 +1,311 @@
+.register {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #dfdfe4;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.registrdiv {
+  padding-left: 8px;
+  width: 292px;
+  height: 34px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #b8b2b2;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.registrdiv input {
+  border: none;
+  font-size: 14px;
+}
+
+.registrdiv input:first-child {
+  width: 40px
+}
+
+.registrdiv input:focus{
+  outline: none;
+}
+
+.checkout {
+  margin-top: 1px;
+  padding: 40px 0;
+  position: relative;
+  height: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.regtrinput {
+  font-size: 14px;
+  height: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #b8b2b2;
+  padding: 2px 10px;
+  width: 278px;
+  border-radius: 5px;
+  background-color: #fff
+}
+
+.regtrinput:focus {
+  outline: none;
+}
+
+.secondDiv {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.1);
+}
+
+.thirdDiv {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.padding {
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
+.mdiv {
+  box-sizing: border-box;
+  width: 50%;
+  padding-left: 70px;
+}
+
+.thirdDiv > div > div {
+  display: inline-block;
+}
+
+.thirdDiv > div > div > img {
+  margin: 5px;
+  height: 54px;
+  width: 160px;
+  border-radius: 8px;
+}
+
+
+@media screen and (min-width: 1140px) {
+  .container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .secondDiv {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .secondDiv > div {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 70px;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+  }
+
+  .checkout {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .thirdDiv {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .thirdDiv {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .padding{
+    padding: 20px;
+  }
+  
+  .secondDiv > div {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .thirdDiv > div > div {
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 5px;
+    border-radius: 10px;
+  } 
+}
+
+
+
+.circular {
+  height: 42px;
+  width: 42px;
+  position: relative;
+}
+
+.circular .inner,
+.circular .outer,
+.circular .circle {
+  position: absolute;
+  z-index: 6;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.circular .inner {
+  top: 50%;
+  left: 50%;
+  height: 38px;
+  width: 38px;
+  margin: -19px 0 0 -19px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.circular .circle {
+  z-index: 1;
+  box-shadow: none;
+}
+
+.circular .numb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 16px;
+  font-weight: 500;
+  color: #3cc;
+}
+
+.circular .bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  clip: rect(0px, 42px, 42px, 21px);
+}
+
+.circle .bar .progress {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 21px, 42px, 0px);
+}
+
+.circle .bar .progress,
+.dot span {
+  background: #3cc;
+}
+
+.circle .left .progress {
+  z-index: 1;
+  animation: left 30s linear both;
+}
+
+@keyframes left {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.circle .right {
+  z-index: 3;
+  transform: rotate(180deg);
+}
+
+.circle .right .progress {
+  animation: right 30s linear both;
+  animation-delay: 30s;
+}
+
+@keyframes right {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.circle .dot {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 8px;
+  margin-top: -4px;
+  animation: dot 60s linear both;
+  transform-origin: 0% 50%;
+}
+
+.circle .dot span {
+  position: absolute;
+  right: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+}
+
+@keyframes dot {
+  0% {
+    transform: rotate(-90deg);
+  }
+
+  50% {
+    transform: rotate(90deg);
+    z-index: 4;
+  }
+
+  100% {
+    transform: rotate(270deg);
+    z-index: 4;
+  }
+}
+
+
+
+
+
