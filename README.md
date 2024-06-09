@@ -102,3 +102,4 @@ https://cdn.payme.uz/logo/payme_color.svg# payme
 # paymeclone
 # paymeclone
 # paymeclone
+# paymeclone
