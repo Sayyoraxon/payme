@@ -2,7 +2,7 @@ import { Button, Grid, Typography } from '@mui/material'
 import { useEffect, useRef, useState } from 'react';
 import WarningIcon from '@mui/icons-material/Warning';
 
-const SendCode = ({ home, setPaid }) => {
+const SendCode = ({ home, setPaid, setSuccess }) => {
 
     const [code, setCode] = useState("")
     const code1 = "910101"
@@ -39,7 +39,7 @@ const SendCode = ({ home, setPaid }) => {
             setText("Yaroqsiz bir martalik kod kiritildi")
             setTimeout(()=>{setWarning(false)}, 2500)
         } else if (code === code1) {
-            alert("muvaffaqiyatli")
+            setSuccess(true)
         }
     }
 

@@ -5,6 +5,2061 @@ export const jarima =
     "result": {
         "merchants": [
             {
+                "_id": "5a9e395244e6a65eb99f0d1b",
+                "paycom_id": "6092995d8ad987025c60646c",
+                "name": "Нотариус",
+                "organization": "Оплата услуги нотариуса",
+                "active": true,
+                "type": 150,
+                "logo": "https://cdn.payme.uz/merchants/notarius2.png",
+                "date": 1520318500152,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 1,
+                        "max": 600000000
+                    },
+                    "account": [
+                        {
+                            "name": "invoice",
+                            "title": "To`lovchi invoys raqami",
+                            "content": "text",
+                            "type": "text",
+                            "validation": "^[0-9]{14}$",
+                            "validation_error": "Ошибка в значении инвойса",
+                            "error": null,
+                            "placeholder": "",
+                            "prefix": null,
+                            "replace": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "notarius",
+                    "нотариус"
+                ],
+                "weight": 0.024021792682288684,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5c1b80310b39f402507486bd",
+                "paycom_id": "60938e045d157d44f1e3029b",
+                "name": "Оплата государственных услуг",
+                "organization": "Агентство государственных услуг",
+                "active": true,
+                "type": 150,
+                "logo": "https://cdn.payme.uz/merchants/0209a276ea820b41084532c77881dc66837c1533.png",
+                "date": 1545300938660,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 1,
+                        "max": 600000000
+                    },
+                    "account": [
+                        {
+                            "name": "payment_type",
+                            "title": "To`lov turi",
+                            "content": "text",
+                            "type": "select",
+                            "values": [
+                                {
+                                    "value": "01",
+                                    "title": "Davlat xizmatlari uchun to'lov",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "validation_error": "Ошибка в типе пошлины",
+                            "default": "01",
+                            "optional": true,
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "visible": null,
+                            "require": null
+                        },
+                        {
+                            "name": "invoice",
+                            "title": "Invoys raqami",
+                            "content": "text",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "_validation": "^.{10,14}$",
+                            "validation": "^(\\d{7}\\-\\d{2,2}\\/\\d{6}\\-\\d{5}|\\d{10,14})$",
+                            "validation_error": "Ошибка в номере квитанции",
+                            "visible": null,
+                            "placeholder": "",
+                            "scan": "CODE_128",
+                            "error": null,
+                            "optional": false
+                        }
+                    ]
+                },
+                "keywords": [
+                    "единое окно",
+                    "пошлина",
+                    "yig'im",
+                    "tushum",
+                    "тушум",
+                    "gov",
+                    "agu",
+                    "davlat xizmatlari",
+                    "darcha",
+                    "давлат хизматлари",
+                    "ягона дарча",
+                    "агу",
+                    "dxm",
+                    "dhm",
+                    "davlat",
+                    "xizmat",
+                    "hizmat",
+                    "markaz",
+                    "гос",
+                    "центр",
+                    "услуг",
+                    "Давлат хизматлари"
+                ],
+                "weight": 0.01595816182681352,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "58d512ae8611444ee0570b90",
+                "paycom_id": "6093ba1d5d157d44f1e302f7",
+                "ussd_id": "50",
+                "name": "ГУБДД Штрафы",
+                "organization": "Главное управление безопасности дорожного движения",
+                "active": true,
+                "type": 150,
+                "logo": "https://cdn.payme.uz/merchants/mvd.png",
+                "date": 1489727064000,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 1,
+                        "max": 600000000,
+                        "magnet": true,
+                        "auto_fetch": false
+                    },
+                    "account": [
+                        {
+                            "name": "ndecree",
+                            "title": "Qaror seriyasi va raqami",
+                            "placeholder": "Seriyasi va raqami",
+                            "content": "text",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "scan": "CODE_128",
+                            "validation": "^([a-zA-Z]{2})? *\\d{10,11}$",
+                            "_validation": "^([a-zA-Z]{2})? *\\d{11}$",
+                            "validation_error": "Ошибка в номере постановления",
+                            "error": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ],
+                    "action_buttons": [
+                        {
+                            "type": "button",
+                            "action": {
+                                "type": "open_service",
+                                "data": "traffic_fines",
+                                "title": "Xabarnomani yoqish"
+                            },
+                            "icon": "ic_notification",
+                            "fallback_url": "https://payme.uz/home/payment/58d512ae8611444ee0570b90"
+                        }
+                    ]
+                },
+                "keywords": [
+                    "гаи",
+                    "штрафы",
+                    "dan",
+                    "yhxb",
+                    "jarima",
+                    "жарима",
+                    "gai",
+                    "gubdd",
+                    "iiv",
+                    "губдд",
+                    "mvd",
+                    "мвд"
+                ],
+                "additional_info": true,
+                "weight": 0.010129594850673522,
+                "options": {
+                    "disabled_without_session": true,
+                    "show_additional_info_account": false,
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                },
+                "info": {
+                    "text": "KV bilan boshlanadigan qarorlar «Ma'muriy huquqbuzarliklar» bo'limi orqali to'lanadi"
+                }
+            },
+            {
+                "_id": "58620f72a5136e0c9412e31c",
+                "paycom_id": "630873457066d254af79f054",
+                "name": "ГНК РУз",
+                "organization": "ГНК РУз",
+                "active": true,
+                "type": 150,
+                "logo": "https://cdn.payme.uz/merchants/df6cdd23fdfeb8ccd1bf1c6333b1c03fc46b189a.png",
+                "date": 1482820675221,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 600000000
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "tax_type",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To`lov turi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Налог на имущество физических лиц",
+                                    "value": "01",
+                                    "title": "Jismoniy shaxslarning mol-mulkiga solinadigan soliq",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Земельный налог, взимаемый с физических лиц",
+                                    "value": "02",
+                                    "title": "Jismoniy shaxslardan olinadigan yer solig'i",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Налог на прибыль (по декларации)",
+                                    "value": "03",
+                                    "title": "Daromad solig'i (deklaratsiya bo'yicha)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Социальный налог, уплачиваемый самозанятыми лицами",
+                                    "value": "04",
+                                    "title": "O'z-o'zini ish bilan ta'milaganlar tomonidan to'lanadigan ijtimoiy soliq",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Социальный налог за неработающего супруга",
+                                    "value": "05",
+                                    "title": "Ishlamaydigan turmush o'rtog'i uchun ijtimoiy soliq",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Плата за декларацию с доходов от сдачи имущества в аренду",
+                                    "value": "06",
+                                    "title": "Mulkni ijaraga berishdan tushgan daromad uchun deklaratsiya to'lovi",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Добровольный социальный налог",
+                                    "value": "07",
+                                    "title": "Ixtiyoriy ijtimoiy soliq",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Земельный налог для дехканских хозяйств",
+                                    "value": "08",
+                                    "title": "Dehqon xo'jaliklari uchun er solig'i",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Налог за использование водных ресурсов дехканскими хозяйствами",
+                                    "value": "09",
+                                    "title": "Dehqon xo'jaliklari tomonidan suv resurslaridan foydalanganlik uchun soliq",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Плата за цифровую подпись",
+                                    "value": "10",
+                                    "title": "Raqamli imzo uchun to'lov",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Единовременный платеж по декларации",
+                                    "value": "11",
+                                    "title": "Deklaratsiya bo'yicha bir martalik to'lov",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Уплата пени в фонд развития налогового органа",
+                                    "value": "12",
+                                    "title": "Soliq organining rivojlanish jamg'armasiga jarima to'lash",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Налог на имущество, подлежащее налогообложению неиспользуемых объектов",
+                                    "value": "14",
+                                    "title": "Foydalanilmayotgan ob'ektlarga soliq solinadigan mol-mulk solig'i",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Земельный налог, взимаемый по высоким ставкам с неиспользуемых объектов",
+                                    "value": "15",
+                                    "title": "Foydalanilmayotgan ob'ektlardan yuqori stavkalar bo'yicha olinadigan er solig'i",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Подоходный налог с иностранных физических лиц, продающих недвижимость",
+                                    "value": "13",
+                                    "title": "Ko'chmas mulk sotadigan xorijiy jismoniy shaxslardan olinadigan daromad solig'i",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "areas",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Tumanlar",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Кашкадарьинская область",
+                                    "value": "10",
+                                    "title": "Кашкадарьинская область",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Навоийская область",
+                                    "value": "12",
+                                    "title": "Навоийская область",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Наманганская область",
+                                    "value": "14",
+                                    "title": "Наманганская область",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Самаркандская область",
+                                    "value": "18",
+                                    "title": "Самаркандская область",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Сурхандарьинская область",
+                                    "value": "22",
+                                    "title": "Сурхандарьинская область",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Сырдарьинская область",
+                                    "value": "24",
+                                    "title": "Сырдарьинская область",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Город Ташкент",
+                                    "value": "26",
+                                    "title": "Город Ташкент",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Ташкентская область",
+                                    "value": "27",
+                                    "title": "Ташкентская область",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Ферганская область",
+                                    "value": "30",
+                                    "title": "Ферганская область",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Хорезмская область",
+                                    "value": "33",
+                                    "title": "Хорезмская область",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Республика Каракалпакистан",
+                                    "value": "35",
+                                    "title": "Республика Каракалпакистан",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Андижанская область",
+                                    "value": "03",
+                                    "title": "Андижанская область",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Бухарская область",
+                                    "value": "06",
+                                    "title": "Бухарская область",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Джизакская область",
+                                    "value": "08",
+                                    "title": "Джизакская область",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "gni",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "GNI",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "КАРШИ ШАХАР ДСИ",
+                                    "value": "1001",
+                                    "title": "КАРШИ ШАХАР ДСИ",
+                                    "filter": "10",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ШАХРИСАБЗ ШАХАР ДСИ",
+                                    "value": "1002",
+                                    "title": "ШАХРИСАБЗ ШАХАР ДСИ",
+                                    "filter": "10",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ГУЗОР ТУМАНИ ДСИ",
+                                    "value": "1004",
+                                    "title": "ГУЗОР ТУМАНИ ДСИ",
+                                    "filter": "10",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ДЕХКОНОБОД ТУМАНИ ДСИ",
+                                    "value": "1005",
+                                    "title": "ДЕХКОНОБОД ТУМАНИ ДСИ",
+                                    "filter": "10",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КАМАШИ ТУМАНИ ДСИ",
+                                    "value": "1006",
+                                    "title": "КАМАШИ ТУМАНИ ДСИ",
+                                    "filter": "10",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КАРШИ ТУМАНИ ДСИ",
+                                    "value": "1007",
+                                    "title": "КАРШИ ТУМАНИ ДСИ",
+                                    "filter": "10",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КОСОН ТУМАНИ ДСИ",
+                                    "value": "1008",
+                                    "title": "КОСОН ТУМАНИ ДСИ",
+                                    "filter": "10",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КИТОБ ТУМАНИ ДСИ",
+                                    "value": "1009",
+                                    "title": "КИТОБ ТУМАНИ ДСИ",
+                                    "filter": "10",
+                                    "description": null
+                                },
+                                {
+                                    "name": "МУБОРАК ТУМАНИ ДСИ",
+                                    "value": "1010",
+                                    "title": "МУБОРАК ТУМАНИ ДСИ",
+                                    "filter": "10",
+                                    "description": null
+                                },
+                                {
+                                    "name": "НИШОН ТУМАНИ ДСИ",
+                                    "value": "1011",
+                                    "title": "НИШОН ТУМАНИ ДСИ",
+                                    "filter": "10",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КАСБИ ТУМАНИ ДСИ",
+                                    "value": "1012",
+                                    "title": "КАСБИ ТУМАНИ ДСИ",
+                                    "filter": "10",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЧИРОКЧИ ТУМАНИ ДСИ",
+                                    "value": "1014",
+                                    "title": "ЧИРОКЧИ ТУМАНИ ДСИ",
+                                    "filter": "10",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ШАХРИСАБЗ ТУМАНИ ДСИ",
+                                    "value": "1015",
+                                    "title": "ШАХРИСАБЗ ТУМАНИ ДСИ",
+                                    "filter": "10",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЯККАБОГ ТУМАНИ ДСИ",
+                                    "value": "1016",
+                                    "title": "ЯККАБОГ ТУМАНИ ДСИ",
+                                    "filter": "10",
+                                    "description": null
+                                },
+                                {
+                                    "name": "МИРИШКОР ТУМАНИ ДСИ",
+                                    "value": "1017",
+                                    "title": "МИРИШКОР ТУМАНИ ДСИ",
+                                    "filter": "10",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КУК������АЛА ТУМАНИ ДСИ",
+                                    "value": "1018",
+                                    "title": "КУКДАЛА ТУМАНИ ДСИ",
+                                    "filter": "10",
+                                    "description": null
+                                },
+                                {
+                                    "name": "НАВОИЙ ШАХАР ДСИ",
+                                    "value": "1201",
+                                    "title": "НАВОИЙ ШАХАР ДСИ",
+                                    "filter": "12",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЗАРАФШОН ШАХАР ДСИ",
+                                    "value": "1202",
+                                    "title": "ЗАРАФШОН ШАХАР ДСИ",
+                                    "filter": "12",
+                                    "description": null
+                                },
+                                {
+                                    "name": "УЧКУДУК ШАХАР ДСИ",
+                                    "value": "1203",
+                                    "title": "УЧКУДУК ШАХАР ДСИ",
+                                    "filter": "12",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КОНИМЕХ ТУМАНИ ДСИ",
+                                    "value": "1204",
+                                    "title": "КОНИМЕХ ТУМАНИ ДСИ",
+                                    "filter": "12",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КИЗИЛТЕПА ТУМАНИ ДСИ",
+                                    "value": "1205",
+                                    "title": "КИЗИЛТЕПА ТУМАНИ ДСИ",
+                                    "filter": "12",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ТОМДИ ТУМАНИ ДСИ",
+                                    "value": "1207",
+                                    "title": "ТОМДИ ТУМАНИ ДСИ",
+                                    "filter": "12",
+                                    "description": null
+                                },
+                                {
+                                    "name": "НАВБАХОР ТУМАНИ ДСИ",
+                                    "value": "1208",
+                                    "title": "НАВБАХОР ТУМАНИ ДСИ",
+                                    "filter": "12",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ХАТИРЧИ ТУМАНИ ДСИ",
+                                    "value": "1209",
+                                    "title": "ХАТИРЧИ ТУМАНИ ДСИ",
+                                    "filter": "12",
+                                    "description": null
+                                },
+                                {
+                                    "name": "НУРОТА ТУМАНИ ДСИ",
+                                    "value": "1210",
+                                    "title": "НУРОТА ТУМАНИ ДСИ",
+                                    "filter": "12",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КАРМАНА ТУМАНИ ДСИ",
+                                    "value": "1211",
+                                    "title": "КАРМАНА ТУМАНИ ДСИ",
+                                    "filter": "12",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ГОЗГОН ШАХАР ДСИ",
+                                    "value": "1213",
+                                    "title": "ГОЗГОН ШАХАР ДСИ",
+                                    "filter": "12",
+                                    "description": null
+                                },
+                                {
+                                    "name": "НАМАНГАН ШАХАР ДСИ",
+                                    "value": "1401",
+                                    "title": "НАМАНГАН ШАХАР ДСИ",
+                                    "filter": "14",
+                                    "description": null
+                                },
+                                {
+                                    "name": "МИНГБУЛОК ТУМАНИ ДСИ",
+                                    "value": "1407",
+                                    "title": "МИНГБУЛОК ТУМАНИ ДСИ",
+                                    "filter": "14",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КОСОНСОЙ ТУМАНИ ДСИ",
+                                    "value": "1408",
+                                    "title": "КОСОНСОЙ ТУМАНИ ДСИ",
+                                    "filter": "14",
+                                    "description": null
+                                },
+                                {
+                                    "name": "НАМАНГАН ТУМАНИ ДСИ",
+                                    "value": "1409",
+                                    "title": "НАМАНГАН ТУМАНИ ДСИ",
+                                    "filter": "14",
+                                    "description": null
+                                },
+                                {
+                                    "name": "НОРИН ТУМАНИ ДСИ",
+                                    "value": "1410",
+                                    "title": "НОРИН ТУМАНИ ДСИ",
+                                    "filter": "14",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ПОП ТУМАНИ ДСИ",
+                                    "value": "1411",
+                                    "title": "ПОП ТУМАНИ ДСИ",
+                                    "filter": "14",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ТУРАКУРГОН ТУМАНИ ДСИ",
+                                    "value": "1412",
+                                    "title": "ТУРАКУРГОН ТУМАНИ ДСИ",
+                                    "filter": "14",
+                                    "description": null
+                                },
+                                {
+                                    "name": "УЙЧИ ТУМАНИ ДСИ",
+                                    "value": "1413",
+                                    "title": "УЙЧИ ТУМАНИ ДСИ",
+                                    "filter": "14",
+                                    "description": null
+                                },
+                                {
+                                    "name": "УЧКУРГОН ТУМАНИ ДСИ",
+                                    "value": "1414",
+                                    "title": "УЧКУРГОН ТУМАНИ ДСИ",
+                                    "filter": "14",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЧОРТОК ТУМАНИ ДСИ",
+                                    "value": "1415",
+                                    "title": "ЧОРТОК ТУМАНИ ДСИ",
+                                    "filter": "14",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЧУСТ ТУМАНИ ДСИ",
+                                    "value": "1416",
+                                    "title": "ЧУСТ ТУМАНИ ДСИ",
+                                    "filter": "14",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЯНГИКУРГОН ТУМАНИ ДСИ",
+                                    "value": "1417",
+                                    "title": "ЯНГИКУРГОН ТУМАНИ ДСИ",
+                                    "filter": "14",
+                                    "description": null
+                                },
+                                {
+                                    "name": "САМАРКАНД ШАХАР ДСИ",
+                                    "value": "1801",
+                                    "title": "САМАРКАНД ШАХАР ДСИ",
+                                    "filter": "18",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ТАЙЛОК ТУМАНИ ДСИ",
+                                    "value": "1804",
+                                    "title": "ТАЙЛОК ТУМАНИ ДСИ",
+                                    "filter": "18",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КАТТАКУРГОН ШАХАР ДСИ",
+                                    "value": "1806",
+                                    "title": "КАТТАКУРГОН ШАХАР ДСИ",
+                                    "filter": "18",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ОКДАРЁ ТУМАНИ ДСИ",
+                                    "value": "1808",
+                                    "title": "ОКДАРЁ ТУМАНИ ДСИ",
+                                    "filter": "18",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БУЛУНГУР ТУМАНИ ДСИ",
+                                    "value": "1809",
+                                    "title": "БУЛУНГУР ТУМАНИ ДСИ",
+                                    "filter": "18",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЖОМБОЙ ТУМАНИ ДСИ",
+                                    "value": "1811",
+                                    "title": "ЖОМБОЙ ТУМАНИ ДСИ",
+                                    "filter": "18",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ИШТИХОН ТУМАНИ ДСИ",
+                                    "value": "1812",
+                                    "title": "ИШТИХОН ТУМАНИ ДСИ",
+                                    "filter": "18",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КАТТАКУРГОН ТУМАНИ ДСИ",
+                                    "value": "1813",
+                                    "title": "КАТТАКУРГОН ТУМАНИ ДСИ",
+                                    "filter": "18",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КУШРАБОТ ТУМАНИ ДСИ",
+                                    "value": "1814",
+                                    "title": "КУШРАБОТ ТУМАНИ ДСИ",
+                                    "filter": "18",
+                                    "description": null
+                                },
+                                {
+                                    "name": "НАРПАЙ ТУМАНИ ДСИ",
+                                    "value": "1815",
+                                    "title": "НАРПАЙ ТУМАНИ ДСИ",
+                                    "filter": "18",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ПАЙАРИК ТУМАНИ ДСИ",
+                                    "value": "1817",
+                                    "title": "ПАЙАРИК ТУМАНИ ДСИ",
+                                    "filter": "18",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ПАСТДАРГОМ ТУМАНИ ДСИ",
+                                    "value": "1818",
+                                    "title": "ПАСТДАРГОМ ТУМАНИ ДСИ",
+                                    "filter": "18",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ПАХТАЧИ ТУМАНИ ДСИ",
+                                    "value": "1819",
+                                    "title": "ПАХТАЧИ ТУМАНИ ДСИ",
+                                    "filter": "18",
+                                    "description": null
+                                },
+                                {
+                                    "name": "САМАРКАНД ТУМАНИ ДСИ",
+                                    "value": "1820",
+                                    "title": "САМАРКАНД ТУМАНИ ДСИ",
+                                    "filter": "18",
+                                    "description": null
+                                },
+                                {
+                                    "name": "НУРОБОД ТУМАНИ ДСИ",
+                                    "value": "1821",
+                                    "title": "НУРОБОД ТУМАНИ ДСИ",
+                                    "filter": "18",
+                                    "description": null
+                                },
+                                {
+                                    "name": "УРГУТ ТУМАНИ ДСИ",
+                                    "value": "1822",
+                                    "title": "УРГУТ ТУМАНИ ДСИ",
+                                    "filter": "18",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ТЕРМИЗ ШАХАР ДСИ",
+                                    "value": "2201",
+                                    "title": "ТЕРМИЗ ШАХАР ДСИ",
+                                    "filter": "22",
+                                    "description": null
+                                },
+                                {
+                                    "name": "АНГОР ТУМАНИ ДСИ",
+                                    "value": "2203",
+                                    "title": "АНГОР ТУМАНИ ДСИ",
+                                    "filter": "22",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ОЛТИНСОЙ ТУМАНИ ДСИ",
+                                    "value": "2204",
+                                    "title": "ОЛТИНСОЙ ТУМАНИ ДСИ",
+                                    "filter": "22",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БОЙСУН ТУМАНИ ДСИ",
+                                    "value": "2205",
+                                    "title": "БОЙСУН ТУМАНИ ДСИ",
+                                    "filter": "22",
+                                    "description": null
+                                },
+                                {
+                                    "name": "МУЗРАБОТ ТУМАНИ ДСИ",
+                                    "value": "2206",
+                                    "title": "МУЗРАБОТ ТУМАНИ ДСИ",
+                                    "filter": "22",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ДЕНОВ ТУМАНИ ДСИ",
+                                    "value": "2207",
+                                    "title": "ДЕНОВ ТУМАНИ ДСИ",
+                                    "filter": "22",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЖАРКУРГОН ТУМАНИ ДСИ",
+                                    "value": "2208",
+                                    "title": "ЖАРКУРГОН ТУМАНИ ДСИ",
+                                    "filter": "22",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КУМКУРГОН ТУМАНИ ДСИ",
+                                    "value": "2209",
+                                    "title": "КУМКУРГОН ТУМАНИ ДСИ",
+                                    "filter": "22",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КИЗИРИК ТУМАНИ ДСИ",
+                                    "value": "2210",
+                                    "title": "КИЗИРИК ТУМАНИ ДСИ",
+                                    "filter": "22",
+                                    "description": null
+                                },
+                                {
+                                    "name": "САРИОСИЁ ТУМАНИ ДСИ",
+                                    "value": "2211",
+                                    "title": "САРИОСИЁ ТУМАНИ ДСИ",
+                                    "filter": "22",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ТЕРМИЗ ТУМАНИ ДСИ",
+                                    "value": "2212",
+                                    "title": "ТЕРМИЗ ТУМАНИ ДСИ",
+                                    "filter": "22",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ШЕРОБОД ТУМАНИ ДСИ",
+                                    "value": "2213",
+                                    "title": "ШЕРОБОД ТУМАНИ ДСИ",
+                                    "filter": "22",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ШУРЧИ ТУМАНИ ДСИ",
+                                    "value": "2214",
+                                    "title": "ШУРЧИ ТУМАНИ ДСИ",
+                                    "filter": "22",
+                                    "description": null
+                                },
+                                {
+                                    "name": "УЗУН ТУМАНИ ДСИ",
+                                    "value": "2215",
+                                    "title": "УЗУН ТУМАНИ ДСИ",
+                                    "filter": "22",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БАНДИХОН ТУМАНИ ДСИ",
+                                    "value": "2216",
+                                    "title": "БАНДИХОН ТУМАНИ ДСИ",
+                                    "filter": "22",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ОКОЛТИН ТУМАНИ ДСИ",
+                                    "value": "2401",
+                                    "title": "ОКОЛТИН ТУМАНИ ДСИ",
+                                    "filter": "24",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БОЁВУТ ТУМАНИ ДСИ",
+                                    "value": "2402",
+                                    "title": "БОЁВУТ ТУМАНИ ДСИ",
+                                    "filter": "24",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ГУЛИСТОН ТУМАНИ ДСИ",
+                                    "value": "2403",
+                                    "title": "ГУЛИСТОН ТУМАНИ ДСИ",
+                                    "filter": "24",
+                                    "description": null
+                                },
+                                {
+                                    "name": "МИРЗАОБОД ТУМАНИ ДСИ",
+                                    "value": "2405",
+                                    "title": "МИРЗАОБОД ТУМАНИ ДСИ",
+                                    "filter": "24",
+                                    "description": null
+                                },
+                                {
+                                    "name": "САЙХУНОБОД ТУМАНИ ДСИ",
+                                    "value": "2406",
+                                    "title": "САЙХУНОБОД ТУМАНИ ДСИ",
+                                    "filter": "24",
+                                    "description": null
+                                },
+                                {
+                                    "name": "СИРДАРЁ ТУМАНИ ДСИ",
+                                    "value": "2407",
+                                    "title": "СИРДАРЁ ТУМАНИ ДСИ",
+                                    "filter": "24",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ХАВАСТ ТУМАНИ ДСИ",
+                                    "value": "2408",
+                                    "title": "ХАВАСТ ТУМАНИ ДСИ",
+                                    "filter": "24",
+                                    "description": null
+                                },
+                                {
+                                    "name": "САРДОБА ТУМАНИ ДСИ",
+                                    "value": "2409",
+                                    "title": "САРДОБА ТУМАНИ ДСИ",
+                                    "filter": "24",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ГУЛИСТОН ШАХАР ДСИ",
+                                    "value": "2410",
+                                    "title": "ГУЛИСТОН ШАХАР ДСИ",
+                                    "filter": "24",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ШИРИН ШАХАР ДСИ",
+                                    "value": "2412",
+                                    "title": "ШИРИН ШАХАР ДСИ",
+                                    "filter": "24",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЯНГИЕР ШАХАР ДСИ",
+                                    "value": "2413",
+                                    "title": "ЯНГИЕР ШАХАР ДСИ",
+                                    "filter": "24",
+                                    "description": null
+                                },
+                                {
+                                    "name": "МИРОБОД ТУМАНИ ДСИ",
+                                    "value": "2601",
+                                    "title": "МИРОБОД ТУМАНИ ДСИ",
+                                    "filter": "26",
+                                    "description": null
+                                },
+                                {
+                                    "name": "МИРЗО УЛУГБЕК ТУМ. ДСИ",
+                                    "value": "2602",
+                                    "title": "МИРЗО УЛУГБЕК ТУМ. ДСИ",
+                                    "filter": "26",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЮНУСОБОД ТУМАНИ ДСИ",
+                                    "value": "2603",
+                                    "title": "ЮНУСОБОД ТУМАНИ ДСИ",
+                                    "filter": "26",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЯККАСАРОЙ ТУМАНИ ДСИ",
+                                    "value": "2604",
+                                    "title": "ЯККАСАРОЙ ТУМАНИ ДСИ",
+                                    "filter": "26",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ШАЙХОНТОХУР ТУМАНИ ДСИ",
+                                    "value": "2605",
+                                    "title": "ШАЙХОНТОХУР ТУМАНИ ДСИ",
+                                    "filter": "26",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЧИЛОНЗОР ТУМАНИ ДСИ",
+                                    "value": "2606",
+                                    "title": "ЧИЛОНЗОР ТУМАНИ ДСИ",
+                                    "filter": "26",
+                                    "description": null
+                                },
+                                {
+                                    "name": "СЕРГЕЛИ ТУМАНИ ДСИ",
+                                    "value": "2607",
+                                    "title": "СЕРГЕЛИ ТУМАНИ ДСИ",
+                                    "filter": "26",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЯШНОБОД ТУМАНИ ДСИ",
+                                    "value": "2608",
+                                    "title": "ЯШНОБОД ТУМАНИ ДСИ",
+                                    "filter": "26",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ОЛМАЗОР ТУМАНИ ДСИ",
+                                    "value": "2609",
+                                    "title": "ОЛМАЗОР ТУМАНИ ДСИ",
+                                    "filter": "26",
+                                    "description": null
+                                },
+                                {
+                                    "name": "УЧТЕПА ТУМАНИ ДСИ",
+                                    "value": "2610",
+                                    "title": "УЧТЕПА ТУМАНИ ДСИ",
+                                    "filter": "26",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БЕКТЕМИР ТУМАНИ ДСИ",
+                                    "value": "2611",
+                                    "title": "БЕКТЕМИР ТУМАНИ ДСИ",
+                                    "filter": "26",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЯНГИХАЁТ ТУМАНИ ДСИ",
+                                    "value": "2612",
+                                    "title": "ЯНГИХАЁТ ТУМАНИ ДСИ",
+                                    "filter": "26",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БЕКОБОД ТУМАНИ ДСИ",
+                                    "value": "2701",
+                                    "title": "БЕКОБОД ТУМАНИ ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БУКА ТУМАНИ ДСИ",
+                                    "value": "2702",
+                                    "title": "БУКА ТУМАНИ ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БУСТОНЛИК ТУМАНИ ДСИ",
+                                    "value": "2703",
+                                    "title": "БУСТОНЛИК ТУМАНИ ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЗАНГИОТА ТУМАНИ ДСИ",
+                                    "value": "2704",
+                                    "title": "ЗАНГИОТА ТУМАНИ ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЮКОРИЧИРЧИК ТУМАНИ ДСИ",
+                                    "value": "2705",
+                                    "title": "ЮКОРИЧИРЧИК ТУМАНИ ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КИБРАЙ ТУМАНИ ДСИ",
+                                    "value": "2706",
+                                    "title": "КИБРАЙ ТУМАНИ ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ОККУРГОН ТУМАНИ ДСИ",
+                                    "value": "2707",
+                                    "title": "ОККУРГОН ТУМАНИ ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ОХАНГАРОН ТУМАНИ ДСИ",
+                                    "value": "2708",
+                                    "title": "ОХАНГАРОН ТУМАНИ ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ПАРКЕНТ ТУМАНИ ДСИ",
+                                    "value": "2709",
+                                    "title": "ПАРКЕНТ ТУМАНИ ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ПСКЕНТ ТУМАНИ ДСИ",
+                                    "value": "2710",
+                                    "title": "ПСКЕНТ ТУМАНИ ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ТОШКЕНТ ТУМАНИ ДСИ",
+                                    "value": "2711",
+                                    "title": "��ОШКЕНТ ТУМАНИ ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "УРТАЧИРЧИК ТУМАНИ ДСИ",
+                                    "value": "2712",
+                                    "title": "УРТАЧИРЧИК ТУМАНИ ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЧИНОЗ ТУМАНИ ДСИ",
+                                    "value": "2713",
+                                    "title": "ЧИНОЗ ТУМАНИ ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КУЙИЧИРЧИК ТУМ�����������НИ ДСИ",
+                                    "value": "2714",
+                                    "title": "КУЙИЧИРЧИК ТУМАНИ ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЯНГИЙУЛ ТУМАНИ ДСИ",
+                                    "value": "2715",
+                                    "title": "ЯНГИЙУЛ ТУМАНИ ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "АНГРЕН ШАХАР ДСИ",
+                                    "value": "2716",
+                                    "title": "АНГРЕН ШАХАР ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БЕКОБОД ШАХАР ДСИ",
+                                    "value": "2717",
+                                    "title": "БЕКОБОД ШАХАР ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ОЛМАЛИК ШАХАР ДСИ",
+                                    "value": "2718",
+                                    "title": "ОЛМАЛИК ШАХАР ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ОХАНГАРОН ШАХАР ДСИ",
+                                    "value": "2719",
+                                    "title": "ОХАНГАРОН ШАХАР ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЧИРЧИК ШАХАР ДСИ",
+                                    "value": "2720",
+                                    "title": "ЧИРЧИК ШАХАР ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЯНГИЙУЛ ШАХАР ДСИ",
+                                    "value": "2722",
+                                    "title": "ЯНГИЙУЛ ШАХАР ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "НУРАФШОН ШАХАР ДСИ",
+                                    "value": "2723",
+                                    "title": "НУРАФШОН ШАХАР ДСИ",
+                                    "filter": "27",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КУВАСОЙ ШАХАР ДСИ",
+                                    "value": "3001",
+                                    "title": "КУВАСОЙ ШАХАР ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КУКОН ШАХАР ДСИ",
+                                    "value": "3003",
+                                    "title": "КУКОН ШАХАР ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "МАРГИЛОН ШАХАР ДСИ",
+                                    "value": "3004",
+                                    "title": "МАРГИЛОН ШАХАР ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ФАРГОНА ШАХАР ДСИ",
+                                    "value": "3005",
+                                    "title": "ФАРГОНА ШАХАР ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БЕШАРИК ТУМАНИ ДСИ",
+                                    "value": "3006",
+                                    "title": "БЕШАРИК ТУМАНИ ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БОГДОД ТУМАНИ ДСИ",
+                                    "value": "3007",
+                                    "title": "БОГДОД ТУМАНИ ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БУВАЙДА ТУМАНИ ДСИ",
+                                    "value": "3008",
+                                    "title": "БУВАЙДА ТУМАНИ ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ДАНГАРА ТУМАНИ ДСИ",
+                                    "value": "3009",
+                                    "title": "ДАНГАРА ТУМАНИ ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЁЗЁВОН ТУМАНИ ДСИ",
+                                    "value": "3010",
+                                    "title": "ЁЗЁВОН ТУМАНИ ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КУВА ТУМАНИ ДСИ",
+                                    "value": "3011",
+                                    "title": "КУВА ТУМАНИ ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ОЛТИАРИК ТУМАНИ ДСИ",
+                                    "value": "3012",
+                                    "title": "ОЛТИАРИК ТУМАНИ ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КУШТЕПА ТУМАНИ ДСИ",
+                                    "value": "3013",
+                                    "title": "КУШТЕПА ТУМАНИ ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "РИШТОН ТУМАНИ ДСИ",
+                                    "value": "3014",
+                                    "title": "РИШТОН ТУМАНИ ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "СУХ ТУМАНИ ДСИ",
+                                    "value": "3015",
+                                    "title": "СУХ ТУМАНИ ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ТОШЛОК ТУМАНИ ДСИ",
+                                    "value": "3016",
+                                    "title": "ТОШЛОК ТУМАНИ ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "УЗБЕКИСТОН ТУМАНИ ДСИ",
+                                    "value": "3017",
+                                    "title": "УЗБЕКИСТОН ТУМАНИ ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "УЧКУПРИК ТУМАНИ ДСИ",
+                                    "value": "3018",
+                                    "title": "УЧКУПРИК ТУМАНИ ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ФАРГОНА ТУМАНИ ДСИ",
+                                    "value": "3019",
+                                    "title": "ФАРГОНА ТУМАНИ ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ФУРКАТ ТУМАНИ ДСИ",
+                                    "value": "3020",
+                                    "title": "ФУРКАТ ТУМАНИ ДСИ",
+                                    "filter": "30",
+                                    "description": null
+                                },
+                                {
+                                    "name": "УРГАНЧ ШАХАР ДСИ",
+                                    "value": "3301",
+                                    "title": "УРГАНЧ ШАХАР ДСИ",
+                                    "filter": "33",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ХИВА ШАХАР ДСИ",
+                                    "value": "3302",
+                                    "title": "ХИВА ШАХАР ДСИ",
+                                    "filter": "33",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ПИТНАК ШАХАР ДСИ",
+                                    "value": "3303",
+                                    "title": "ПИТНАК ШАХАР ДСИ",
+                                    "filter": "33",
+                                    "description": null
+                                },
+                                {
+                                    "name": "УРГАНЧ ТУМАНИ ДСИ",
+                                    "value": "3304",
+                                    "title": "УРГАНЧ ТУМАНИ ДСИ",
+                                    "filter": "33",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ХИВА ТУМАНИ ДСИ",
+                                    "value": "3305",
+                                    "title": "ХИВА ТУМАНИ ДСИ",
+                                    "filter": "33",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ХАЗОРАСП ТУМАНИ ДСИ",
+                                    "value": "3306",
+                                    "title": "ХАЗОРАСП ТУМАНИ ДСИ",
+                                    "filter": "33",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ГУРЛАН ТУМАНИ ДСИ",
+                                    "value": "3307",
+                                    "title": "ГУРЛАН ТУМАНИ ДСИ",
+                                    "filter": "33",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ШОВОТ ТУМАНИ ДСИ",
+                                    "value": "3308",
+                                    "title": "ШОВОТ ТУМАНИ ДСИ",
+                                    "filter": "33",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЯНГИАРИК ТУМАНИ ДСИ",
+                                    "value": "3309",
+                                    "title": "ЯНГИАРИК ТУМАНИ ДСИ",
+                                    "filter": "33",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КУШКУПИР ТУМАНИ ДСИ",
+                                    "value": "3310",
+                                    "title": "КУШКУПИР ТУМАНИ ДСИ",
+                                    "filter": "33",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БОГОТ ТУМАНИ ДСИ",
+                                    "value": "3311",
+                                    "title": "БОГОТ ТУМАНИ ДСИ",
+                                    "filter": "33",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ХОНКА ТУМАНИ ДСИ",
+                                    "value": "3312",
+                                    "title": "ХОНКА ТУМАНИ ДСИ",
+                                    "filter": "33",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЯНГИБОЗОР ТУМАНИ ДСИ",
+                                    "value": "3313",
+                                    "title": "ЯНГИБОЗОР ТУМАНИ ДСИ",
+                                    "filter": "33",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ТУПРОККАЛЪА ТУМАНИ ДСИ",
+                                    "value": "3314",
+                                    "title": "ТУПРОККАЛЪА ТУМАНИ ДСИ",
+                                    "filter": "33",
+                                    "description": null
+                                },
+                                {
+                                    "name": "НУКУС ШАХАР ДСИ",
+                                    "value": "3501",
+                                    "title": "НУКУС ШАХАР ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "АМУДАРЁ ТУМАНИ ДСИ",
+                                    "value": "3508",
+                                    "title": "АМУДАРЁ ТУМАНИ ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БЕРУНИЙ ТУМАНИ ДСИ",
+                                    "value": "3509",
+                                    "title": "БЕРУНИЙ ТУМАНИ ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БУЗАТОВ ТУМАНИ ДСИ",
+                                    "value": "3510",
+                                    "title": "БУЗАТОВ ТУМАНИ ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КЕГЕЙЛИ ТУМАНИ ДСИ",
+                                    "value": "3511",
+                                    "title": "КЕГЕЙЛИ ТУМАНИ ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КУНГИРОТ ТУМАНИ ДСИ",
+                                    "value": "3512",
+                                    "title": "КУНГИРОТ ТУМАНИ ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КОНЛИКУЛ ТУМАНИ ДСИ",
+                                    "value": "3513",
+                                    "title": "КОНЛИКУЛ ТУМАНИ ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "МУЙНОК ТУМАНИ ДСИ",
+                                    "value": "3514",
+                                    "title": "МУЙНОК ТУМАНИ ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "НУКУС ТУМАНИ ДСИ",
+                                    "value": "3515",
+                                    "title": "НУКУС ТУМАНИ ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ТАХТАКУПИР ТУМАНИ ДСИ",
+                                    "value": "3516",
+                                    "title": "ТАХТАКУПИР ТУМАНИ ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ТУРТКУЛ ТУМАНИ ДСИ",
+                                    "value": "3517",
+                                    "title": "ТУРТКУЛ ТУМАНИ ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ХУЖАЙЛИ ТУМАНИ ДСИ",
+                                    "value": "3518",
+                                    "title": "ХУЖАЙЛИ ТУМАНИ ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЧИМБОЙ ТУМАНИ ДСИ",
+                                    "value": "3519",
+                                    "title": "ЧИМБОЙ ТУМАНИ ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ШУМАНАЙ ТУМАНИ ДСИ",
+                                    "value": "3520",
+                                    "title": "ШУМАНАЙ ТУМАНИ ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЭЛЛИККАЛА ТУМАНИ ДСИ",
+                                    "value": "3521",
+                                    "title": "ЭЛЛИККАЛА ТУМАНИ ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КОРАУЗАК ТУМАНИ ДСИ",
+                                    "value": "3522",
+                                    "title": "КОРАУЗАК ТУМАНИ ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ТАХИАТОШ ТУМАНИ ДСИ",
+                                    "value": "3523",
+                                    "title": "ТАХИАТОШ ТУМАНИ ДСИ",
+                                    "filter": "35",
+                                    "description": null
+                                },
+                                {
+                                    "name": "АНДИЖОН ТУМАНИ ДСИ",
+                                    "value": "0307",
+                                    "title": "АНДИЖОН ТУМАНИ ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "АНДИЖОН ШАХАР ДСИ",
+                                    "value": "0301",
+                                    "title": "АНДИЖОН ШАХАР ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "АСАКА ТУМАНИ ДСИ",
+                                    "value": "0315",
+                                    "title": "АСАКА ТУМАНИ ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БАЛИКЧИ ТУМАНИ ДСИ",
+                                    "value": "0308",
+                                    "title": "БАЛИКЧИ ТУМАНИ ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БУЛОКБОШИ ТУМАНИ ДСИ",
+                                    "value": "0310",
+                                    "title": "БУЛОКБОШИ ТУМАНИ ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БУСТОН ТУМАНИ ДСИ",
+                                    "value": "0309",
+                                    "title": "БУСТОН ТУМАНИ ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЖАЛОЛКУДУК ТУМАНИ ДСИ",
+                                    "value": "0311",
+                                    "title": "ЖАЛОЛКУДУК ТУМАНИ ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ИЗБОСКАН ТУМАНИ ДСИ",
+                                    "value": "0312",
+                                    "title": "ИЗБОСКАН ТУМАНИ ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КОРАСУВ ШАХАР ДСИ",
+                                    "value": "0305",
+                                    "title": "КОРАСУВ ШАХАР ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КУРГОНТЕПА ТУМ��НИ ДСИ",
+                                    "value": "0314",
+                                    "title": "КУРГОНТЕПА ТУМАНИ ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "МАРХАМАТ ТУМАНИ ДСИ",
+                                    "value": "0316",
+                                    "title": "МАРХАМАТ ТУМАНИ ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ОЛТИНКУЛ ТУМАНИ ДСИ",
+                                    "value": "0306",
+                                    "title": "ОЛТИНКУЛ ТУМАНИ ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ПАХТАОБОД ТУМАНИ ДСИ",
+                                    "value": "0318",
+                                    "title": "ПАХТАОБОД ТУМАНИ ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "УЛУГНОР ТУМАНИ ДСИ",
+                                    "value": "0313",
+                                    "title": "УЛУГНОР ТУМАНИ ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ХОНОБОД ШАХАР ДСИ",
+                                    "value": "0303",
+                                    "title": "ХОНОБОД ШАХАР ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ХУЖАОБОД ТУМАНИ ДСИ",
+                                    "value": "0319",
+                                    "title": "ХУЖАОБОД ТУМАНИ ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ШАХРИХОН ТУМАНИ ДСИ",
+                                    "value": "0317",
+                                    "title": "ШАХРИХОН ТУМАНИ ДСИ",
+                                    "filter": "03",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БУХОРО ТУМАНИ ДСИ",
+                                    "value": "0605",
+                                    "title": "БУХОРО ТУМАНИ ДСИ",
+                                    "filter": "06",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БУХОРО ШАХАР ДСИ",
+                                    "value": "0601",
+                                    "title": "БУХОРО ШАХАР ДСИ",
+                                    "filter": "06",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ВОБКЕНТ ТУМАНИ ДСИ",
+                                    "value": "0606",
+                                    "title": "ВОБКЕНТ ТУМАНИ ДСИ",
+                                    "filter": "06",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ГИЖДУВОН ТУМАНИ ДСИ",
+                                    "value": "0607",
+                                    "title": "ГИЖДУВОН ТУМАНИ ДСИ",
+                                    "filter": "06",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЖОНДОР ТУМАНИ ДСИ",
+                                    "value": "0608",
+                                    "title": "ЖОНДОР ТУМАНИ ДСИ",
+                                    "filter": "06",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КОГОН ТУМАНИ ДСИ",
+                                    "value": "0609",
+                                    "title": "КОГОН ТУМАНИ ДСИ",
+                                    "filter": "06",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КОГОН ШАХАР ДСИ",
+                                    "value": "0603",
+                                    "title": "КОГОН ШАХАР ДСИ",
+                                    "filter": "06",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КОРАКУЛ ТУМАНИ ДСИ",
+                                    "value": "0610",
+                                    "title": "КОРАКУЛ ТУМАНИ ДСИ",
+                                    "filter": "06",
+                                    "description": null
+                                },
+                                {
+                                    "name": "КОРОВУЛБОЗОР ТУМ. ДСИ",
+                                    "value": "0614",
+                                    "title": "КОРОВУЛБОЗОР ТУМ. ДСИ",
+                                    "filter": "06",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ОЛОТ ТУМАНИ ДСИ",
+                                    "value": "0604",
+                                    "title": "ОЛОТ ТУМАНИ ДСИ",
+                                    "filter": "06",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ПЕШКУ ТУМАНИ ДСИ",
+                                    "value": "0611",
+                                    "title": "ПЕШКУ ТУМАНИ ДСИ",
+                                    "filter": "06",
+                                    "description": null
+                                },
+                                {
+                                    "name": "РОМИТАН ТУМАНИ ДСИ",
+                                    "value": "0612",
+                                    "title": "РОМИТАН ТУМАНИ ДСИ",
+                                    "filter": "06",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ШОФИРКОН ТУМАНИ ДСИ",
+                                    "value": "0613",
+                                    "title": "ШОФИРКОН ТУМАНИ ДСИ",
+                                    "filter": "06",
+                                    "description": null
+                                },
+                                {
+                                    "name": "АРНАСОЙ ТУМАНИ ДСИ",
+                                    "value": "0801",
+                                    "title": "АРНАСОЙ ТУМАНИ ДСИ",
+                                    "filter": "08",
+                                    "description": null
+                                },
+                                {
+                                    "name": "БАХМАЛ ТУМАНИ ДСИ",
+                                    "value": "0802",
+                                    "title": "БАХМАЛ ТУМАНИ ДСИ",
+                                    "filter": "08",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ГАЛЛАОРОЛ ТУМАНИ ДСИ",
+                                    "value": "0803",
+                                    "title": "ГАЛЛАОРОЛ ТУМАНИ ДСИ",
+                                    "filter": "08",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ДУСТЛИК ТУМАНИ ДСИ",
+                                    "value": "0805",
+                                    "title": "ДУСТЛИК ТУМАНИ ДСИ",
+                                    "filter": "08",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЖИЗЗАХ ТУМАНИ ДСИ",
+                                    "value": "0804",
+                                    "title": "ЖИЗЗАХ ТУМАНИ ДСИ",
+                                    "filter": "08",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЖИЗЗАХ ШАХАР ДСИ",
+                                    "value": "0812",
+                                    "title": "ЖИЗЗАХ ШАХАР ДСИ",
+                                    "filter": "08",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЗАРБДОР ТУМАНИ ДСИ",
+                                    "value": "0806",
+                                    "title": "ЗАРБДОР ТУМАНИ ДСИ",
+                                    "filter": "08",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЗАФАРОБОД ТУМАНИ ДСИ",
+                                    "value": "0808",
+                                    "title": "ЗАФАРОБОД ТУМАНИ ДСИ",
+                                    "filter": "08",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЗОМИН ТУМАНИ ДСИ",
+                                    "value": "0807",
+                                    "title": "ЗОМИН ТУМАНИ ДСИ",
+                                    "filter": "08",
+                                    "description": null
+                                },
+                                {
+                                    "name": "МИРЗАЧУЛ ТУМАНИ ДСИ",
+                                    "value": "0809",
+                                    "title": "МИРЗАЧУЛ ТУМАНИ ДСИ",
+                                    "filter": "08",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ПАХТАКОР ТУМАНИ ДСИ",
+                                    "value": "0810",
+                                    "title": "ПАХТАКОР ТУМАНИ ДСИ",
+                                    "filter": "08",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ФОРИШ ТУМАНИ ДСИ",
+                                    "value": "0811",
+                                    "title": "ФОРИШ ТУМАНИ ДСИ",
+                                    "filter": "08",
+                                    "description": null
+                                },
+                                {
+                                    "name": "ЯНГИОБОД ТУМАНИ ДСИ",
+                                    "value": "0813",
+                                    "title": "ЯНГИОБОД ТУМАНИ ДСИ",
+                                    "filter": "08",
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": "areas",
+                            "optional": true,
+                            "visible": {
+                                "value": "^01|02|03|04|05|06|07|10|11|08|09|13|12|14|15$",
+                                "require": "tax_type"
+                            },
+                            "error": null,
+                            "scan": null
+                        },
+                        {
+                            "name": "taxno",
+                            "title": "PINFL",
+                            "content": "number",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "optional": true,
+                            "validation": "^([1-9]{1}[0-9]{13})$",
+                            "validation_error": "PINFL 14 ta raqamdan iborat va noldan boshlanmasligi kerak",
+                            "visible": {
+                                "require": "tax_type",
+                                "value": "^01|02|03|04|05|06|07|10|11|08|09|13|12|14|15$"
+                            },
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "property_id",
+                            "placeholder": "00:00:00:00:00:0000",
+                            "replace": "[ -]",
+                            "title": "Kadastr raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "optional": true,
+                            "visible": {
+                                "require": "tax_type",
+                                "value": "^01|02|08|09|12|14|15$"
+                            },
+                            "error": null,
+                            "scan": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "налоги",
+                    "nalogi",
+                    "soliq",
+                    "солик",
+                    "ыщдшй"
+                ],
+                "additional_info": true,
+                "myhome": true,
+                "weight": 0.009550435581038795,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "58d3ada08611444ee0570b8d",
+                "paycom_id": "6093c52a5d157d44f1e3032e",
+                "name": "Оплата в бюджет",
+                "organization": "Оплата в бюджет",
+                "active": true,
+                "type": 150,
+                "logo": "https://cdn.payme.uz/merchants/munis.png",
+                "date": 1489727064000,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100000,
+                        "max": 600000000
+                    },
+                    "account": [
+                        {
+                            "name": "budget_account",
+                            "title": "Hisob raqami",
+                            "content": "number",
+                            "type": "text",
+                            "optional": true,
+                            "prefix": null,
+                            "replace": null,
+                            "_validation": "^\\d{27}$",
+                            "validation": "^[0-9]{27}$|^[0-9]{25}$",
+                            "validation_error": "Лицевой счет должен быть 25 или 27-значным числом",
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "visible": null
+                        },
+                        {
+                            "name": "pay_purpose",
+                            "title": "FISh, to`lov maqsadi",
+                            "content": "text",
+                            "type": "text",
+                            "error": null,
+                            "placeholder": "",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "бюджет"
+                ],
+                "weight": 0.008129745881206235,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
                 "_id": "5c1245b0a13238736601234b",
                 "paycom_id": "6093c6a85d157d44f1e30338",
                 "name": "Оплата государственных пошлин ОВИР",

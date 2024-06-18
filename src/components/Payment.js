@@ -1,7 +1,11 @@
 import { Grid, Typography } from '@mui/material'
 import Mobileoperators from './Mobileoperators'
 import InternetProviders from './InternetProviders'
+import Utilities from './Utilities'
 import Footer from './Footer'
+import PublicServices from './PublicServices'
+import Telefoniya from './Telefoniya'
+import TVandOnline from './TVandOnline'
 
 
 const Payment = ({ home, payment, setInput1, setInput2, setImage, setLogoname, setServicetype, setNumber }) => {
@@ -25,6 +29,11 @@ const Payment = ({ home, payment, setInput1, setInput2, setImage, setLogoname, s
 
       <Mobileoperators home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>
       <InternetProviders home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>
+      <Utilities home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>
+      
+      <PublicServices home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>
+      <Telefoniya home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>
+      <TVandOnline home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>
       <Footer home={home}/>
     </Grid>
   )

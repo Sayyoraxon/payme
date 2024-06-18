@@ -1,28 +1,33 @@
-import { Box, Button, Card, CardMedia, Dialog, Grid, IconButton, NativeSelect, Typography } from "@mui/material"
-import { providers } from '../data/providers'
+import { Box, Button, Card, CardMedia, Dialog, Grid, IconButton, InputBase, MenuItem, Select, Typography } from "@mui/material"
+import { styled } from '@mui/material/styles';
+import { services } from "../data/communalServices"
 import { useState } from "react"
 import CloseIcon from '@mui/icons-material/Close';
 import { useNavigate } from "react-router-dom";
 
 
-const InternetProviders = ({ home, payment, setInput1, setInput2, setImage, setLogoname, setServicetype, setNumber }) => {
-    const mobile_operators = payment && payment.types[2]
-    const internetproviders = providers && providers.result.merchants
+
+
+
+const Utilities = ({ home, payment, setInput1, setInput2, setImage, setLogoname, setServicetype, setNumber }) => {
+    const mobile_operators = payment && payment.types[3]
+    const utilities = services && services.result.merchants
     const [hide, setHide] = useState(false)
     const [open, setOpen] = useState(false)
     const [namemo, setNamemo] = useState("")
     const [logomo, setLogomo] = useState("")
     const [select, setSelect] = useState("")
+    const [filtervalue, setFiltervalue] = useState("")
     const [phoneNumber, setPhoneNumber] = useState("")
     const [summa, setSumma] = useState("")
     const [sumlength, setSumlength] = useState(false)
     const [text, setText] = useState("")
     const [phonetext, setPhonetext] = useState("")
     const [formatphone, setFormatphone] = useState(false)
+    const [formatSelect, setFormatSelect] = useState(false)
+    const [format2Select, setFormat2Select] = useState(false)
     const [title, setTitle] = useState("")
-    const [prefix, setPrefix] = useState(false)
-    const [min, setMin] = useState()
-    const [max, setMax] = useState()
+    const [prefix, setPrefix] = useState([])
 
     const navigate = useNavigate()
 
@@ -31,19 +36,23 @@ const InternetProviders = ({ home, payment, setInput1, setInput2, setImage, setL
             setSumlength(true)
             setText(home.INPUT_ERROR_REQUIRED)
         } else if (summa.length > 0) {
-            if (Number(summa.replace(/\D/g, "")) < min) {
+            if (Number(summa.replace(/\D/g, "")) < 500) {
                 setSumlength(true)
-                setText(`${home.INPUT_AMOUNT_ERROR_MIN} ${min}`)
-            } else if (Number(summa.replace(/\D/g, "")) > max) {
+                setText(`${home.INPUT_AMOUNT_ERROR_MIN} 500`)
+            } else if (Number(summa.replace(/\D/g, "")) > 3000000) {
                 setSumlength(true)
-                setText(`${home.INPUT_AMOUNT_ERROR_MAX} ${max}`)
+                setText(`${home.INPUT_AMOUNT_ERROR_MAX} 3000000`)
             }
         }
 
-        if (phoneNumber.length === 0) {
+        if(filtervalue.length === 0) {
+            setFormatSelect(true)
+        }else if(select.length === 0) {
+            setFormat2Select(true)
+        }else if (phoneNumber.length === 0) {
             setFormatphone(true)
             setPhonetext(home.INPUT_ERROR_REQUIRED)
-        } else if (phoneNumber.length > 0 && Number(summa.replace(/\D/g, "")) > 500 && Number(summa.replace(/\D/g, "")) < 100000) {
+        }else if (Number(summa.replace(/\D/g, "")) > 500 && Number(summa.replace(/\D/g, "")) < 3000000 && phoneNumber.length > 0 ) {
             navigate("/checkout")
             setInput1(phoneNumber)
             setInput2(summa.replace(/\D/g, ""))
@@ -79,7 +88,39 @@ const InternetProviders = ({ home, payment, setInput1, setInput2, setImage, setL
         const formattedInputValue = getFormattedInputValue(value)
         setSumma(formattedInputValue)
     }
-    
+
+    console.log(utilities)
+
+    const BootstrapInput = styled(InputBase)(({ theme }) => ({
+        'label + &': {
+            marginTop: theme.spacing(3),
+        },
+        '& .MuiInputBase-input': {
+            borderRadius: 4,
+            position: 'relative',
+            backgroundColor: theme.palette.background.paper,
+            borderWidth: '1px',
+            borderStyle: 'solid',
+            borderColor: formatSelect ? '#dc3545' : '#b8b2b2',
+            fontSize: 16,
+            padding: '6px 26px 6px 12px',
+            width: '254px',
+            transition: theme.transitions.create(['border-color', 'box-shadow']),
+            // Use the system font instead of the default Roboto font.
+            fontFamily: [
+                '-apple-system',
+                'BlinkMacSystemFont',
+                '"Segoe UI"',
+                'Roboto',
+                '"Helvetica Neue"',
+                'Arial',
+                'sans-serif',
+                '"Apple Color Emoji"',
+                '"Segoe UI Emoji"',
+                '"Segoe UI Symbol"',
+            ].join(','),
+        },
+    }));
     return (
         <>
             <Grid container className='padding' sx={{ "@media (max-width: 1139px)": { px: "60px" }, "@media (min-width: 1140px)": { width: "1140px", mr: "auto", ml: "auto" } }}>
@@ -89,7 +130,7 @@ const InternetProviders = ({ home, payment, setInput1, setInput2, setImage, setL
                             <Typography variant='h6'>
                                 {`${mobile_operators.title} `}
                                 <span style={{ color: "#666" }}>
-                                    {mobile_operators.cache_size}
+                                    298
                                 </span>
                             </Typography>
                         </Grid>
@@ -105,23 +146,24 @@ const InternetProviders = ({ home, payment, setInput1, setInput2, setImage, setL
                 <Grid item md={12} sm={12} xs={12} sx={{ mt: 3, overflowY: "hidden", paddingBottom: 1 }} height={!hide ? "180px" : "auto"}>
                     <Grid container spacing={3} >
 
-                        {internetproviders.map((provider) => (
+                        {utilities.map((provider) => (
                             <Grid item key={provider.id}
                                 onClick={() => {
                                     setFormatphone(false)
                                     setSumlength(false)
+                                    setFormatSelect(false)
+                                    setFormat2Select(false)
                                     setPhoneNumber("")
                                     setSumma("")
+                                    setFiltervalue("")
                                     setOpen(true)
                                     setLogomo(provider.logo)
                                     setNamemo(provider.organization)
-                                    setTitle(provider.terminal.account[0].title)
-                                    setPrefix(provider.terminal.account[0].prefix ? provider.terminal.account[0].prefix : false)
-                                    setMin(provider.terminal.amount.min)
-                                    setMax(provider.terminal.amount.max)
+                                    setTitle(provider.terminal.account[provider.terminal.account.length-1].title)
+                                    setPrefix(provider.terminal.account)
                                 }}>
                                 <Card className="card"
-                                    sx={{ width: "106px", height: "60px", px: 6, py: 7 }}>
+                                    sx={{ width: "126px", height: "60px", px: 4.75, py: 7 }}>
                                     <CardMedia
                                         component="img"
                                         image={provider.logo}
@@ -155,50 +197,80 @@ const InternetProviders = ({ home, payment, setInput1, setInput2, setImage, setL
                                 <img src={logomo} alt="beline" width="auto" height="60px" />
                             </Box>
                         </Grid>
-                        <Grid item sx={{ mr: "auto", ml: "auto", mb: 2 }}>
-                            <Typography><small>{title}</small></Typography>
-                            {
-                                !prefix ?
-                                    <input className="regtrinput"
-                                        type="text"
-                                        onChange={(e)=>setPhoneNumber(e.target.value)}
-                                        onFocus={() => setFormatphone(false)}
-                                        style={{ borderColor: formatphone ? "#dc3545" : "" }} />
+
+                        {prefix.map((item) => (
+                            <>
+                                {item.values ?
+
+                                    item.name === "subRegion"
+                                        ?
+                                        <Grid item sx={{ mr: "auto", ml: "auto", mb: 1 }}>
+                                            <Typography><small>{item.title}</small></Typography>
+                                            <Select sx={{ p: 1 }}
+                                                input={<BootstrapInput />}
+                                                value={select}
+                                                onChange={(e)=>setSelect(e.target.value)}
+                                                onFocus = {()=>setFormat2Select(false)}
+                                            >
+                                                {item.values.map((value) => (
+                                                    value.filter === filtervalue && <MenuItem value={value.value}>
+                                                        {value.title}
+                                                    </MenuItem>
+                                                ))}
+                                            </Select>
+                                            {format2Select && <Typography sx={{ color: "#dc3545" }}>
+                                            {home.INPUT_ERROR_REQUIRED}
+                                        </Typography>}
+                                        </Grid>
+                                        :
+                                        <Grid item sx={{ mr: "auto", ml: "auto", mb: 1 }}>
+                                            <Typography><small>{item.title}</small></Typography>
+                                            <Select sx={{ p: 1 }}
+                                                input={<BootstrapInput />}
+                                                value={filtervalue}
+                                                onChange={(e) => setFiltervalue(e.target.value)}
+                                                onFocus={()=>setFormatSelect(false)}
+                                            >
+                                                {item.values.map((value) => (
+                                                    <MenuItem value={value.value}>
+                                                        {value.title}
+                                                    </MenuItem>
+                                                ))}
+                                            </Select>
+                                            {formatSelect && <Typography sx={{ color: "#dc3545" }}>
+                                            {home.INPUT_ERROR_REQUIRED}
+                                        </Typography>}
+                                        </Grid>
                                     :
-                                    <div className="registrdiv">
-                                        <NativeSelect
-                                            onChange={(e)=>setSelect(e.target.value)}
-                                            sx={{ "&::before": { borderBottom: "none" }, "&::after": { borderBottom: "none" } }}>
-                                            {prefix.values.map((value) => (
-                                                <option
-                                                    value={value.value}
-                                                    style={{ fontSize: "16px", border: "none" }}>
-                                                    {value.title}
-                                                </option>
-                                            ))}
-                                        </NativeSelect>
-                                        <input type="text"
-                                        onChange={(e)=>{setPhoneNumber(`${select}${e.target.value}`)}}
-                                         />
-                                    </div>
-                            }
-                            {formatphone && <Typography sx={{ color: "#dc3545" }}>
-                                {phonetext}
-                            </Typography>}
-                        </Grid>
+                                    <Grid item sx={{ mr: "auto", ml: "auto", mb: 1 }}>
+                                        <Typography><small>{item.title}</small></Typography>
+                                        <input className='regtrinput' style={{ borderColor: formatphone ? "#dc3545" : "", height: "30px" }}
+                                            type={item.type}
+                                            placeholder={item.placeholder}
+                                            value={phoneNumber}
+                                            onChange={(e) => setPhoneNumber(e.target.value)}
+                                            onFocus={()=>setFormatphone(false)}
+                                            />
+                                        {formatphone && <Typography sx={{ color: "#dc3545" }}>
+                                            {phonetext}
+                                        </Typography>}
+                                    </Grid>}
+                            </>
+
+                        ))}
+
                         <Grid item sx={{ mr: "auto", ml: "auto", mb: 5 }}>
                             <Typography><small>{home.CHEQUE_AMOUNT}</small></Typography>
-
                             <input className='regtrinput' style={{ borderColor: sumlength ? "#dc3545" : "" }}
                                 onChange={handleSetInputValue}
                                 value={summa}
                                 onFocus={() => setSumlength(false)}
                                 placeholder={home.INPUT_AMOUNT_PLACEHOLDER} />
-
                             {sumlength && <Typography sx={{ color: "#dc3545" }}>
                                 {text}
                             </Typography>}
                         </Grid>
+
                         <Grid item md={12} sm={12} xs={12} sx={{ mb: 2 }}>
                             <Button onClick={handlePay}
                                 variant="contained" sx={{ width: "100%", bgcolor: "#3cc", "&:hover": { bgcolor: "#81e8e9" } }}>
@@ -212,4 +284,4 @@ const InternetProviders = ({ home, payment, setInput1, setInput2, setImage, setL
     )
 }
 
-export default InternetProviders
+export default Utilities

@@ -5,6 +5,256 @@ export const televideniya =
     "result": {
         "merchants": [
             {
+                "_id": "545f3bdd5ae5eca82d1b463c",
+                "paycom_id": "559cc1c1ef3fa61ad82647de",
+                "name": "UzDigitalTV",
+                "organization": "UZDIGITAL TV",
+                "active": true,
+                "type": 200,
+                "logo": "https://cdn.payme.uz/merchants/uzdigital.png",
+                "date": 1399114284039,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 50000,
+                        "max": 80000000
+                    },
+                    "account": [
+                        {
+                            "name": "client_id",
+                            "title": "Номер счета",
+                            "content": "number",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "eplbl;bnfknd",
+                    "уздиджиталтв",
+                    "tv",
+                    "тв",
+                    "телевидение",
+                    "televizor"
+                ],
+                "additional_info": true,
+                "myhome": true,
+                "weight": 0.005062551812298502,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "588b32d2f922ecea38f7a63e",
+                "paycom_id": "6023ae07a5cb0038bfcc231e",
+                "name": "Allplay",
+                "organization": "ООО «Allmedia Safe Service»",
+                "active": true,
+                "type": 200,
+                "logo": "https://cdn.payme.uz/merchants/allplay__.png",
+                "date": 1481702123770,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 50000,
+                        "max": 100000000,
+                        "round": true
+                    },
+                    "account": [
+                        {
+                            "name": "user_id",
+                            "content": "number",
+                            "type": "text",
+                            "replace": null,
+                            "title": "ID пользователя",
+                            "error": null,
+                            "placeholder": "",
+                            "prefix": null,
+                            "validation": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "alplay",
+                    "аллплей",
+                    "алплей",
+                    "фддздфн",
+                    "tv",
+                    "тв"
+                ],
+                "additional_info": true,
+                "myhome": true,
+                "weight": 0.0026330073991382903,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "58f7350f35a62b0920563e00",
+                "paycom_id": "6124f2f0754e932e68ff4557",
+                "name": "ITV",
+                "organization": "ООО «Alphazet Technologies»",
+                "active": true,
+                "type": 200,
+                "logo": "https://cdn.payme.uz/merchants/3550362008186961a05e84e19d73682987fb9ad6.png",
+                "date": 1399114284039,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100000,
+                        "max": 50000000
+                    },
+                    "account": [
+                        {
+                            "name": "account",
+                            "title": "Лицевой счёт",
+                            "content": "number",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "итв",
+                    "айтв",
+                    "шем",
+                    "фильмы",
+                    "сериалы",
+                    "кино",
+                    "tv",
+                    "тв",
+                    "itv",
+                    "itv.uz",
+                    "i tv"
+                ],
+                "myhome": true,
+                "weight": 0.002630918456777119,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6200fb7cb0159dc2d9e44f7f",
+                "paycom_id": "61e583d082e271b9d3c1c2cd",
+                "name": "RIYA PLAY",
+                "organization": "ООО «\"KINOBEST MEDIA\" MCHJ»",
+                "active": true,
+                "type": 200,
+                "logo": "https://cdn.payme.uz/merchants/ffd691c1bf191a8c15e5d8e09645bb4d6deef969.png",
+                "date": 1644231548040,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 10000000000,
+                        "min": 100000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "user_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "ID пользователя",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "BEK TV",
+                    "ИУЛ ЕМ",
+                    "бек тв",
+                    ",tr nd"
+                ],
+                "weight": 0.0010319375264185929,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5c24705ca5bf0b2628814728",
+                "paycom_id": "5fbf98284602db1c688d9b6d",
+                "name": "Turon Telecom Цифровое телевидение",
+                "organization": "ЧП «Turon Media»",
+                "active": true,
+                "type": 200,
+                "logo": "https://cdn.payme.uz/merchants/09d1978adacf899010cf1434c0d86fffeeac521e.png",
+                "date": 1545891919792,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 50000,
+                        "max": 30000000
+                    },
+                    "account": [
+                        {
+                            "name": "login",
+                            "title": "Номер карты",
+                            "content": "number",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "TuronTelecom",
+                    "Цифровое телевидение",
+                    "егкщт еудусщь",
+                    "турон телеком"
+                ],
+                "myhome": true,
+                "weight": 0.00047199652650664186,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
                 "_id": "65b9e0cf664f9dee6dfe3b61",
                 "paycom_id": "65a7aa60075071280efde022",
                 "name": "Uzmovi",

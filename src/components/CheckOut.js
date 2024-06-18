@@ -1,12 +1,13 @@
-import { Button, Grid, IconButton, Typography } from '@mui/material'
+import { Box, Button, Grid, IconButton, Typography } from '@mui/material'
 import QRCode from "react-qr-code";
 import { NavLink } from 'react-router-dom'
 import CloseIcon from '@mui/icons-material/Close';
 import ShareIcon from '@mui/icons-material/Share';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
-import FormattedInputs from './TextMaskCustom';
 import { useState } from 'react';
 import SendCode from './SendCode';
+import FormattedInput from './FormattedInput';
 
 const CheckOut = ({ home, phoneNumber, summa, logoname, image, servicetype, number }) => {
     const baseUrl = window.location.hostname
@@ -18,18 +19,19 @@ const CheckOut = ({ home, phoneNumber, summa, logoname, image, servicetype, numb
     const [pay, setPay] = useState(true)
     const [format, setFormat] = useState(true)
     const [paid, setPaid] = useState(false)
-    
+    const [success, setSuccess] = useState(false)
 
-    
+
+
 
 
     const handlePay = () => {
 
-        if(datee.length===0){
+        if (datee.length === 0) {
             setPay(false)
-        }else if(datee.length>0 && datee.length<5){
+        } else if (datee.length > 0 && datee.length < 5) {
             setFormat(false)
-        }else{
+        } else {
             setPaid(true)
         }
 
@@ -65,7 +67,7 @@ const CheckOut = ({ home, phoneNumber, summa, logoname, image, servicetype, numb
                         <Typography sx={{ width: "100%", textAlign: "center", color: "#888894", my: 1 }}>
                             {logoname}
                         </Typography>
-                        <Typography>
+                        <Typography sx={{ fontSize: "14px" }}>
                             {servicetype}
                         </Typography>
                         <Grid item md={12} sm={12} xs={12}>
@@ -93,8 +95,8 @@ const CheckOut = ({ home, phoneNumber, summa, logoname, image, servicetype, numb
                                     {`${home.CHEQUE_STATUS}:`}
                                 </Typography>
                                 <div>
-                                    <Typography sx={{ bgcolor: "#fa6a6a", color: "#fff", px: 1, borderRadius: "20px" }}>
-                                        {home.CHEQUE_STATE_UNPAID}
+                                    <Typography sx={{ bgcolor: success ? "#20c997" : "#fa6a6a", color: "#fff", px: 1, borderRadius: "20px", textAlign: "center" }}>
+                                        {success ? home.CHEQUE_STATE_PAYED : home.CHEQUE_STATE_UNPAID}
                                     </Typography>
                                     <Typography>
                                         {`${date} ${time}`}
@@ -136,76 +138,112 @@ const CheckOut = ({ home, phoneNumber, summa, logoname, image, servicetype, numb
 
 
             <Grid container sx={{ maxWidth: "470px", mr: "auto", ml: "auto" }}>
-                {!paid ?
-                    <Grid item md={12} sm={12} xs={12} sx={{ p: 6, "@media (max-width: 470px)": { p: 2 } }}>
-                        <Typography sx={{ fontWeight: "bold", mb: 1 }}>
-                            {home.BTN_ENTER}
+                {success ?
+                    <Grid item md={12} sm={12} xs={12} sx={{ textAlign: "center", p: 6, "@media (max-width: 470px)": { p: 2 } }}>
+
+                        <CheckCircleIcon sx={{ fontSize: "120px", color: "#3cc" }} />
+                        <Typography variant='h5' gutterBottom sx={{ mt: 4 }}>
+                            {home.CHECKOUT_MESSAGE_SUCCESS_HEADER}
                         </Typography>
-                        <Grid item sx={{ mb: 4 }}>
-                            <Typography sx={{ color: "#999", fontWeight: "550" }}>
-                                <small>
-                                    {home.INPUT_PHONE_LABEL}
-                                </small>
-                            </Typography>
-                            <FormattedInputs />
-                        </Grid>
-                        <Typography sx={{ fontWeight: 550, fontSize: 14, mb: 2 }}>
-                            {home.CHECKOUT_PAY_HEADER}
+                        <Typography sx={{ fontSize: "14px" }}>
+                            {home.CHECKOUT_MESSAGE_SUCCESS_TEXT}
                         </Typography>
-                        <Grid item>
-                            <Typography sx={{ color: "#999", fontWeight: "550" }}>
-                                <small>
-                                    {home.INPUT_CARD_NUMBER_LABEL}
-                                </small>
+
+                        <Box sx={{
+                            width: "300px", borderRadius: "10px", display: "flex", justifyContent: "space-between",
+                            p: 1.5, bgcolor: "#02bdbf", mt: 2, ml: "auto", mr: "auto"
+                        }}>
+                            <Typography sx={{ color: "#fff", fontWeight: "550" }}>
+                                {home.CHECKOUT_MESSAGE_LOYALTY_TITLE}
                             </Typography>
-                            <div style={{ marginLeft: "8px", boxSizing: "border-box", display: "flex", width: "300px", borderWidth: "1px ", borderStyle: "solid", borderColor: !pay || !format ? '#dc3545' : '#b8b2b2', borderRadius: "5px", padding: "5px" }}>
-                                <CreditCardIcon sx={{ px: 2 }} />
-                                <input
-                                    style={{ border: "none", outline: "none", fontSize: "14px" }}
-                                    type="text"
-                                    placeholder="1234 5678 9012 3456"
-                                    required
-                                    maxLength={19}
-                                    value={cardNumber
-                                        .replace(/\s/g, "")
-                                        .replace(/(\d{4})/g, "$1 ")
-                                        .trim()}
-                                    onChange={(e) => setCardNumber(e.target.value)}
-                                />
-                                <input
-                                    onFocus={()=>{
-                                        setPay(true)
-                                        setFormat(true)
-                                    }}
-                                    style={{ width: "50px", border: "none", outline: "none", fontSize: "14px" }}
-                                    maxLength={5}
-                                    type="text"
-                                    placeholder={home.INPUT_CARD_EXPIRE_PLACEHOLDER}
-                                    required
-                                    value={datee
-                                        .replace(/\s/i, "")
-                                        .replace(/(\d{2})/i, " $1 ")
-                                        .trim()
-                                    }
-                                    onChange={(e) => setDate(e.target.value)}
-                                />
-                            </div>
-                            {!pay && <Typography sx={{ ml: 29, color: "#dc3545" }}>
-                                {home.INPUT_ERROR_REQUIRED}
-                            </Typography>}
-                            {!format && <Typography sx={{ ml: 24, color: "#dc3545" }}>
-                                {home.INPUT_ERROR_PATTERN}
-                            </Typography>}
-                        </Grid>
-                        {cardNumber.length === 19 && <Grid item md={12} sm={12} xs={12} sx={{ mt: 3 }}>
-                            <Button onClick={handlePay}
-                                variant="contained" sx={{ ml: 1, width: "300px", bgcolor: "#3cc", "&:hover": { bgcolor: "#81e8e9" } }}>
-                                {home.BTN_PAY}
-                            </Button>
-                        </Grid>}
+                            <Typography sx={{ color: "#fff", fontWeight: "550" }}>
+                                {`10 ${home.CHECKOUT_MESSAGE_LOYALTY_VALUE_0}`}
+                            </Typography>
+                        </Box>
+                        <Typography sx={{ my: 2, fontSize: "14px" }}>
+                            {home.CHECKOUT_MESSAGE_HISTORY}
+                        </Typography>
+                        <Button variant='contained' sx={{
+                            bgcolor: "#3cc", color: "#fff",
+                            fontWeight: "550", width: "324px", "&:hover": { bgcolor: "#3cc" }
+                        }}>
+                            <NavLink to="/">
+                                {home.BTN_CHECKOUT_TO_CABINET}
+                            </NavLink>
+                        </Button>
                     </Grid>
                     :
-                    <SendCode home={home} setPaid={setPaid}/>
+                    !paid
+                        ?
+                        <Grid item md={12} sm={12} xs={12} sx={{ p: 6, "@media (max-width: 470px)": { p: 2 } }}>
+                            <Typography sx={{ fontWeight: "bold", mb: 1 }}>
+                                {home.BTN_ENTER}
+                            </Typography>
+                            <Grid item sx={{ mb: 4 }}>
+                                <Typography sx={{ color: "#999", fontWeight: "550" }}>
+                                    <small>
+                                        {home.INPUT_PHONE_LABEL}
+                                    </small>
+                                </Typography>
+                                <FormattedInput />
+                            </Grid>
+                            <Typography sx={{ fontWeight: 550, fontSize: 14, mb: 2 }}>
+                                {home.CHECKOUT_PAY_HEADER}
+                            </Typography>
+                            <Grid item>
+                                <Typography sx={{ color: "#999", fontWeight: "550" }}>
+                                    <small>
+                                        {home.INPUT_CARD_NUMBER_LABEL}
+                                    </small>
+                                </Typography>
+                                <div style={{ boxSizing: "border-box", display: "flex", width: "300px", borderWidth: "1px ", borderStyle: "solid", borderColor: !pay || !format ? '#dc3545' : '#b8b2b2', borderRadius: "5px", padding: "5px" }}>
+                                    <CreditCardIcon sx={{ px: 2 }} />
+                                    <input
+                                        style={{ border: "none", outline: "none", fontSize: "14px" }}
+                                        type="text"
+                                        placeholder="1234 5678 9012 3456"
+                                        required
+                                        maxLength={19}
+                                        value={cardNumber
+                                            .replace(/\s/g, "")
+                                            .replace(/(\d{4})/g, "$1 ")
+                                            .trim()}
+                                        onChange={(e) => setCardNumber(e.target.value)}
+                                    />
+                                    <input
+                                        onFocus={() => {
+                                            setPay(true)
+                                            setFormat(true)
+                                        }}
+                                        style={{ width: "40px", border: "none", outline: "none", fontSize: "14px" }}
+                                        maxLength={5}
+                                        type="text"
+                                        placeholder={home.INPUT_CARD_EXPIRE_PLACEHOLDER}
+                                        required
+                                        value={datee
+                                            .replace(/\s/i, "")
+                                            .replace(/(\d{2})/i, " $1 ")
+                                            .trim()
+                                        }
+                                        onChange={(e) => setDate(e.target.value)}
+                                    />
+                                </div>
+                                {!pay && <Typography sx={{ ml: 29, color: "#dc3545" }}>
+                                    {home.INPUT_ERROR_REQUIRED}
+                                </Typography>}
+                                {!format && <Typography sx={{ ml: 24, color: "#dc3545" }}>
+                                    {home.INPUT_ERROR_PATTERN}
+                                </Typography>}
+                            </Grid>
+                            {cardNumber.length === 19 && <Grid item md={12} sm={12} xs={12} sx={{ mt: 3 }}>
+                                <Button onClick={handlePay}
+                                    variant="contained" sx={{ width: "300px", bgcolor: "#3cc", "&:hover": { bgcolor: "#81e8e9" } }}>
+                                    {home.BTN_PAY}
+                                </Button>
+                            </Grid>}
+                        </Grid>
+                        :
+                        <SendCode home={home} setPaid={setPaid} setSuccess={setSuccess} />
 
                 }
 

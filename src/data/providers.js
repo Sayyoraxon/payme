@@ -4,6 +4,230 @@ export const providers =
     "result": {
         "merchants": [
             {
+                "_id": "545e1fe65ae5eca82d1b4633",
+                "paycom_id": "55ae373aea05384bd72e2eaa",
+                "ussd_id": "06",
+                "name": "UzOnline",
+                "organization": "АК «Узбектелеком»",
+                "active": true,
+                "type": 100,
+                "logo": "https://cdn.payme.uz/merchants/uzonline.png",
+                "date": 1399114284039,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 50000,
+                        "max": 100000000
+                    },
+                    "account": [
+                        {
+                            "name": "phone",
+                            "title": "Hisob raqami",
+                            "content": "number",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": "^[0-9]{1,10}$",
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "узонлайн",
+                    "epjykfqy",
+                    "интернет",
+                    "internet",
+                    "провайдер"
+                ],
+                "additional_info": true,
+                "myhome": true,
+                "weight": 0.035540847544495255,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "560b980f5c752614212bde8a",
+                "paycom_id": "5fbf989a4602db1c688d9b7a",
+                "name": "Turon Telecom Интернет",
+                "organization": "ЧП «Turon Media»",
+                "active": true,
+                "type": 100,
+                "logo": "https://cdn.payme.uz/merchants/eaa928a2144ed7711ea7979e37717ad2368af569.png",
+                "date": 1399114284039,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100000,
+                        "max": 50000000
+                    },
+                    "account": [
+                        {
+                            "name": "login",
+                            "title": "Login",
+                            "content": "text",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "nehjy ntktrjv",
+                    "турон телеком",
+                    "интернет",
+                    "internet",
+                    "провайдер"
+                ],
+                "additional_info": true,
+                "myhome": true,
+                "weight": 0.005189037272267421,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "545e23b55ae5eca82d1b4635",
+                "paycom_id": "5630bc3ae71e91553ab935bf",
+                "ussd_id": "07",
+                "name": "Sarkor Telecom",
+                "organization": "СП ООО «Sarkor Telecom»",
+                "active": true,
+                "type": 100,
+                "logo": "https://cdn.payme.uz/merchants/765196cb84753aa600c048b13e4c5b7f1ca24f1b.png",
+                "date": 1399114284039,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 50000,
+                        "max": 500000000
+                    },
+                    "account": [
+                        {
+                            "name": "login",
+                            "title": "Login",
+                            "content": "number",
+                            "type": "text",
+                            "prefix": {
+                                "type": "select",
+                                "values": [
+                                    {
+                                        "title": "HE",
+                                        "value": "he-"
+                                    },
+                                    {
+                                        "title": "X",
+                                        "value": "x-"
+                                    },
+                                    {
+                                        "title": "GE",
+                                        "value": "ge-"
+                                    },
+                                    {
+                                        "title": "RW",
+                                        "value": "rw-"
+                                    },
+                                    {
+                                        "title": "C",
+                                        "value": "c-"
+                                    }
+                                ],
+                                "output": true
+                            },
+                            "replace": null,
+                            "validation": null,
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "саркор",
+                    "cfhrjh",
+                    "интернет",
+                    "internet",
+                    "провайдер"
+                ],
+                "myhome": true,
+                "weight": 0.002135943564297594,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "545e26045ae5eca82d1b4638",
+                "paycom_id": "5e8b17dc7e9d5724c0897395",
+                "ussd_id": "08",
+                "name": "Comnet",
+                "organization": "ООО «TVPLUS»",
+                "active": true,
+                "type": 100,
+                "logo": "https://cdn.payme.uz/merchants/15ac4bdaa13300dba18a2292c28b3968ec92b3ee.png",
+                "date": 1399114284039,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 10000,
+                        "max": 500000000
+                    },
+                    "account": [
+                        {
+                            "name": "login",
+                            "title": "Login",
+                            "content": "text",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "komnet",
+                    "комнэт",
+                    "комнет",
+                    "интернет",
+                    "internet",
+                    "провайдер"
+                ],
+                "additional_info": true,
+                "myhome": true,
+                "weight": 0.002081317721552966,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
                 "_id": "57bae69f9a910920584d3659",
                 "paycom_id": "61697329a934af095c7fec68",
                 "ussd_id": "43",
@@ -62,7 +286,7 @@ export const providers =
                 "organization": "ООО «Технопросистем»",
                 "active": true,
                 "type": 100,
-                "logo": "https://cdn.payme.uz/merchants/9f94497fb443cab95d14736cb625442cf9287cc7.png",
+                "logo": "https://cdn.payme.uz/merchants/02d88f28330050bcda3c3027b0966af230cefcb6.png",
                 "date": 1399114284039,
                 "terminal": {
                     "type": "form",
