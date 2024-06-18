@@ -1,11 +1,5 @@
 import { Box, Button, Card, CardMedia, Dialog, Grid, IconButton, Typography } from "@mui/material"
 import { operators } from '../data/mobileop'
-import beeline from '../images/beeline.png'
-import ucell from '../images/ucell.png'
-import perfectum from '../images/perfectum.png'
-import mobiuz from '../images/mobiuz.png'
-import uzmobile_cdma from '../images/uzmobile-cdma.png'
-import uzmobile_gsm from '../images/uzmobile_gsm.png'
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react"
 import React from "react"
