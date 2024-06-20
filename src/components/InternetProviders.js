@@ -1,5 +1,6 @@
 import { Box, Button, Card, CardMedia, Dialog, Grid, IconButton, NativeSelect, Typography } from "@mui/material"
 import { providers } from '../data/providers'
+import { providersru } from '../data/providers'
 import { useState } from "react"
 import CloseIcon from '@mui/icons-material/Close';
 import { useNavigate } from "react-router-dom";
@@ -7,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 const InternetProviders = ({ home, payment, setInput1, setInput2, setImage, setLogoname, setServicetype, setNumber }) => {
     const mobile_operators = payment && payment.types[2]
-    const internetproviders = providers && providers.result.merchants
+    const internetproviders = home.APRIL === "Aprel" ? providers.result.merchants : providersru.result.merchants
     const [hide, setHide] = useState(false)
     const [open, setOpen] = useState(false)
     const [namemo, setNamemo] = useState("")
@@ -85,7 +86,7 @@ const InternetProviders = ({ home, payment, setInput1, setInput2, setImage, setL
             <Grid container className='padding' sx={{ "@media (max-width: 1139px)": { px: "60px" }, "@media (min-width: 1140px)": { width: "1140px", mr: "auto", ml: "auto" } }}>
                 <Grid item md={12} sm={12} xs={12}>
                     <Grid container>
-                        <Grid item md={10} sm={10} xs={10}>
+                        <Grid item md={11.3} sm={11.3} xs={11.3}>
                             <Typography variant='h6'>
                                 {`${mobile_operators.title} `}
                                 <span style={{ color: "#666" }}>
@@ -93,7 +94,7 @@ const InternetProviders = ({ home, payment, setInput1, setInput2, setImage, setL
                                 </span>
                             </Typography>
                         </Grid>
-                        <Grid item md={2} sm={2} xs={2}>
+                        <Grid item md={0.7} sm={0.7} xs={0.7}>
                             <Button onClick={() => setHide(!hide)}
                                 sx={{ fontWeight: "600", color: "#3ccc", "&: hover": { bgcolor: "inherit", color: "#81e8e9" } }}>
                                 {!hide ? home.BTN_MORE : home.BTN_LESS}

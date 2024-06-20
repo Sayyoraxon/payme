@@ -107,3 +107,4 @@ https://cdn.payme.uz/logo/payme_color.svg# payme
 # payme
 # payme
 # payme
+# payme

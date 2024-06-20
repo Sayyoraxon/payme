@@ -23,14 +23,13 @@ const Payment = ({ home, payment, setInput1, setInput2, setImage, setLogoname, s
         </Grid>
         <Grid item md={5} sm={5} xs={12}>
           <input className='regtrinput' placeholder={home.INPUT_SEARCH_PLACEHOLDER}
-            style={{ width: "100%" }} />
+            style={{ width: "95%" }} />
         </Grid>
       </Grid>
 
       <Mobileoperators home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>
       <InternetProviders home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>
       <Utilities home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>
-      
       <PublicServices home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>
       <Telefoniya home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>
       <TVandOnline home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>

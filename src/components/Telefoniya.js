@@ -1,5 +1,6 @@
 import { Box, Button, Card, CardMedia, Dialog, Grid, IconButton, InputBase, MenuItem, Select, TextField, Typography } from "@mui/material"
 import { telefoniya } from '../data/telefoniya'
+import { telefoniyaru } from '../data/telefoniya'
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react"
 import { styled } from '@mui/material/styles';
@@ -10,7 +11,7 @@ import { useNavigate } from "react-router-dom"
 
 const Telefoniya = ({ home, payment, setInput1, setInput2, setImage, setLogoname, setNumber, setServicetype }) => {
     const mobile_operators = payment && payment.types[5]
-    const internetproviders = telefoniya && telefoniya.result.merchants
+    const internetproviders = home.APRIL === "Aprel" ? telefoniya.result.merchants : telefoniyaru.result.merchants
 
 
     const [hide, setHide] = useState(false)
@@ -135,7 +136,7 @@ const Telefoniya = ({ home, payment, setInput1, setInput2, setImage, setLogoname
             <Grid container className='padding' sx={{ "@media (max-width: 1139px)": { px: "60px", py: 0 }, "@media (min-width: 1140px)": { width: "1140px", mr: "auto", ml: "auto" } }}>
                 <Grid item md={12} sm={12} xs={12}>
                     <Grid container>
-                        <Grid item md={10} sm={10} xs={10}>
+                        <Grid item md={11.3} sm={11.3} xs={11.3}>
                             <Typography variant='h6'>
                                 {`${mobile_operators.title} `}
                                 <span style={{ color: "#666" }}>
@@ -143,7 +144,7 @@ const Telefoniya = ({ home, payment, setInput1, setInput2, setImage, setLogoname
                                 </span>
                             </Typography>
                         </Grid>
-                        <Grid item md={2} sm={2} xs={2}>
+                        <Grid item md={0.7} sm={0.7} xs={0.7}>
                             <Button onClick={() => setHide(!hide)}
                                 sx={{ fontWeight: "600", color: "#3ccc", "&: hover": { bgcolor: "inherit", color: "#81e8e9" } }}>
                                 {!hide ? home.BTN_MORE : home.BTN_LESS}
