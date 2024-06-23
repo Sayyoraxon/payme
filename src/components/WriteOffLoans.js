@@ -1,14 +1,14 @@
 import { Box, Button, Card, CardMedia, Dialog, Grid, IconButton, NativeSelect, Typography } from "@mui/material"
-import { televideniya } from '../data/televideni'
-import { televideniyaru } from '../data/televideni'
+import { kredit } from '../data/kredit'
+import { kreditru } from '../data/kredit'
 import { useState } from "react"
 import CloseIcon from '@mui/icons-material/Close';
 import { useNavigate } from "react-router-dom";
 
 
-const TVandOnline = ({ home, payment, setInput1, setInput2, setImage, setLogoname, setServicetype, setNumber }) => {
-    const mobile_operators = payment && payment.types[6]
-    const internetproviders = home.APRIL === "Aprel" ? televideniya.result.merchants : televideniyaru.result.merchants
+const WriteOffLoans = ({ home, payment, setInput1, setInput2, setImage, setLogoname, setServicetype, setNumber }) => {
+    const mobile_operators = payment && payment.types[9]
+    const internetproviders = home.APRIL === "Aprel" ? kredit.result.merchants : kreditru.result.merchants
     const [hide, setHide] = useState(false)
     const [open, setOpen] = useState(false)
     const [namemo, setNamemo] = useState("")
@@ -80,8 +80,6 @@ const TVandOnline = ({ home, payment, setInput1, setInput2, setImage, setLogonam
         const formattedInputValue = getFormattedInputValue(value)
         setSumma(formattedInputValue)
     }
-
-    console.log(internetproviders)
     
     return (
         <>
@@ -120,13 +118,12 @@ const TVandOnline = ({ home, payment, setInput1, setInput2, setImage, setLogonam
                                     setNamemo(provider.organization)
                                     setTitle(provider.terminal.account[0].title)
                                     setPrefix(provider.terminal.account[0].prefix ? provider.terminal.account[0].prefix : false)
-                                    setMin(provider.terminal.amount.min/100)
-                                    setMax(provider.terminal.amount.max/100)
+                                    setMin(provider.terminal.amount.min)
+                                    setMax(provider.terminal.amount.max)
                                 }}>
                                 <Card className="card"
-                                    sx={{ px: 6, py: 7, width: "106px", height: "60px" }}>
+                                    sx={{ width: "106px", height: "60px", px: 6, py: 7 }}>
                                     <CardMedia
-                                        sx={{width: "106px", height: "auto"}}
                                         component="img"
                                         image={provider.logo}
                                         title="Image title" />
@@ -216,4 +213,4 @@ const TVandOnline = ({ home, payment, setInput1, setInput2, setImage, setLogonam
     )
 }
 
-export default TVandOnline
+export default WriteOffLoans

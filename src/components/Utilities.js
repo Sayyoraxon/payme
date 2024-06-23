@@ -164,7 +164,7 @@ const Utilities = ({ home, payment, setInput1, setInput2, setImage, setLogoname,
                                     setPrefix(provider.terminal.account)
                                 }}>
                                 <Card className="card"
-                                    sx={{ width: "126px", height: "60px", px: 4.75, py: 7 }}>
+                                    sx={{ width: "126px", px: 4.75, py: 7 }}>
                                     <CardMedia
                                         component="img"
                                         image={provider.logo}

@@ -1,8 +1,262 @@
-export const onlineServices =
+export const onlineServicesru =
 {
     "jsonrpc": "2.0",
     "result": {
         "merchants": [
+            {
+                "_id": "6256bac3f5fa78703427d503",
+                "paycom_id": "6256b9cff5fa78703427d4f9",
+                "name": "eMaktab.uz",
+                "organization": "ООО «Kundalik»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/4ce4758ee9603312094d122672219f350f801616.png",
+                "date": 1649850953642,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 10000000,
+                        "require": "data"
+                    },
+                    "account": [
+                        {
+                            "name": "payer_id",
+                            "content": "text",
+                            "type": "text",
+                            "validation": null,
+                            "title": "Ваш логин в eMaktab.uz",
+                            "placeholder": "Введите свой логин в eMaktab.uz",
+                            "error": null,
+                            "prefix": null,
+                            "replace": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "name": "data",
+                            "type": "dynamic-select",
+                            "requires": [
+                                "payer_id"
+                            ],
+                            "_visible": {
+                                "require": "payer_id",
+                                "value": "^[0-9a-zA-Z]{0,30}$"
+                            },
+                            "optional": true,
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "title": "Подписка",
+                            "placeholder": "",
+                            "error": null,
+                            "scan": null,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "emaktab",
+                    "емактаб",
+                    "уьфлефи",
+                    "tvfrnf,"
+                ],
+                "myhome": true,
+                "weight": 0.0026863798764662156,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5dd2689fc053e6720c458f10",
+                "paycom_id": "6143140c90d8a20d11eedb8d",
+                "name": "Oriflame",
+                "organization": "ИП ООО «ORIFLAME»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/oriflame.png",
+                "date": 1574070514559,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 50000,
+                        "max": 1000000000
+                    },
+                    "account": [
+                        {
+                            "name": "account",
+                            "title": "Идентификатор консультанта",
+                            "content": "number",
+                            "type": "text",
+                            "prefix": null,
+                            "placeholder": "",
+                            "replace": null,
+                            "validation": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "oriflame",
+                    "orifleym",
+                    "щкшадфьу",
+                    "орифлейм",
+                    "орифлайм",
+                    "jhbaktqv",
+                    "косметика"
+                ],
+                "weight": 0.0014946382594180228,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65e1714b88f9930638b5aee3",
+                "paycom_id": "65ca091dde9e0abfa2a6807c",
+                "name": "JANAPOST",
+                "organization": "ООО «JANAPOST»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/af6f8729e84349488bb5012144e96dbe49b43464.png",
+                "date": 1709273419430,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 500000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "JP",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "JANA POST (JP ID)",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "JANAPOST",
+                    "ОФТФЗЩЫЕ",
+                    "жанапост",
+                    ";fyfgjcn"
+                ],
+                "weight": 0.000626264919879138,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "645364bf5a26a8829b865d47",
+                "paycom_id": "6450d5f16fd382828be2cc1d",
+                "name": "TEHNO-BOON",
+                "organization": "ООО «TEHNO-BOO MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/7a444391979373a5a749ec74507c47fcf3cad7ae.png",
+                "date": 1683186879906,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 1,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "type": "text",
+                            "content": "number",
+                            "name": "phone",
+                            "replace": "[ -]",
+                            "_prefix": {
+                                "type": "static",
+                                "value": "998",
+                                "output": true
+                            },
+                            "title": "Номер телефона (12 цифр: 998901234567)",
+                            "validation": "^([0-9]{9,13})$",
+                            "validation_error": "Неправильно введен номер телефона",
+                            "error": null,
+                            "placeholder": "",
+                            "prefix": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "type": "text",
+                            "content": "number",
+                            "name": "pinfl",
+                            "title": "ПИНФЛ",
+                            "validation": "^([1-9]{1}[0-9]{13})$",
+                            "validation_error": "ПИНФЛ содержит 14 цифр",
+                            "error": null,
+                            "placeholder": "",
+                            "prefix": null,
+                            "replace": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "name": "deal_uid",
+                            "type": "dynamic-select",
+                            "requires": [
+                                "phone",
+                                "pinfl"
+                            ],
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "title": "Выберите договор",
+                            "placeholder": "",
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Texnomart ",
+                    "Boon",
+                    "Бон",
+                    "Техномарт",
+                    "Ищщт",
+                    "Еучтщьфке"
+                ],
+                "additional_info": true,
+                "myhome": true,
+                "weight": 0.0004406623910890732,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
             {
                 "_id": "6154282b88800c96dd77f155",
                 "paycom_id": "613ef36106f619dfa07b232b",
@@ -42,7 +296,7 @@ export const onlineServices =
                     "антиплаг",
                     "фтешздфп"
                 ],
-                "weight": 0.0002423953957825078,
+                "weight": 0.0004374245304292578,
                 "options": {
                     "prompts": {
                         "amount_disabled": false,
@@ -18235,6 +18489,16965 @@ export const onlineServices =
                     "go'shtbo'r",
                     "goshtbor",
                     "гоштбор"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            }
+        ]
+    }
+}
+
+
+
+export const onlineServices = 
+{
+    "jsonrpc": "2.0",
+    "result": {
+        "merchants": [
+            {
+                "_id": "6256bac3f5fa78703427d503",
+                "paycom_id": "6256b9cff5fa78703427d4f9",
+                "name": "eMaktab.uz",
+                "organization": "ООО «Kundalik»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/4ce4758ee9603312094d122672219f350f801616.png",
+                "date": 1649850953642,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 10000000,
+                        "require": "data"
+                    },
+                    "account": [
+                        {
+                            "name": "payer_id",
+                            "content": "text",
+                            "type": "text",
+                            "validation": null,
+                            "title": "eMaktab.uz sizning loginingiz",
+                            "placeholder": "eMaktab.uz loginingizni kiriting",
+                            "error": null,
+                            "prefix": null,
+                            "replace": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "name": "data",
+                            "type": "dynamic-select",
+                            "requires": [
+                                "payer_id"
+                            ],
+                            "_visible": {
+                                "require": "payer_id",
+                                "value": "^[0-9a-zA-Z]{0,30}$"
+                            },
+                            "optional": true,
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "title": "Obuna",
+                            "placeholder": "",
+                            "error": null,
+                            "scan": null,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "emaktab",
+                    "емактаб",
+                    "уьфлефи",
+                    "tvfrnf,"
+                ],
+                "myhome": true,
+                "weight": 0.0026863798764662156,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5dd2689fc053e6720c458f10",
+                "paycom_id": "6143140c90d8a20d11eedb8d",
+                "name": "Oriflame",
+                "organization": "ИП ООО «ORIFLAME»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/oriflame.png",
+                "date": 1574070514559,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 50000,
+                        "max": 1000000000
+                    },
+                    "account": [
+                        {
+                            "name": "account",
+                            "title": "Konsultant IDsi",
+                            "content": "number",
+                            "type": "text",
+                            "prefix": null,
+                            "placeholder": "",
+                            "replace": null,
+                            "validation": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "oriflame",
+                    "orifleym",
+                    "щкшадфьу",
+                    "орифлейм",
+                    "орифлайм",
+                    "jhbaktqv",
+                    "косметика"
+                ],
+                "weight": 0.0014946382594180228,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65e1714b88f9930638b5aee3",
+                "paycom_id": "65ca091dde9e0abfa2a6807c",
+                "name": "JANAPOST",
+                "organization": "ООО «JANAPOST»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/af6f8729e84349488bb5012144e96dbe49b43464.png",
+                "date": 1709273419430,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 500000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "JP",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "JANA POST (JP ID) ",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "JANAPOST",
+                    "ОФТФЗЩЫЕ",
+                    "жанапост",
+                    ";fyfgjcn"
+                ],
+                "weight": 0.000626264919879138,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "645364bf5a26a8829b865d47",
+                "paycom_id": "6450d5f16fd382828be2cc1d",
+                "name": "TEHNO-BOON",
+                "organization": "ООО «TEHNO-BOO MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/7a444391979373a5a749ec74507c47fcf3cad7ae.png",
+                "date": 1683186879906,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 1,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "type": "text",
+                            "content": "number",
+                            "name": "phone",
+                            "replace": "[ -]",
+                            "_prefix": {
+                                "type": "static",
+                                "value": "998",
+                                "output": true
+                            },
+                            "title": "Telefon raqam (12 ta raqam: 998901234567)",
+                            "validation": "^([0-9]{9,13})$",
+                            "validation_error": "Telefon raqam noto'g'ri kiritilgan",
+                            "error": null,
+                            "placeholder": "",
+                            "prefix": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "type": "text",
+                            "content": "number",
+                            "name": "pinfl",
+                            "title": "PINFL",
+                            "validation": "^([1-9]{1}[0-9]{13})$",
+                            "validation_error": "PINFL da 14 ta raqam bo'lishi kerak",
+                            "error": null,
+                            "placeholder": "",
+                            "prefix": null,
+                            "replace": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "name": "deal_uid",
+                            "type": "dynamic-select",
+                            "requires": [
+                                "phone",
+                                "pinfl"
+                            ],
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "title": "Shartnomani tanlang",
+                            "placeholder": "",
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Texnomart ",
+                    "Boon",
+                    "Бон",
+                    "Техномарт",
+                    "Ищщт",
+                    "Еучтщьфке"
+                ],
+                "additional_info": true,
+                "myhome": true,
+                "weight": 0.0004406623910890732,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6154282b88800c96dd77f155",
+                "paycom_id": "613ef36106f619dfa07b232b",
+                "name": "Antiplag.uz",
+                "organization": "ООО «Perspective Team»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/9184f01274f472509c84584af0d7a45c8d13e083.png",
+                "date": 1632905259775,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 10000000000,
+                        "min": 100000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "key",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "ID",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "antiplag.uz",
+                    "антиплаг",
+                    "фтешздфп"
+                ],
+                "weight": 0.0004374245304292578,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5c6d40683941254340539854",
+                "paycom_id": "6038e6612aa96f0823818287",
+                "name": "iTicket.uz",
+                "organization": "ООО «ITICKET INGURUZ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/iticket.png",
+                "date": 1550663733071,
+                "terminal": {
+                    "type": "link",
+                    "endpoint": "https://iticket.uz/",
+                    "link_type": "external"
+                },
+                "keywords": [
+                    "iTicket.uz",
+                    "айтикет",
+                    "билеты"
+                ],
+                "weight": 0.0004021214045254638,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64a3ae595b17f8b641a8dff5",
+                "paycom_id": "6492e6d48b14636fd2f2d34b",
+                "name": "BTS EXPRESS CARGO SERVIS",
+                "organization": "ООО «\"BTS EXPRESS CARGO SERVIS\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/52a7c5c31b52624c4a13bbeda91b795a5aa09fb8.png",
+                "date": 1688448601421,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "barcode",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Barcode",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "BTS EXPRESS CARGO SERVIS",
+                    "бтс экспресс карго сервис",
+                    "иес учзкуыы мфкпщ ыукмшы"
+                ],
+                "weight": 0.00022268125570085425,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64da136271e0baa108e0c624",
+                "paycom_id": "64da12f3a8a1f5ec97d1c77e",
+                "name": "Idealsmm",
+                "organization": "ЧП «NAJIMOV FIRDAVS»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/ca82e5617c5651ce930131fa1386f79a61e272c0.png",
+                "date": 1692013410731,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "order-id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Idealseen",
+                    "Швуфдыуут",
+                    "идеалсин",
+                    "bltfkcby"
+                ],
+                "weight": 0.00020711863511012853,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65d6e7aab62990a4d27a4f84",
+                "paycom_id": "65cda1aa3c319dec9d8b0b82",
+                "name": "MEGA HOUSE TEXNO IT",
+                "organization": "ООО «\"MEGA HOUSE TEXNO IT\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/dde84813312b3e18daeff602751bfc4534d4d3b8.png",
+                "date": 1708582826956,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "megataxi",
+                    "мегатакси",
+                    "ьупфефчш"
+                ],
+                "weight": 0.0001951072165333939,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65852c2e4de4489c5e278465",
+                "paycom_id": "65721e5bdbf5969676425185",
+                "name": "NEO SMM",
+                "organization": "ЧП «CHORIYEV NODIR»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/ebdaf9d9e3dab3d1443560653a79f01aff9b0ea0.png",
+                "date": 1703226414342,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 50000000000
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "telegram_user_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Kabinet ID:",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "neo smm",
+                    "нео смм",
+                    "тущ ыьь"
+                ],
+                "weight": 0.00018038017288713663,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65cc5c75a37b40d4f6f537bb",
+                "paycom_id": "658a9c9943057b5376dffd2b",
+                "name": "MAY TAXI",
+                "organization": "ООО «\"EVRO KOMFORT\" XK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/f743ee1565f9908f8a0de9082f43551f455c1a3d.png",
+                "date": 1707891829671,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 10000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "phone",
+                            "name": "driver_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami (9 xona)",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "may taxi",
+                    "май такси",
+                    "ьфн ефчш"
+                ],
+                "weight": 0.00014434591715693274,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "60757c72b8d597ed134d8ad3",
+                "paycom_id": "60fe918f958486ea8f73fe5d",
+                "name": "Faktura.uz",
+                "organization": "ООО «ООО \"SPACE ONLINE GENESIS\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/353508058777e50a59c681e4e02000d63e4553b2.png",
+                "date": 1618312306354,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "inn",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "STIR",
+                            "type": "text",
+                            "validation": "^\\d{9}$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "фактура",
+                    "faktura",
+                    "balansni to'ldirish",
+                    "пополнение баланса",
+                    "афлегкф"
+                ],
+                "weight": 0.00008146875208567839,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65a125aa91578e6d2d800b56",
+                "paycom_id": "65a11bf2c9a68d35404e49b2",
+                "name": "Luxe Taxi ",
+                "organization": "ООО «\"YURKONSALTINGSERVIS\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/ed84229fa0eac63c3c23483ba55807a85da26407.png",
+                "date": 1705059754158,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "driver_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Haydovchi ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "luxe taxi 2023",
+                    "люкс такси",
+                    "дгчу ефчш"
+                ],
+                "weight": 0.00006893509791865095,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5d0ca4af05a64216f0e9ae27",
+                "paycom_id": "5d0c047ca3b992f45f77025b",
+                "name": "Ice City",
+                "organization": "ИП ООО «Pro Rent Invest»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/5cd133311722d50474387f09.png",
+                "date": 1561109586426,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100000,
+                        "max": 50000000
+                    },
+                    "account": [
+                        {
+                            "name": "CardNum",
+                            "title": "Karta raqami",
+                            "content": "number",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": "^[0-9]+$",
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "развлечение",
+                    "o'yin-kulgi",
+                    "парк",
+                    "bog'",
+                    "ледовый каток",
+                    "muz saroyi",
+                    "Ice City",
+                    "айс сити"
+                ],
+                "weight": 0.00006705504979359683,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65dc226ab62990a4d27a696f",
+                "paycom_id": "65c9aaca3c319dec9d8a9a13",
+                "name": "YULDA.UZ",
+                "organization": "СП «СП \"VERGE TECH\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/e320a7113ffaf90b5abdb5c3c13bb2ad37f1677d.png",
+                "date": 1708925546043,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "credit",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov kodi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "VERGE TECH",
+                    "yulda.uz",
+                    "вендинг",
+                    "wending"
+                ],
+                "weight": 0.00006611502573106977,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "651bec705a8224b99c9a2f87",
+                "paycom_id": "651bbaf1030c52d882dac894",
+                "name": "Baursak",
+                "organization": "ООО «\"FOODMASTERS\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/e3e748b5e5f7cf70da047536994b143e697f93ff.png",
+                "date": 1696328816365,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Baursak",
+                    "Boursok",
+                    "boursak",
+                    "Baursok",
+                    "bugursoq",
+                    "баурсак"
+                ],
+                "weight": 0.00006527944878660128,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6604251f12d57e0dca11f12d",
+                "paycom_id": "65719038cd5b3ae6485412ad",
+                "name": "SEENUZBE",
+                "organization": "ЧП «CHORIYEV NODIR»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/7577fff0c73bd2b66ea336b6d28fcdadb2bc3fd1.png",
+                "date": 1711547679037,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "telegram_user_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Kabinet ID:",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "seenuzbe",
+                    "синузбе",
+                    "ыуутгяиу"
+                ],
+                "weight": 0.00005995264576561461,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5e05f522ba8ac3e976c4b795",
+                "paycom_id": "5e8c58e5f404cf625d16b92f",
+                "name": "Sales Doctor",
+                "organization": "ООО «Sales Doctor Solutions»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/ff7a47dbb075be7fce3f9400cafa4661f68b5205.png",
+                "date": 1577448738652,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "host",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Сервер номи",
+                            "type": "text",
+                            "validation": "^[a-zA-Z0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "sales doctor solutions",
+                    "сервис",
+                    "оплата услуг",
+                    "доктор",
+                    "Sales Doctor",
+                    "Ыфдуы Вщсещк",
+                    "сейлс доктор"
+                ],
+                "weight": 0.00004000324621642926,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6613993890823bcdf98bf83f",
+                "paycom_id": "661398c9abe7377ebe5790f0",
+                "name": "Zoom Taxi",
+                "organization": "ООО «STOR FAMILJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/7957b4b3bc75120c3bc8856dae0d4ab25687c581.png",
+                "date": 1712560440051,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "driver_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Pozivnoy raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "zoom taxi",
+                    "зум такси",
+                    "ящщь ефчш",
+                    "Zoom Logistic"
+                ],
+                "weight": 0.000038749880799726515,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6329718175feb1ed5f2294f1",
+                "paycom_id": "63241843f5172565f156f113",
+                "name": "YESPOS",
+                "organization": "ООО «QPOS SYS TECH MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/b3567e8c5cad0c0e747be302f50dd742455ef921.png",
+                "date": 1663660417154,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "user_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Foydalanuvchi ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "YES POS",
+                    "НУЫ ЗЩЫ",
+                    "ес пос",
+                    "tc gjc"
+                ],
+                "weight": 0.000037287621146906646,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "60923febb8d597ed134d9fad",
+                "paycom_id": "60923b5851d5f0862e0c95b8",
+                "name": "Savodxon",
+                "organization": "ЧП «JURAYEV JAVLON»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/848ef5e7378d118e932ca2fc167b708c823e353e.png",
+                "date": 1620197355866,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "member_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Foydalanuvchi ID raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "переводы",
+                    "орфография",
+                    "центр переводов",
+                    "savodxon",
+                    "саводхон",
+                    "ыфмщвчщт"
+                ],
+                "weight": 0.00003425865472320835,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "662659397d6fb5f626ce6895",
+                "paycom_id": "661e720af83b22d2752f2bff",
+                "name": "buyseenrubot",
+                "organization": "ЧП «KOZIMOV ABDULVAXXOB»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/5fb577224880e9bb76e71adf631ef763e8f38872.png",
+                "date": 1713789241503,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "order_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telegram id raqamingiz",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Buyseenrubot",
+                    "Buy seenru bot",
+                    "Buyseen bot",
+                    "игныуутище"
+                ],
+                "weight": 0.00002976742864669018,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6512dec15240a8ca4dff1af7",
+                "paycom_id": "64faff0936ef51a083e41fc1",
+                "name": "Ideal Water",
+                "organization": "ООО «Ideal Water Service»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/ad104ed3203b0d561955156b5f9151598477bfe0.png",
+                "date": 1695735489346,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "code",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "ID code",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "ideal water",
+                    "идеал вода",
+                    "швуфд цфеук"
+                ],
+                "weight": 0.00001890492836859973,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65253bf61ff1e7cb8e16a60d",
+                "paycom_id": "65253bbe1dbb2b13f1736b21",
+                "name": "Fikrat-Media ",
+                "organization": "ООО «\"FIKR-MEDIA\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/c0ef6f30e073d3378b82487eb9cd69e9858ed0e0.png",
+                "date": 1696938998097,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "account_mail",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Gmail",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "content",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Content",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Fikrat-Media",
+                    "Фикрат-Медиа",
+                    "Fikrat-Media"
+                ],
+                "weight": 0.000018069351424131233,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "62010077b0159dc2d9e44f8c",
+                "paycom_id": "6034ee08a10b214d8d1217b2",
+                "name": "Hippo",
+                "organization": "ООО «ООО \"ART OF BUSINESS ASSISTANCE\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/ea82f5518b09c35919ebc59844e4ffbed24ccdf1.png",
+                "date": 1644232823595,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 10000000000,
+                        "min": 100000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "Uid",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Tashkilot kodi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Hippo",
+                    "Ршззщ",
+                    "ubggj",
+                    "гиппо",
+                    "[bggj",
+                    "хиппо"
+                ],
+                "weight": 0.000017129327361604175,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "620399da983e4283bf24a9cb",
+                "paycom_id": "61f7cbd96b2af010e78ddcac",
+                "name": "XMed",
+                "organization": "ООО «TELEDOCTOR»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/e963b7ab45a12e78efb1dd31a4487a64880f1761.png",
+                "date": 1644403162291,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100000,
+                        "max": 1000000000
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "cardNumber",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Карта Номери",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "XMed",
+                    "TELEDOCTOR",
+                    "теледоктор",
+                    "теле доктор",
+                    "X Med"
+                ],
+                "weight": 0.000017024880243545614,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "63e0f3eb5a05f76fd5a6bc17",
+                "paycom_id": "63e0f2c38b91a7c90a1437a1",
+                "name": "BILLZ",
+                "organization": "ООО «\"SHOPPE GROUP\" MCHJ XK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/cc52877d3bdf70edd6801c0b55aff8210ace1779.png",
+                "date": 1675686891853,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "inn",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "STIR/JSHSHIR.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma/ommaviy taklif raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Do'kon nomi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "BILLZ",
+                    "Биллз",
+                    "билз"
+                ],
+                "weight": 0.00001639819753519424,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64ca5e7c601456d371c9f517",
+                "paycom_id": "64b56b10d2cbaa16838ef155",
+                "name": "ORG INFO",
+                "organization": "ООО «\"ORGINFO\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/19d3539aa8a744a8cfa593222132c18666e5041c.png",
+                "date": 1690984060755,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 1000000000,
+                        "min": 100000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "user_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Foydalanuvchi idsi",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "orginfo.uz ",
+                    "щкпштащюгя ",
+                    "оргинфо",
+                    "jhubyaj"
+                ],
+                "weight": 0.00001598040906295999,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5f9678e4ea62ccfa6119cdc1",
+                "paycom_id": "5f86a59e14d1b5a1575360d7",
+                "name": "ASE - ASIA AFRICA SKY EXPRESS",
+                "organization": "ООО «ООО \"ASD ASIA ESTERN EUROPE FORWARDING  INTERNATIONAL TRADIN»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/e0fd70d4a0d00233abdb6df7f339d022612ed8b9.png",
+                "date": 1603696868033,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 10000000000,
+                        "min": 10000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "invoice_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Hisob-faktura raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "ase",
+                    "asia africa sky express",
+                    "азия африка скай экспресс"
+                ],
+                "weight": 0.000014204808055964438,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "60be1ff7b8d597ed134dbd41",
+                "paycom_id": "60be16430d44ad63647a6722",
+                "name": "Lerna",
+                "organization": "ООО «ООО \"UBRAINS\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/159d3bec39c508caa9c609923b5487893714aaaf.png",
+                "date": 1623072759171,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 10000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "receiver",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov turi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Skillbox",
+                                    "value": "skillbox",
+                                    "title": "Skillbox",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "GeekBrains",
+                                    "value": "geekbrains",
+                                    "title": "GeekBrains",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Skillfactory",
+                                    "value": "skillf",
+                                    "title": "Skillfactory",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "SF Education",
+                                    "value": "sf_education",
+                                    "title": "SF Education",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "FISH",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.SH.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "TelefonRaqami",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "скилбокс гик брейн",
+                    "skillbox geekbrains",
+                    "онлайн сервисы",
+                    "onlayn xizmatlar",
+                    "курсы",
+                    "гик брэйн",
+                    "lerna",
+                    "лерна"
+                ],
+                "weight": 0.000013891466701788751,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "641403066a689d2b4b958a92",
+                "paycom_id": "64140205fed6675a22804d1f",
+                "name": "DHL",
+                "organization": "ООО «\"GLOBAL LOGISTICS SYSTEMS\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/8f8be2602525e03f56ed2be72972a430bd61d9ba.png",
+                "date": 1679033094476,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "invoice_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "hisob-faktura raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "дхл",
+                    "доставка",
+                    "международная доставка",
+                    "dostavka",
+                    "DHL"
+                ],
+                "weight": 0.000013160336875378817,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5ef065ab343eb86f54d34070",
+                "paycom_id": "5ee9cf67c2a2e8e1604ae8ac",
+                "name": "Hujjat.uz",
+                "organization": "ООО «RealSoft»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/4a1b857c187c604eb10a5d516dc23dcd6156c0d6.png",
+                "date": 1592812971361,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 1000000000,
+                        "min": 50000,
+                        "round": true
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "TIN",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "STIR / JShShIR",
+                            "type": "text",
+                            "validation": "^([0-9]{9,9}|[0-9]{14,14})$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "hujjat.uz",
+                    "hujjat uz",
+                    "худжат уз",
+                    "hujjatuz",
+                    "real soft",
+                    "реал софт",
+                    "RealSoft",
+                    "КуфдЫщае"
+                ],
+                "weight": 0.000012638101285086006,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "624fe15d377280a48ffbdbf5",
+                "paycom_id": "624fe05112212dd376f2b0a6",
+                "name": "intertext",
+                "organization": "ООО «\"DYNAMIC BUSINESS SOLUTIONS\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/405b4f2b8b8fd7f16e8771a7713183894b866a11.png",
+                "date": 1649402205637,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "phone",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon rakami",
+                            "type": "text",
+                            "length": 9,
+                            "prefix": {
+                                "type": "static",
+                                "value": "+998",
+                                "output": false
+                            },
+                            "validation": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "purpose",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov maqsadi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Перевод других языков (текст речь)",
+                                    "value": "other_languages",
+                                    "title": "Boshqa tillarning tarjimasi (matn nutqi)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Перевод английского языка (текст)",
+                                    "value": "english_translation",
+                                    "title": "Ingliz tilining tarjimasi (matn)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Перевод узбекского языка (текст)",
+                                    "value": "uzbek_language",
+                                    "title": "O'zbek tilining tarjimasi (matn)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Перевод таджикского языка (речь)",
+                                    "value": "tajik_language_speech",
+                                    "title": "Tojik tilining tarjimasi (nutq)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Перевод таджикского языка (текст)",
+                                    "value": "tajik_language_text",
+                                    "title": "Tojik tilining tarjimasi (matn)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Перевод французского языка (текст, речь)",
+                                    "value": "french_translation",
+                                    "title": "Frantsuz tilining tarjimasi (matn, nutq)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Перевод иностранных языка (текст)",
+                                    "value": "foreign_languages",
+                                    "title": "Chet tilini tarjima qilish (matn)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Перевод китайского языка (текст)",
+                                    "value": "chinese_translation",
+                                    "title": "Xitoy tilining tarjimasi (matn)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Перевод кыргызского языка (текст)",
+                                    "value": "kyrgyz_language",
+                                    "title": "Qirg'iz tilining tarjimasi (matn)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Перевод турецкого языка (текст)",
+                                    "value": "turkish_translation",
+                                    "title": "Turk tilining tarjimasi (matn)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Перевод русского языка (текст)",
+                                    "value": "russian_language",
+                                    "title": "Rus tilining tarjimasi (matn)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Перевод казахского языка (текст)",
+                                    "value": "kazakh_language",
+                                    "title": "Qozoq tilining tarjimasi (matn)",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "number",
+                            "name": "quantity",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Miqdor",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Intertext",
+                    "штеукеуче",
+                    "перевод",
+                    "Интертекст"
+                ],
+                "weight": 0.000012638101285086006,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64ddbc822208ca5249eeef30",
+                "paycom_id": "6426d406fc0dc40f8260de73",
+                "name": "Profi24.uz",
+                "organization": "ООО «\"24-7 TIME\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/4dba8a1c2dfcdbfc01562da9b9317c9bab5a00a0.png",
+                "date": 1692253314362,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "UserID",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Foydalanuvchi ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Profi24.uz",
+                    "profi 24 uz",
+                    "profi24 uz",
+                    "prof 24",
+                    "профи24",
+                    "профи 24",
+                    "зкщаш24"
+                ],
+                "weight": 0.000012429207048968883,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "66289f2ce90d731d6a283b89",
+                "paycom_id": "65dc3bf53c319dec9d8c3485",
+                "name": "Мой Склад",
+                "organization": "ООО «\"LOGNEX\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/cdfe257be43c78e4e2fac63a642397cbd3b8c0f8.png",
+                "date": 1713938220122,
+                "terminal": {
+                    "type": "link",
+                    "endpoint": "https://online.moysklad.ru/app/#payments",
+                    "link_type": "external"
+                },
+                "keywords": [
+                    "MySklad",
+                    "МойСклад",
+                    "LOGNEX",
+                    "Мой склад",
+                    "vjq crkfl",
+                    "ьн ылдфв"
+                ],
+                "weight": 0.000012324759930910321,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64ef12a675650238711980d4",
+                "paycom_id": "64edab5858efae63652cd307",
+                "name": "Zim Zim",
+                "organization": "ООО «\"I TECH IT GROUP\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/419a6cfcd1d76a04fdc03dd39920176bfcd9bb65.png",
+                "date": 1693389478031,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 999999600,
+                        "min": 10000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "company_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Kompaniya ID",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Zim zim",
+                    "zim-zim",
+                    "зим зим",
+                    "зим-зим",
+                    "zimzim"
+                ],
+                "weight": 0.000010862500278090452,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6220b2d768f7e32b9136cbaf",
+                "paycom_id": "621f50c5e59128783dede2b0",
+                "name": "Uztelecom Cloud",
+                "organization": "ООО «Uzcloud»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/2320ae93ed8f84238ada86101f30ab489d3dbd3e.png",
+                "date": 1646309846872,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100000,
+                        "max": 10000000
+                    },
+                    "account": [
+                        {
+                            "name": "accountNumber",
+                            "title": "Akkaunt raqami",
+                            "content": "text",
+                            "type": "text",
+                            "placeholder": "",
+                            "validation": null,
+                            "error": null,
+                            "prefix": null,
+                            "replace": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "serviceName",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Xizmat turi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Интернет",
+                                    "value": "wifi",
+                                    "title": "Internet",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Облачные сервисы",
+                                    "value": "CloudService",
+                                    "title": "Bulut xizmatlari",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Home Safety",
+                                    "value": "aipix",
+                                    "title": "Home Safety",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "error": null,
+                            "prefix": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null,
+                            "require": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "uzcloud",
+                    "узклауд",
+                    "гясдщгв",
+                    "eprkfel",
+                    "cloud"
+                ],
+                "myhome": true,
+                "weight": 0.000010549158923914766,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6597edff4de4489c5e27bafe",
+                "paycom_id": "6597ed885c8188fb6e91ec51",
+                "name": "Kraftpaket",
+                "organization": "ООО «\"MEGA PAPER PLUS\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/df269e41c8e89aa2084b3e05ec19cf2bd688b523.png",
+                "date": 1704455679679,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "comment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Sharh",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Mega Paper Plus",
+                    "Мега папер плюс",
+                    "Meta qog'oz plyus",
+                    "Kraftpaket",
+                    "Крафтпакет"
+                ],
+                "weight": 0.000009818029097504831,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5c7921b559da573b2c231b81",
+                "paycom_id": "61f2488c6b2af010e78d3a0f",
+                "name": "Kitobxon",
+                "organization": "ООО «ООО «INFOPORT»»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/kitobxon.png",
+                "date": 1551442332854,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 50000,
+                        "max": 500000000
+                    },
+                    "account": [
+                        {
+                            "name": "kitobxon",
+                            "title": "ID",
+                            "content": "number",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "китобхон",
+                    "книги",
+                    "аудиокниги",
+                    "онлайн библиотека",
+                    "Kitobxon"
+                ],
+                "weight": 0.00000971358197944627,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "638600d4912b0e828a2c0aa3",
+                "paycom_id": "637f5870185c22ee89798022",
+                "name": "Hippo EDI",
+                "organization": "ООО «ООО \"ART OF BUSINESS ASSISTANCE\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/7f68f75c176c331b531dc99d1b21047c4f698dff.png",
+                "date": 1669726420923,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 10000000000,
+                        "min": 10000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "identity",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Инн",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "hippo edi",
+                    "ршззщ увш",
+                    "хиппо еди",
+                    "[bggj tlb"
+                ],
+                "weight": 0.000008669110798860649,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "654b80aecbc305212221191a",
+                "paycom_id": "653cefb885e03ff06dcf64c9",
+                "name": "KSB SOFT",
+                "organization": "ООО «\"KSB SOFT\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/6ef79ed5aa4b19587d05525aa43a1cb1f0ef5ed7.png",
+                "date": 1699446958865,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "ksb_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "KSB ID",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "type",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov turi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Программное обеспечение",
+                                    "value": "1",
+                                    "title": "Программное обеспечение",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "ИТС",
+                                    "value": "2",
+                                    "title": "ИТС",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "IT услуги",
+                                    "value": "3",
+                                    "title": "IT услуги",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Аренда сервера",
+                                    "value": "4",
+                                    "title": "Аренда сервера",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "KSB SOFT",
+                    "КСБ СОФТ",
+                    "ксб SOFT",
+                    "QSB soft"
+                ],
+                "weight": 0.00000814687520856784,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65c4d5605a28ca784d9179b2",
+                "paycom_id": "65c4d5193c319dec9d8a4a08",
+                "name": "Sakura Store",
+                "organization": "ЧП «YEFIMOV NIKOLAY»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/967382bf274ef4b5fba28507ece232d7c06b3193.png",
+                "date": 1707398496200,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_num",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Sakura Store",
+                    "Ыфлгкф Ыещку",
+                    "сакура стор",
+                    "cfrehf cnjh"
+                ],
+                "weight": 0.000007937980972450715,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6229fdc38ea3ca870dc51e59",
+                "paycom_id": "6229f4774fed152a10680206",
+                "name": "mDokon",
+                "organization": "ООО «\"AUTOMATION SOURCE\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/02670c7783b2730281fe9a59160daec9b5f47adb.png",
+                "date": 1646919107301,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "payment_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "mDOKON",
+                    "ьВЩЛЩТ",
+                    "мдокон",
+                    "vljrjy"
+                ],
+                "weight": 0.00000720685114604078,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65aa1e0cf1b913a488b0ee2c",
+                "paycom_id": "65a21e9fe531812c3f75bc5b",
+                "name": "SocialBalance Ota Ona uchun",
+                "organization": "ЧП «G‘OFURJONOV ERKIN»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/60d795c05e3be89c0347cb9ae062d69a1dff5e36.png",
+                "date": 1705647628413,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 750000,
+                        "max": 1000000000
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "phone",
+                            "placeholder": "911234567",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "SocialBalance",
+                    "Social Balance",
+                    "social balans",
+                    "социал баланс",
+                    "Balance social",
+                    "ыщсшфд ифдфтсу",
+                    "Ota Ona uchun"
+                ],
+                "weight": 0.00000720685114604078,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "61792c77f174a0df7b1db723",
+                "paycom_id": "6177d25fe07835ed4c763f32",
+                "name": "TEXNOGARANT",
+                "organization": "ООО «ООО \"TEXNOGARANT\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/26619da5079ec89387dedf04e7f4fa98e5bbf8e4.png",
+                "date": 1635331191981,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "subscriber_ID",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Abonent identifikatori",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_details",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov tafsilotlari",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "device_type",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Qurilma turi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Кондиционер",
+                                    "value": "1",
+                                    "title": "Кондиционер",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Лифт",
+                                    "value": "2",
+                                    "title": "Лифт",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Насос",
+                                    "value": "3",
+                                    "title": "Насос",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Котёл",
+                                    "value": "4",
+                                    "title": "Котёл",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Газ счетчик",
+                                    "value": "5",
+                                    "title": "Газ счетчик",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Солнечные панели",
+                                    "value": "6",
+                                    "title": "Солнечные панели",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "service",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Xizmat",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Профилактика",
+                                    "value": "01",
+                                    "title": "Профилактика",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Ремонт",
+                                    "value": "02",
+                                    "title": "Ремонт",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Запуск",
+                                    "value": "03",
+                                    "title": "Запуск",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Продажа",
+                                    "value": "04",
+                                    "title": "Продажа",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Технадзор",
+                                    "value": "05",
+                                    "title": "Технадзор",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "texnogarant",
+                    "техногарант",
+                    "оплата за услуги",
+                    "texnogarant",
+                    "техно гарант",
+                    "texno garant",
+                    "еучтщпфкфте",
+                    "nt[yjufhfyn"
+                ],
+                "weight": 0.000006893509791865095,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "636df70eeec4fd5d9a05bc51",
+                "paycom_id": "636ca833e07cd29f1467db63",
+                "name": "FIrstCoderBot",
+                "organization": "ЧП «RAJABOV ISKANDAR»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/074a30f876718e7b60b2f74447fc3e262dd42b6b.png",
+                "date": 1668151054566,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "user_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Foydalanuvchi ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "FIrstCoderBot",
+                    "АШкыеСщвукИще",
+                    "фирсткодербот",
+                    "abhcnrjlth,jn"
+                ],
+                "weight": 0.0000059534857293380365,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "646325268367719e00a45032",
+                "paycom_id": "646324232cb83937a754613d",
+                "name": "“Iqtisodiy taraqqiyot va tahlil\" ilmiy elektron jurnal",
+                "organization": "ООО «\"SHAFI SCIENCE CENTER\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/de1dee042f38166fb92726d7a775f80a2823db9c.png",
+                "date": 1684219174310,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov maqsadi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Iqtisodiy taraqqiyot va tahlil ilmiy elektron jurnal",
+                    "elektron jurnal",
+                    "иктисодий тараккиёт",
+                    "шйешыщвшн ефкфййшнще мф ефрдшд",
+                    "электронный журнал"
+                ],
+                "weight": 0.000005535697257103788,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "61710f0088800c96dd7806a8",
+                "paycom_id": "61710defe07835ed4c75933b",
+                "name": "Orient Logistics Center",
+                "organization": "СП ООО «ORIENT LOGISTICS CENTER»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/69507de2adbb28e011c9da63df836de4b51f86ab.png",
+                "date": 1634799360578,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami yoki oferta raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Orient Logistics Center",
+                    "щкшуте дщпшыешсы сутеук",
+                    "Ориент логистический центр",
+                    "logistika markazi"
+                ],
+                "weight": 0.000004909014548752416,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65a656d891578e6d2d801277",
+                "paycom_id": "65a655e3b21f178707cafa82",
+                "name": "SOFT DENIM",
+                "organization": "ООО «\"SOFT DENIM TEXTILES\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/7b0355225c21ddfd1b233ad8548400f5391193ff.png",
+                "date": 1705400024701,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Брюки джинсовые мужские",
+                                    "value": "1",
+                                    "title": "Брюки джинсовые мужские",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Брюки джинсовые женские",
+                                    "value": "2",
+                                    "title": "Брюки джинсовые женские",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "costumer",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lovchi ismi/Tashkilot nomi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "soft denim",
+                    "софт деним",
+                    "ыщае вутшь"
+                ],
+                "weight": 0.000004909014548752416,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5f4f95235099c11c41f366e0",
+                "paycom_id": "5f4f93fa1d8bbeb111fb9b73",
+                "name": "Nevo",
+                "organization": "ООО «AWARDS CREATIVE GROUP»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/389d48c39145be6b54fc8882a3bfaa8bdb5c5274.png",
+                "date": 1599051043583,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "number",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Hamkor ID / shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": {
+                                "type": "static",
+                                "value": "P-",
+                                "output": true
+                            },
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "телевидение",
+                    "кабельное тв",
+                    "авардс креатив групп",
+                    "нево",
+                    "nevo",
+                    "Тумщ",
+                    "ytdj"
+                ],
+                "weight": 0.000004700120312635292,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "652f8e5e4c0c6f03e2a70d35",
+                "paycom_id": "652e7aa5f67194aa76c6b5e2",
+                "name": "AliPos",
+                "organization": "ООО «NEXTGEN IT»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/304b1ce727a23d4bea2c4992e6cc51ee23ac93a9.png",
+                "date": 1697615454474,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "organization_code",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Tashkilot kodi",
+                            "type": "text",
+                            "validation": "^[A-Z0-9]{4,4}$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "AliPoster",
+                    "алипостер",
+                    "фдшзщыеук",
+                    "fkbgjcnth",
+                    "AliPos",
+                    "алипос",
+                    "фдшзщы",
+                    "fkbgjc"
+                ],
+                "weight": 0.0000037600962501082334,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5dfb060412dc2e7e77b6d5a8",
+                "paycom_id": "5ffef0c64602db0d1087e413",
+                "name": "PICKAPP",
+                "organization": "ООО «PICKAPP»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/pickapp-taxi.png",
+                "date": 1576746792950,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 200000000,
+                        "min": 50000,
+                        "round": true
+                    },
+                    "account": [
+                        {
+                            "name": "phone",
+                            "title": "Haydovchi telefon raqami",
+                            "content": "phone",
+                            "length": 9,
+                            "type": "text",
+                            "prefix": {
+                                "type": "static",
+                                "value": "+998",
+                                "output": true
+                            },
+                            "replace": "[ -]",
+                            "placeholder": "",
+                            "validation": "^(\\+998)?[0-9]{9}$",
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "pickapp",
+                    "pikap",
+                    "pickup",
+                    "pikup",
+                    "пикап",
+                    "зшслфзз",
+                    "пикуп",
+                    "taxi",
+                    "taksi",
+                    "такси",
+                    "тахи",
+                    "ефчш",
+                    "nfrcb"
+                ],
+                "weight": 0.0000036556491320496714,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6113d1a112950f485b3b1a00",
+                "paycom_id": "6113d0b0754e932e68fd8cfb",
+                "name": "Agroxizmat Markazi",
+                "organization": "ГУП «ГУП \"O`ZBEKISTON RESPUBLIKASI VAZIRLAR MAHKAMASI HUZURIDAGI»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/1c48ec7b6545fa275e5fe650eea9325d4114fc24.png",
+                "date": 1628688801859,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 10000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "region",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Viloyat",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov turi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Сертификация семян",
+                                    "value": "seeds",
+                                    "title": "Urug'larni sertifikatlash",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Сертификация хлопковой продукции",
+                                    "value": "cutton",
+                                    "title": "Paxta mahsulotlarini sertifikatlash",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Сертификация зерна и зернопродуктов",
+                                    "value": "grain_products",
+                                    "title": "Don va don mahsulotlarini sertifikatlash",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Услуги апробации",
+                                    "value": "approbation",
+                                    "title": "Aprobatsiya xizmatlari",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "STIR",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Agroxizmat Markazi",
+                    "фпкщчшяьфе ьфклфяш",
+                    "Агрохизмат маркази",
+                    "fuhj[bpvfn vfhrfpb",
+                    "Агросервисный центр"
+                ],
+                "weight": 0.0000034467548959325474,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64900dadf328b7550bba06e5",
+                "paycom_id": "6489649f33013ca481df4a35",
+                "name": "IVI",
+                "organization": "ИП ООО «\"ASBIS CA\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/c571da994b44585e1d7795a33d6c5d1430d47694.png",
+                "date": 1687162285758,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 99999999900,
+                        "require": "sub_name"
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "sub_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Obunani tanlash",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Подписка ИВИ на 1 месяц + 2 месяца в ПОДАРОК (3 месяцев подписки)",
+                                    "value": "PM-IVI-1M+2M",
+                                    "amount": 3500000,
+                                    "title": "IVI obunasi 1 oy + 2 oy sovg'a sifatida (3 oylik obuna)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Subscription IVI for 6 months",
+                                    "value": "PM-IVI-6M",
+                                    "amount": 16900000,
+                                    "title": "IVI onlayn kinoteatriga 6 oylik obuna",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Подписка на онлайн-кинотеатр ИВИ на 12 месяцев",
+                                    "value": "PM-IVI-12M",
+                                    "amount": 26900000,
+                                    "title": "IVI onlayn kinoteatriga 12 oylik obuna",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "IVI",
+                    "Иви",
+                    "шмш",
+                    "ASBIS",
+                    "fc,bc",
+                    "асбис"
+                ],
+                "weight": 0.000003342307777873985,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6629f165e90d731d6a283edc",
+                "paycom_id": "6607c33333187ead44b3cbac",
+                "name": "Blaze",
+                "organization": "ООО «Blaze.ERP»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/5c01165d541c03a226328f619f486a2922826ff8.png",
+                "date": 1714024805120,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false,
+                        "require": "data"
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "invoice_id",
+                            "replace": "[ -]",
+                            "title": "Invoys",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "error": null,
+                            "placeholder": "",
+                            "prefix": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "name": "data",
+                            "type": "dynamic-select",
+                            "requires": [
+                                "invoice_id"
+                            ],
+                            "title": "Invoys ma'lumotlari",
+                            "error": null,
+                            "placeholder": "",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "blaze core",
+                    "blzae core",
+                    "blase core",
+                    "blaze erp",
+                    "блейз корп"
+                ],
+                "weight": 0.000002924519305639737,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "63e4850a5a05f76fd5a6c25c",
+                "paycom_id": "63e34f18ed01190def7d2255",
+                "name": "Soundbook ",
+                "organization": "ООО «RAJAPOV SHOHRUZ SHUXRAT O‘G‘LI»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/8f9f328e967da11ffa4e87ef58c20c758a3a1ec2.png",
+                "date": 1675920650403,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "user_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "id",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Soundbook ",
+                    "саундбук",
+                    "Ыщгтвищщл"
+                ],
+                "weight": 0.000002715625069522613,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6242f3e65bc3e35a0e921fff",
+                "paycom_id": "62220ee68dccd302156b7976",
+                "name": "JOYLA",
+                "organization": "ООО «Sunet Technology»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/f27c59ebd8520a186482e51eb4179c5b97d73f8f.png",
+                "date": 1648554982131,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "phoneNumber",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "OZIQUZ",
+                    "ЩЯШЙГЯ",
+                    "JPBREP",
+                    "Joyla",
+                    "Жойла",
+                    "Ощндф"
+                ],
+                "weight": 0.000002611177951464051,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "62c54f22cb6e753eb77b066d",
+                "paycom_id": "6017b53e5a08a5dda944930e",
+                "name": "ALLSO.UZ",
+                "organization": "ООО «\"ALL SALE OUTLET\" MChJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/faf67a553b05296ae4b23b46ffd262cceee6f93e.png",
+                "date": 1657098018866,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "id_org",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Saytdagi do'kon ID",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "allso",
+                    "алсо уз",
+                    "фддыщ"
+                ],
+                "weight": 0.0000021933894792298027,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5f8591472af15d604f4c5c96",
+                "paycom_id": "5f8573d20735b3601780ad90",
+                "name": "EASTLINE EXPRESS",
+                "organization": "ООО «EASTLINE EXPRESS»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/8fab25f9781385c381e3c3dd6a983d20a86a0ba9.png",
+                "date": 1602588999617,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.SH.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "invoice_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Hisob-faktura raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "eastline express",
+                    "ест лайн",
+                    "ист лайн",
+                    "ист лайн экспресс",
+                    "уфые дшту учзкуыы",
+                    "уфыедшту"
+                ],
+                "weight": 0.0000020889423611712407,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6437f13d850676df804b25ae",
+                "paycom_id": "6434515a5a04ae2eb622b908",
+                "name": "MTT Menyu",
+                "organization": "ООО «\"YENGIL YECHIM\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/1da1c1aaa1a8d9eda2004aba27136b691d56c3ea.png",
+                "date": 1681387837987,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 100000000,
+                        "min": 10000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "mtt menyu",
+                    "мтт меню",
+                    "mtt menu",
+                    "mttmenu",
+                    "ьее ьутнг"
+                ],
+                "weight": 0.0000019844952431126787,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "650bfc265240a8ca4dff1241",
+                "paycom_id": "650be7502918d26924fca38f",
+                "name": "SKY PARK",
+                "organization": "СП ООО «\"SMAGIC PARK\" MCHJ XK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/3870d6c753839fd5f3572a5fa4b82599788d0b6b.png",
+                "date": 1695284262292,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "cardn",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Sky Park karta raqami",
+                            "type": "text",
+                            "validation": "^[0-9]{1,15}$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Sky park",
+                    "skypark",
+                    "скайпарк",
+                    "parksky"
+                ],
+                "weight": 0.0000019844952431126787,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5ec4fb52343eb86f54d332fa",
+                "paycom_id": "5ec4f0566420f3660dc93293",
+                "name": "GSS",
+                "organization": "ООО «Good Solutions Systems»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/23440b087dbf9a05cfdc8998d77841c7473d6d9f.png",
+                "date": 1589967698852,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "type",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Uchun to'lov:",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Услуги",
+                                    "value": "01",
+                                    "title": "Xizmatlar",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "GPS",
+                                    "value": "02",
+                                    "title": "GPS",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "name": "full_name",
+                            "title": "F.I.Sh",
+                            "content": "text",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "optional": true,
+                            "visible": {
+                                "require": "type",
+                                "value": "^01$"
+                            },
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null
+                        },
+                        {
+                            "name": "contract_number",
+                            "title": "Shartnoma raqami",
+                            "content": "text",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "optional": true,
+                            "visible": {
+                                "require": "type",
+                                "value": "^01$"
+                            },
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null
+                        },
+                        {
+                            "name": "login",
+                            "title": "Login",
+                            "content": "text",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "optional": true,
+                            "visible": {
+                                "require": "type",
+                                "value": "^02$"
+                            },
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "gss",
+                    "гсс",
+                    "good",
+                    "solution"
+                ],
+                "weight": 0.0000018800481250541167,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64e746637c8935bad9a8f805",
+                "paycom_id": "64e744de7da901ca3bae56a0",
+                "name": "La floristique",
+                "organization": "ЧП «MINGALIYEVA SEVARA»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/1f491afc8e61dbf583fd68bb2948c3cbf20f74b1.png",
+                "date": 1692878435220,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": []
+                },
+                "keywords": [
+                    "La floristique",
+                    "Ля флористик",
+                    "дф адщкшыешл"
+                ],
+                "weight": 0.0000016711538889369925,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "660fee9190823bcdf98bf495",
+                "paycom_id": "660fee06abe7377ebe57614f",
+                "name": "ASR TAXI",
+                "organization": "ООО «\"ANORTAXI\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/889ac590a8437f523c00b54b951c47630265358f.png",
+                "date": 1712320145306,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "driver_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Pozivnoy raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "anortaxi",
+                    "анортакси",
+                    "фтщкефчш",
+                    "asr taxi"
+                ],
+                "weight": 0.0000016711538889369925,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5bebc9aaf4239340c0208d7b",
+                "paycom_id": "619e09a6328ba73ec0fb453d",
+                "name": "FedEx",
+                "organization": "ООО «Cargo Star»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/fedex.png",
+                "date": 1542179226688,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100000,
+                        "max": 10000000000
+                    },
+                    "account": [
+                        {
+                            "name": "invoice_id",
+                            "title": "Yukxat raqami",
+                            "content": "text",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Fed Ex",
+                    "Cargo Star",
+                    "фед экс",
+                    "федэкс доставка",
+                    "аувуч"
+                ],
+                "weight": 0.0000015667067708784305,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6200ec72b0159dc2d9e44f1c",
+                "paycom_id": "61fa85dbfd67d1d0d77d4a29",
+                "name": "PRINT MEDIA",
+                "organization": "ООО «ООО \"PRINT MEDIA\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/6498a2b303b0c9ee2a48c22d1b74aa572b8427a4.png",
+                "date": 1644227698473,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 10000000000,
+                        "min": 10000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "PRINT MEDIA",
+                    "печать",
+                    "PRINT"
+                ],
+                "weight": 0.0000014622596528198685,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "60d1c96ce6319b983a3202ce",
+                "paycom_id": "60d1c9057ae4e5e93d7d758a",
+                "name": "MAHALLA NASHRIYOT MATBAA UYI",
+                "organization": "ООО «ООО \"MAHALLA  NASHRIYOT-MATBAA UYI\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/7fcc457bf4ed71a0bd27bc29156a82efb874bbd6.png",
+                "date": 1624361324638,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 99999999900,
+                        "require": "subscription_type"
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.SH.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "adress",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Manzil",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "subscription_type",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Obuna turi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "\"Mahalla ko`zgusi\" jurnali - 350 000 so`m",
+                                    "value": "Gazeta_maxalla",
+                                    "amount": 35000000,
+                                    "title": "\"Mahalla ko`zgusi\" jurnali - 350 000 so`m",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "\"Mahalla\" gazetasi - 550 000 so`m",
+                                    "value": "Maxalla_kuzgusi",
+                                    "amount": 55000000,
+                                    "title": "\"Mahalla\" gazetasi - 550 000 so`m",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "mahalla nashriyot matbaa uyi",
+                    "mahalla gazeta",
+                    "газета махалля",
+                    "махаллинский Издательский дом",
+                    "маҳалла нашриёт матбаа уйи",
+                    "газета",
+                    "gazeta"
+                ],
+                "weight": 0.0000013578125347613065,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6274f32874c0eaf7a054ee82",
+                "paycom_id": "6274f2b18383f692758b7d32",
+                "name": "SCIENTIFIC INNOVATIONS",
+                "organization": "ООО «\"SCIENTIFIC INNOVATIONS\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/9126befb7c19f4439d5aaaaaf4bcc964a4102a77.png",
+                "date": 1651831592315,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "article",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Макола раками",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "SCIENTIFIC INNOVATIONS",
+                    "Сайнтифик Иновэшнс",
+                    "Ысштешашс Шттщмфешщты"
+                ],
+                "weight": 0.0000013578125347613065,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64218c7f6a689d2b4b95931b",
+                "paycom_id": "64218bd4fc0dc40f826062fa",
+                "name": "MICROS PAK",
+                "organization": "СП ООО «MICROS PAK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/55c620a3411fe18362a1f6d02aa7ca1eb308f421.png",
+                "date": 1679920255576,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Uchun to'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Услуги графического дизайна",
+                                    "value": "1",
+                                    "title": "Услуги графического дизайна",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Коробки, упаковки и аналогичные изделия из бумаги и картона",
+                                    "value": "2",
+                                    "title": "Коробки, упаковки и аналогичные изделия из бумаги и картона",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Визитка",
+                                    "value": "3",
+                                    "title": "Визитка",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "MICROS PAK",
+                    "web2print",
+                    "web print"
+                ],
+                "weight": 0.0000013578125347613065,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "656dab34157e836acba06535",
+                "paycom_id": "656da11f94dc4293bdd47295",
+                "name": "Newway Nigella International",
+                "organization": "ООО «\"NEWWAY NIGELLA INTERNATIONAL\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/38f50c0fc2b3387575048d1b61c5b69012e49d61.png",
+                "date": 1701686068177,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "ID",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": {
+                                "type": "static",
+                                "value": "UZ",
+                                "output": false
+                            },
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "newway",
+                    "neway",
+                    "nigella",
+                    "NEWWAY NIGELLA INTERNATIONAL",
+                    "nigela"
+                ],
+                "weight": 0.0000013578125347613065,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65c9f9e35a28ca784d9180fe",
+                "paycom_id": "65c9f99c3c319dec9d8aaa50",
+                "name": "KULBAYEV DISTRIBUTOR",
+                "organization": "ООО «\"KULBAYEV DISTRIBUTOR\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/67bccc900a918ed12a7f7f826983b5959d5f5934.png",
+                "date": 1707735523667,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "kulbayev distributor",
+                    "кулбаев дистрибютор",
+                    "лгдифнум вшыекшигещк"
+                ],
+                "weight": 0.0000013578125347613065,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5f4656ed5099c11c41f3638e",
+                "paycom_id": "5f3f55a141c04555482e3b9f",
+                "name": "TENVEO",
+                "organization": "ООО «TENVEO»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/6fc29b98f234ce8a9b8a1da4370195a1f1367b58.png",
+                "date": 1598445293958,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "date",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Sana",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "tenveo",
+                    "тенево",
+                    "програмное обеспечение",
+                    "еутмущ",
+                    "ntytdj"
+                ],
+                "weight": 0.0000012533654167027445,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "62ea80a35a4746e92b379289",
+                "paycom_id": "62ea7f3d39c675be34e5f6c9",
+                "name": "UzAvtor",
+                "organization": "ОО «MUALLIFLIK VA TURDOSH HUQUQLARNI HUQUQLARNI HIMOYA QILISH JA»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/9919991c4a41b64a97a0ac45c2f44b942d5c09c2.png",
+                "date": 1659535523067,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 1000000000,
+                        "min": 100000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "invoice_id",
+                            "placeholder": "8 raqamni kiritish kerak",
+                            "replace": "[ -]",
+                            "title": "Invoice ID",
+                            "type": "text",
+                            "validation": "^\\d{8}$",
+                            "validation_error": "Неверный инвойс",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "UzAvtor",
+                    "УзАвтор",
+                    "ГяФмещк",
+                    "EpFdnjh"
+                ],
+                "weight": 0.0000012533654167027445,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6620fde0e08b752620c61684",
+                "paycom_id": "6620fdb02aafa476603e2ae2",
+                "name": "OPTIMO",
+                "organization": "ИП ООО «\"OPTIMO\" MCHJ XK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/2b02cbc66c06096107985cce4ff4ad1392728668.png",
+                "date": 1713438176738,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "inn",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "TIN",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "OPTIMO",
+                    "\"OPTIMO\" MCHJ XK ",
+                    "ИП ООО «\"OPTIMO\" MCHJ XK»"
+                ],
+                "weight": 0.0000012533654167027445,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "66277cbbe90d731d6a28397a",
+                "paycom_id": "66277c6f2eb76ec81b694652",
+                "name": "QALAMKASH",
+                "organization": "ЧП «PULATOV ISMATULLA»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/1df6264aedd740d44469f574f42e4a468dcad6d1.png",
+                "date": 1713863867483,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Оплата за издательско-полиграфические услуги",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "QALAMKASH",
+                    "kALAMKASH",
+                    "QALAM KASH"
+                ],
+                "weight": 0.0000012533654167027445,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "611cb3a412950f485b3b1f6a",
+                "paycom_id": "611cabc5754e932e68fe5d9a",
+                "name": "KIRBY",
+                "organization": "ООО «ООО \"RELIABLE SYSTEMS TRADE\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/36ce2bad9e87a4dd45282af13b5aa522c8182876.png",
+                "date": 1629270948331,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 10000000000,
+                        "min": 10000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "region",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Регион",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "KIRBY",
+                    "Кирби",
+                    "RELIABLE SYSTEMS TRADE",
+                    "qirbi",
+                    "систем трэйд"
+                ],
+                "weight": 0.0000011489182986441823,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "653b6a1474b04dc1cef66667",
+                "paycom_id": "6549d86241a367e34fca13f1",
+                "name": "iWon",
+                "organization": "\"CHOYKHONA\" MCHJ",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/316d37f8a8ae6053556aabf6cf9fc2364dbd5645.png",
+                "date": 1698392596546,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "type": "text",
+                            "content": "number",
+                            "name": "clientId",
+                            "title": "Elektron hamyon raqami",
+                            "optional": false,
+                            "validation": null,
+                            "validation_error": "Elektron hamyon raqami noto'g'ri kiritilgan",
+                            "error": null,
+                            "placeholder": "",
+                            "prefix": null,
+                            "replace": null,
+                            "scan": null,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "iwon",
+                    "айвон",
+                    "шцщт",
+                    "fqdoy"
+                ],
+                "weight": 0.0000011489182986441823,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6603f81812d57e0dca11ef85",
+                "paycom_id": "6603f7af5b347a44404c69d2",
+                "name": "LOYAL TAXI",
+                "organization": "ООО «\"LOYAL TAXI\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/872ff063cacbe1f25046679f62f1fc6c561ef69b.png",
+                "date": 1711536152213,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "callsign",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Pozivnoy",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "loyal taxi",
+                    "лояль такси",
+                    "дщнфд ефчш"
+                ],
+                "weight": 0.0000011489182986441823,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "62d55bfb0721155acbfdb5a2",
+                "paycom_id": "62d55ba439c675be34e258a1",
+                "name": "LA ROSEE AROMA",
+                "organization": "ООО «JNS LABS»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/93a760be471da591f61d099ccf1244e32d442835.png",
+                "date": 1658149883696,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "LEADER MEN",
+                    "Лидер Мэн",
+                    "Дуфвук Ьут"
+                ],
+                "weight": 0.0000010444711805856203,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "660cf89290823bcdf98beadc",
+                "paycom_id": "660cf8308dd95c4de5e18cab",
+                "name": "LINKSERV GROUP",
+                "organization": "ООО «\"LINKSERV GROUP\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/3797d03968bc04bacdbd45d26ae10298fa648751.png",
+                "date": 1712126098008,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "tin",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "STIR or PINFL",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "kkm",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "KKM seriya raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "details",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov tafsilotlari",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "linkserv group",
+                    "линксерв груп",
+                    "дштлыукм пкщгз"
+                ],
+                "weight": 9.400240625270584e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5d2d5d50c8f1962fc446e07c",
+                "paycom_id": "5d08e2ba253629eb5d35638d",
+                "name": "OZIQUZ",
+                "organization": "ООО «Sunet Technology»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/5bec125404a37daf2abe4c94.png",
+                "date": 1563253600538,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 2000000,
+                        "max": 99999999900
+                    },
+                    "account": [
+                        {
+                            "name": "client_id",
+                            "title": "ID",
+                            "content": "number",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "УЛГУРЖИ ОЗИҚ-ОВҚАТ БОЗОРИ",
+                    "OZIQUZ"
+                ],
+                "weight": 8.355769444684963e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6489c794c34b8a5ddef9b946",
+                "paycom_id": "6489684f33013ca481df4b7c",
+                "name": "BOOKNOMY",
+                "organization": "ООО «ООО \"BOOKNOMY\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/53511ae9e9639a9eb21168dac9770da4684e645b.png",
+                "date": 1686751124186,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "user_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Foydalanuvchi IDsi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "BOOKNOMY",
+                    "buknomy",
+                    "букном",
+                    "booknomi"
+                ],
+                "weight": 8.355769444684963e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "63d3b2b25914a6cfaa1ad437",
+                "paycom_id": "63d104c74ade4c6768a31000",
+                "name": "Money Manager",
+                "organization": "ЧП «SALIYEV OYBEK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/25a138b6cef1efeada7038955a7adc6ed4abac25.png",
+                "date": 1674818226650,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 1500000000,
+                        "min": 100000,
+                        "round": true
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "ID",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Foydalanuvchi IDsi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Money Manager",
+                    "Money ",
+                    "Manager"
+                ],
+                "weight": 7.311298264099343e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "659b9d944de4489c5e27be00",
+                "paycom_id": "659b9d485c8188fb6e922956",
+                "name": "SOFIZAR",
+                "organization": "ООО «SOFIZAR TRADE»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/1f319590e90d36bd4945070a7e74ab389bf5dc88.png",
+                "date": 1704697236623,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "branch_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Filiali",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Алиев",
+                                    "value": "1",
+                                    "title": "Алиев",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Чорсу 1",
+                                    "value": "2",
+                                    "title": "Чорсу 1",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Xizmatlar uchun to'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Кольцо из золота",
+                                    "value": "1",
+                                    "title": "Кольцо из золота",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Серьги из золота",
+                                    "value": "2",
+                                    "title": "Серьги из золота",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Кулон из золота",
+                                    "value": "3",
+                                    "title": "Кулон из золота",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Браслет из золота",
+                                    "value": "4",
+                                    "title": "Браслет из золота",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Цепочка из золота",
+                                    "value": "5",
+                                    "title": "Цепочка из золота",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "SOFIZAR",
+                    "СОФИЗАР",
+                    "Sofizar"
+                ],
+                "weight": 7.311298264099343e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "641053ff6a689d2b4b958507",
+                "paycom_id": "64104ced4a0c178255938803",
+                "name": "METROLOGIYA ILMIY MARKAZI",
+                "organization": "ООО «\"METROLOGIYA ILMIY MARKAZI\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/dffce7ed78d90384655adc86b0de5a039efdacd5.png",
+                "date": 1678791679755,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "org_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Tashkilot nomi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "inn",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "STIR(ИНН)",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnomaning raqami va sanasi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "METROLOGIYA ILMIY MARKAZI",
+                    "метрология",
+                    "ьуекщдщпшнф шдьшн ьфклфяш",
+                    "metrologiya"
+                ],
+                "weight": 6.266827083513723e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "659d24574de4489c5e27c391",
+                "paycom_id": "6596bd6e581cb23f75f15c7c",
+                "name": "CSZONE.UZ",
+                "organization": "ООО HASAN HUSEN BROTHERS",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/9fad144ed95e8c9f1cfde74d646b232a0a355bca.png",
+                "date": 1704797271629,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "number_accaunt",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": {
+                                "type": "static",
+                                "value": "998",
+                                "output": false
+                            },
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "CSZONE.UZ",
+                    "CSZONE UZ",
+                    "cs zone uz",
+                    "cszon",
+                    "cs zon"
+                ],
+                "weight": 6.266827083513723e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "619770d2bf10e032bf0ee58a",
+                "paycom_id": "61977037361e75d9ce9dd3a3",
+                "name": "OSI",
+                "organization": "ООО «OSIYO SANOAT INVEST MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/cdc058e4b8b1aed4a339a1f42144ef4c63c984ea.png",
+                "date": 1637314770439,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "order_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Zakaz raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "osiyo sanoat invest",
+                    "щышнщ ыфтщфе штмуые",
+                    "sanoat invest",
+                    "SANOAT INVEST MCHJ",
+                    "саноат инвест",
+                    "cfyjfn bydtcn"
+                ],
+                "weight": 5.222355902928102e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "655614662810c55017037028",
+                "paycom_id": "6554491b679f4465af47b70d",
+                "name": "YANGIYUL TAXI",
+                "organization": "ООО «YANGIYUL YANDEX TAXI»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/92cc716267dbd0c79876dd594bb627b1ad274dfb.png",
+                "date": 1700140134355,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 50000000,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "callsign",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Pozivnoy raqam",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "yangiyul taxi",
+                    "янгиюль такси",
+                    "нфтпшнгд ефчш"
+                ],
+                "weight": 5.222355902928102e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "658a663c4de4489c5e278a9e",
+                "paycom_id": "658975f35c8188fb6e90eb82",
+                "name": "PESHQADAMLAR KARVONI",
+                "organization": "ООО «\"PESHQADAMLAR KARVONI\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/d195c5efa754803a3b5620b3a8629e2389d209ca.png",
+                "date": 1703568956748,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov maqsadi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Конференция, тренинг, тадбирлар ўтказиш хизмати",
+                                    "value": "1",
+                                    "title": "Конференция, тренинг, тадбирлар ўтказиш хизмати",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Реклама хизматлари",
+                                    "value": "2",
+                                    "title": "Реклама хизматлари",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Бошка консалтинг хизматлари",
+                                    "value": "3",
+                                    "title": "Бошка консалтинг хизматлари",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "PESHQADAMLAR KARVONI",
+                    "PESHQADAM",
+                    "KARVON",
+                    "пешкадамлар карвони"
+                ],
+                "weight": 5.222355902928102e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "604070452d127859d8d42ef2",
+                "paycom_id": "603f5af532b9d27ba076f932",
+                "name": "\"Iqtisodiyot va ta'lim\" Ilmiy jurnali",
+                "organization": "\"Iqtisodiyot va ta'lim\" Ilmiy jurnali",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/b8c0ec5735857d63479f2d49901520ae9bf26b7f.png",
+                "date": 1614835781597,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.SH.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Nashr uchun",
+                                    "value": "1",
+                                    "title": "Nashr uchun",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Jurnalning chop etilgan shakli uchun",
+                                    "value": "2",
+                                    "title": "Jurnalning chop etilgan shakli uchun",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Dissertatsiyani tahrirlash",
+                                    "value": "3",
+                                    "title": "Dissertatsiyani tahrirlash",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Аvtoreferаt (PhD)",
+                                    "value": "4",
+                                    "title": "Аvtoreferаt (PhD)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Аvtoreferаt (DSc)",
+                                    "value": "5",
+                                    "title": "Аvtoreferаt (DSc)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Аntiplаgiаt",
+                                    "value": "6",
+                                    "title": "Аntiplаgiаt",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "ик,тисодиёт ва таълим",
+                    "ик тисодиёт ва таълим",
+                    "ик тисидиет ва талим",
+                    "iqtisodiyot va ta'lim",
+                    "Iqtisodiyot va talim Ilmiy jurnali"
+                ],
+                "weight": 4.177884722342481e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6155a56188800c96dd77f3a7",
+                "paycom_id": "6155a218161e70ea14dcf3f4",
+                "name": "UZTELECOM DISK",
+                "organization": "АО «\"O`ZBEKTELEKOM \" AJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/16665ebabb81145088006ce909928f9d618c962d.png",
+                "date": 1633002849094,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "number",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shaxsiy xisob raqam",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "UZTELECOM DISK",
+                    "узтелеком диск",
+                    "хранение на облаке",
+                    "saqlash",
+                    "uztelekom disk",
+                    "ГЯЕУДУСЩЬ ВШЫЛ"
+                ],
+                "additional_info": true,
+                "weight": 4.177884722342481e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "61f7b2f4195f0459f3f81c0b",
+                "paycom_id": "61f7b1ce6b2af010e78dd71b",
+                "name": "Osmondagi Bolalar Loyihasi",
+                "organization": "ООО «\"OSMONDAGI BOLALAR LOYIHASI\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/3024cc858627703d366646653d8870a83b77624c.png",
+                "date": 1643623156086,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "comment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Izoh",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Osmondagi Bolalar Loyihasi",
+                    "Щыьщтвфпш Ищдфдфк Дщншрфыш",
+                    "осмондаги болалар лойихаси",
+                    "jcvjylfub ,jkfkfh kjqb[fcb"
+                ],
+                "weight": 4.177884722342481e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6305f783e5b34221aeb9b340",
+                "paycom_id": "6305f6997066d254af79a31d",
+                "name": "Ulkan",
+                "organization": "ООО «\"OQILA COMPUTER\" XK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/b30b5d1e9660930d9d0b9574d2b24ddca033c931.png",
+                "date": 1661335427661,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 10000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "site_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Sayt ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Ulkan",
+                    "улкан",
+                    "гдлфт"
+                ],
+                "weight": 4.177884722342481e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "63dcb2019d045bb304f59339",
+                "paycom_id": "63dcb15a3855b731808a43e2",
+                "name": "DODAPUL",
+                "organization": "ООО «\"MILLIYCITY\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/3642ccafc221fe25517957e96e4aaccb21e880fe.png",
+                "date": 1675407873492,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "login",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Login",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "DODAPUL",
+                    "Додапул",
+                    "Вщвфзгд"
+                ],
+                "weight": 4.177884722342481e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "645354d35a26a8829b865cef",
+                "paycom_id": "64524c7e6d12387a828c273c",
+                "name": "Consult MM",
+                "organization": "ООО «\"CONSULT-MM\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/4f565dffa52b8b7d697cb52a404e446669d0e78c.png",
+                "date": 1683182803691,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov maqsadi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Консультацию",
+                                    "value": "consult",
+                                    "title": "Консультацию",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Книгу",
+                                    "value": "book",
+                                    "title": "Книгу",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Наставничество",
+                                    "value": "nastavnik",
+                                    "title": "Наставничество",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "consult",
+                    "konsult",
+                    "консулт",
+                    "консалт",
+                    "сщтыгде",
+                    "consult mm",
+                    "consultmm",
+                    "consult-mm"
+                ],
+                "weight": 4.177884722342481e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6493ed2d8b56646db103dd07",
+                "paycom_id": "6493ea74406523fd2dffa137",
+                "name": "Button",
+                "organization": "ЧП «\"GROUP ALPHA»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/3a45146966b1e182c13a37178d46896c7f8666ff.png",
+                "date": 1687416109442,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Button",
+                    "Баттон",
+                    "игеещт"
+                ],
+                "weight": 4.177884722342481e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5c923873d6cc463260317377",
+                "paycom_id": "5c92339877b30c4a05005414",
+                "name": "Центр Программистов-BEPRO",
+                "organization": "ООО «Центр Программистов-BEPRO»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/uzgps.png",
+                "date": 1553086570660,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 99999999900
+                    },
+                    "account": [
+                        {
+                            "name": "service",
+                            "title": "Xizmat turi",
+                            "require": null,
+                            "type": "select",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "placeholder": "",
+                            "values": [
+                                {
+                                    "value": "Пакет подключения",
+                                    "title": "Ulanish to'plami",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "value": "Абонентская плата",
+                                    "title": "Abonent to'lovi",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "value": "Доп. услуги с разовой оплатой",
+                                    "title": "Qo'shimcha to'lov",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "name": "id_contract",
+                            "title": "Shartnoma raqami",
+                            "content": "text",
+                            "type": "text",
+                            "prefix": {
+                                "type": "static",
+                                "value": "GPS-",
+                                "output": true
+                            },
+                            "replace": null,
+                            "validation": null,
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "uzgps",
+                    "Центр Программистов-BEPRO",
+                    "спутниковый мониторинг"
+                ],
+                "weight": 3.1334135417568613e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65aa6399f1b913a488b0f02d",
+                "paycom_id": "65aa630a44b50c0d6c2e0f76",
+                "name": "UzARM ",
+                "organization": "ННО «O'ZBEKISTON REPRODUKTIV MEDITSINA ASSOTSIATSIYASI»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/8af65d2bcdc211bdb83de092bc1982541ad3786d.png",
+                "date": 1705665433734,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "payment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Uchunt tolov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "взнос",
+                                    "value": "1",
+                                    "title": "взнос",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "UzARM",
+                    "O'ZBEKISTON REPRODUKTIV MEDITSINA ASSOTSIATSIYASI ",
+                    "узарм"
+                ],
+                "weight": 3.1334135417568613e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "660c028c90823bcdf98be929",
+                "paycom_id": "660be9af8dd95c4de5e17b65",
+                "name": "СТОРИС TALK",
+                "organization": "ЧП «DALIMOVA ZAKIYAXON»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/fbe7c89abb6e2a3a0c181c3bca0342588be434e0.png",
+                "date": 1712063116465,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 99999999900
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "mail",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "E-mail",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Xizmatni tanlang",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Доступ к онлайн-практикуму \"Сторис TALK\"",
+                                    "value": "dostup_praktikum",
+                                    "title": "Доступ к онлайн-практикуму \"Сторис TALK\"",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "сторис talk",
+                    "stories talk",
+                    "storis talk"
+                ],
+                "weight": 3.1334135417568613e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "663210ba50e2902d98cfece7",
+                "paycom_id": "6632106c2eb76ec81b69fb6f",
+                "name": "Jahona Nashr",
+                "organization": "ООО «\"JAHONA NASHR\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/a52e5d35173374c742c6e121d57bd0dce375a560.png",
+                "date": 1714557114234,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Ўқув қўлланма чоп этиш учун тўлов",
+                                    "value": "oquv",
+                                    "title": "Ўқув қўлланма чоп этиш учун тўлов",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Монография чоп этиш учун тўлов",
+                                    "value": "monografiya",
+                                    "title": "Монография чоп этиш учун тўлов",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Услубий тавсиянома чоп этиш учун тўлов",
+                                    "value": "tavsiya",
+                                    "title": "Услубий тавсиянома чоп этиш учун тўлов",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Дарслик чоп этиш учун тўлов",
+                                    "value": "darslik",
+                                    "title": "Дарслик чоп этиш учун тўлов",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Канцтовар учун тўлов",
+                                    "value": "stationery",
+                                    "title": "Канцтовар учун тўлов",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Китоб учун тўлов",
+                                    "value": "books",
+                                    "title": "Китоб учун тўлов",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "jahona nashr",
+                    "жахона нашр",
+                    "офрщтф тфырк"
+                ],
+                "weight": 3.1334135417568613e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5ee8a9bc343eb86f54d33e16",
+                "paycom_id": "5ee85c63c2a2e8e1604ac8ef",
+                "name": "CLOUD SOFT",
+                "organization": "ООО «CLOUD SOFT»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/0c628ec8e15c57c4fbc63d76e2d9dd1970d48b11.png",
+                "date": 1592306108193,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "ИТС",
+                                    "value": "1",
+                                    "title": "ИТС",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Программные обеспечение",
+                                    "value": "2",
+                                    "title": "Программные обеспечение",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Услуги",
+                                    "value": "3",
+                                    "title": "Услуги",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "услуги",
+                    "клауд софт",
+                    "интернет"
+                ],
+                "weight": 2.0889423611712406e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5fa4e4f68b38a19f0b3997a7",
+                "paycom_id": "5fa2b85c740f35d3638b7800",
+                "name": "FIDES",
+                "organization": "ООО «FIDES SOLUTIONS»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/bc5bdf2df482772acb61ca792eeaac01cc592483.png",
+                "date": 1604642038601,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 5000000000,
+                        "min": 100000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "invoiceId",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Hisob/buyurtma",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "voronkaid",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "ИТС (1С:КП)",
+                                    "value": "0",
+                                    "title": "ИТС (1С:КП)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Сопровождение ПО",
+                                    "value": "1",
+                                    "title": "Dasturlarga xizmat ko'rsatish",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Программное обеспечение",
+                                    "value": "3",
+                                    "title": "Dasturiy ta'minot",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Обучение",
+                                    "value": "5",
+                                    "title": "O'qitish",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Экзамен 1С:Профессионал",
+                                    "value": "9",
+                                    "title": "Imtihon 1C: Professional",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "fides",
+                    "фидес",
+                    "программное обеспечение",
+                    "fides solutions",
+                    "ашвуы",
+                    "abltc",
+                    "фидэ",
+                    "внедренческий центр"
+                ],
+                "weight": 2.0889423611712406e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "62906c4cddb5245414e3adbe",
+                "paycom_id": "6290677d8a45fcc782ea6495",
+                "name": "MBOS.UZ",
+                "organization": "ООО «\"ONLINE SOFTWARE IT V2\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/1908e5e3c55be0729ac56464b9ee50bb01c178fe.png",
+                "date": 1653632076440,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "number",
+                            "name": "schetid",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": "^(\\+?998)?[0-9]{9}$",
+                            "prefix": {
+                                "type": "static",
+                                "value": "+998",
+                                "output": false
+                            },
+                            "length": 9,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "MBOS.uz",
+                    "ЬИЩЫюгя",
+                    "мбос.уз",
+                    "v,jc/ep"
+                ],
+                "weight": 2.0889423611712406e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "62b301332abe8594b27f606e",
+                "paycom_id": "62a0b19c230198252fe56d7e",
+                "name": "BossTracker",
+                "organization": "ООО «BOSS TRACKER»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/5a7baaa97421fc53614ecf7d027cb34d2cc2257f.png",
+                "date": 1655898419718,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 100000000,
+                        "min": 100000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "usercode",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Abonent kodi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Boss Tracker",
+                    "Босс трекер",
+                    "ищыы екфслук",
+                    "BossTracker"
+                ],
+                "weight": 2.0889423611712406e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "62e0df405f25646c66d0e465",
+                "paycom_id": "62e0dec039c675be34e45258",
+                "name": "LUX TECH",
+                "organization": "ЧП «SOY VIKTOR»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/463b9bdd40aef64f5482c7ff25be70ac2961de49.png",
+                "date": 1658904384327,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "LUX TECH",
+                    "LUXTECH",
+                    "lux tech",
+                    "люкс теч",
+                    "дгч еуср"
+                ],
+                "weight": 2.0889423611712406e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "63d37ccd9d9e2612eb6e8c60",
+                "paycom_id": "63d37b4e45caa8355e1159ff",
+                "name": "Bizzon",
+                "organization": "ООО «\"BIZZON\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/6ab3f933a9899f978282455249b52934bbb857b7.png",
+                "date": 1674804429003,
+                "terminal": {
+                    "type": "link",
+                    "endpoint": "https://bizzon.uz/kuponator/paymepay",
+                    "link_type": "external"
+                },
+                "keywords": [
+                    "BIZZON",
+                    "ИШЯЯЩТ",
+                    "биззон",
+                    ",bppjy"
+                ],
+                "weight": 2.0889423611712406e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "63d75db85914a6cfaa1ad534",
+                "paycom_id": "63d75cef45caa8355e11e54a",
+                "name": "LABORATORIYA MONOHROM",
+                "organization": "ООО «\"LABORATORIYA MONOHROM\" XK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/30710bd2a917cb32c4e1bc57cae0bbfa402d86f3.png",
+                "date": 1675058616643,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "number",
+                            "name": "PIN",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "JShShIR",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "length": 14,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "number",
+                            "name": "phone",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": "^(\\+?998)?[0-9]{9}$",
+                            "prefix": {
+                                "type": "static",
+                                "value": "+998",
+                                "output": true
+                            },
+                            "length": 9,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "delivery",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Yetkazib berish manzili",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Заправка",
+                                    "value": "refill",
+                                    "title": "Yoqilg'i quyish",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Ремонт",
+                                    "value": "repair",
+                                    "title": "Ta'mirlash",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "LABORATORIYA MONOHROM",
+                    "ДФИЩКФЕЩКШНФ ЬЩТЩРКЩЬ",
+                    "Лаборатори монохром",
+                    "Kf,jhfnjhb vjyj[hjv"
+                ],
+                "weight": 2.0889423611712406e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "651e87215a8224b99c9a33f4",
+                "paycom_id": "651e862d2072915c77042f1b",
+                "name": "Eurotransit Global",
+                "organization": "ООО «\"EUROTRANSIT GLOBAL\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/2c2d31d9fbd75668d6b42ce43435afe45c075959.png",
+                "date": 1696499489862,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Eurotransit Global",
+                    "EurotransitGlobal",
+                    "Evrotransit Global",
+                    "евротранзит глобал"
+                ],
+                "weight": 2.0889423611712406e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "662f9830e90d731d6a2848f2",
+                "paycom_id": "662f97d32eb76ec81b69d08c",
+                "name": "LEADHUNTER",
+                "organization": "ООО «\"LEADHUNTER\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/a0bf3de70fdbe5b78225e3513fed75c9c974794d.png",
+                "date": 1714395184646,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "ser",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Servis",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "amoCRM",
+                                    "value": "1",
+                                    "title": "amoCRM",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "SIPUNI",
+                                    "value": "2",
+                                    "title": "SIPUNI",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "tarif",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Tarif rejasi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Базовый",
+                                    "value": "11",
+                                    "title": "Базовый",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Расширенный",
+                                    "value": "22",
+                                    "title": "Расширенный",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Профессиональный",
+                                    "value": "33",
+                                    "title": "Профессиональный",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov muddati",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "6 месяцев",
+                                    "value": "1",
+                                    "title": "6 месяцев",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "12 месяцев",
+                                    "value": "2",
+                                    "title": "12 месяцев",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Foydalanuvchilar soni",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "cab",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Cabinet raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "cont",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Aloqa raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "LEADHUNTER ",
+                    "LEAD HUNTER ",
+                    "ООО «\"LEADHUNTER\" MCHJ»"
+                ],
+                "weight": 2.0889423611712406e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "66436a2c9324d81461cdd933",
+                "paycom_id": "663b1ac0fe41a3907df8f595",
+                "name": "Go'shtBor",
+                "organization": "ЧП «YUSUPALIYEV OYBEK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/399e1d92def7659fab34d3dad4ed5ac50b1bbfd0.png",
+                "date": 1715694124159,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "order_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Buyurtma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "go'shtbor",
+                    "goshtbo'r",
+                    "go'shtbo'r",
+                    "goshtbor",
+                    "гоштбор"
+                ],
+                "weight": 2.0889423611712406e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5a016cb02081d72d90dea825",
+                "paycom_id": "5a00b5171fe08a8d561ce63a",
+                "name": "Darakchi",
+                "organization": "ООО «Darakchi inform servis»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/darakchi.png",
+                "date": 1510042778708,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 50000,
+                        "max": 100000000
+                    },
+                    "account": [
+                        {
+                            "name": "code",
+                            "title": "Kod",
+                            "content": "text",
+                            "type": "text",
+                            "prefix": null,
+                            "placeholder": "",
+                            "replace": null,
+                            "validation": null,
+                            "validation_error": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Darakchi",
+                    "даракчи",
+                    "газета",
+                    "вфкфлсрш"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5e58f0c47cdad02b21e77d01",
+                "paycom_id": "60101d8c81f5b552f269d035",
+                "name": "«Ёшлик» журнали таҳририяти",
+                "organization": "ООО ««Ёшлик» журнали таҳририяти»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/1d7be5700301a253556cb58d133f2ca5273704ef.png",
+                "date": 1582887108091,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "address",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Manzili",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "оплата за подписку журнала",
+                    "оплата за журнал",
+                    "подписка на журнал",
+                    "jurnalga obuna to'lovi",
+                    "jurnal to'lovi",
+                    "jurnalga obuna bo'lish"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5eff013f343eb86f54d344ed",
+                "paycom_id": "5efee5d1469ba6fe197ab09b",
+                "name": "ANATOMICÁ",
+                "organization": "ООО «MEDMEDIA»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/5e16ef8f46996fbe6557152dc1e317a5d96a27ac.png",
+                "date": 1593770303547,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 99999999900,
+                        "require": "quantity"
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.SH.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": {
+                                "type": "static",
+                                "value": "+998",
+                                "output": false
+                            },
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "address",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Manzil",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Uchun to'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Журнал",
+                                    "value": "1",
+                                    "title": "Jurnal",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Подписку",
+                                    "value": "2",
+                                    "title": "Obuna",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Электронный журнал",
+                                    "value": "4",
+                                    "title": "Электронный журнал",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "ANATOMICÁ kids",
+                                    "value": "3",
+                                    "title": "ANATOMICÁ kids",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "quantity",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Miqdori",
+                            "type": "select",
+                            "validation": null,
+                            "optional": true,
+                            "require": "payment",
+                            "values": [
+                                {
+                                    "name": "1 экземпляр",
+                                    "value": "01",
+                                    "amount": 10000000,
+                                    "title": "1 экземпляр",
+                                    "filter": "1",
+                                    "description": null
+                                },
+                                {
+                                    "name": "2 экземпляра",
+                                    "value": "02",
+                                    "amount": 20000000,
+                                    "title": "2 экземпляра",
+                                    "filter": "1",
+                                    "description": null
+                                },
+                                {
+                                    "name": "3 экземпляра",
+                                    "value": "03",
+                                    "amount": 30000000,
+                                    "title": "3 экземпляра",
+                                    "filter": "1",
+                                    "description": null
+                                },
+                                {
+                                    "name": "1 Годовая подписка",
+                                    "value": "04",
+                                    "amount": 35000000,
+                                    "title": "1 yillik obuna",
+                                    "filter": "2",
+                                    "description": null
+                                },
+                                {
+                                    "name": "2 Годовые подписки",
+                                    "value": "05",
+                                    "amount": 70000000,
+                                    "title": "2 yillik obuna",
+                                    "filter": "2",
+                                    "description": null
+                                },
+                                {
+                                    "name": "3 Годовые подписки",
+                                    "value": "06",
+                                    "amount": 78000000,
+                                    "title": "3 yillik obuna",
+                                    "filter": "2",
+                                    "description": null
+                                },
+                                {
+                                    "name": "1 экзeмпляр",
+                                    "value": "07",
+                                    "amount": 1500000,
+                                    "title": "1 экзeмпляр",
+                                    "filter": "3",
+                                    "description": null
+                                },
+                                {
+                                    "name": "1 экзeмпляр",
+                                    "value": "07",
+                                    "amount": 1500000,
+                                    "title": "1 экзeмпляр",
+                                    "filter": "4",
+                                    "description": null
+                                },
+                                {
+                                    "name": "2 экзeмпляра",
+                                    "value": "08",
+                                    "amount": 3000000,
+                                    "title": "2 экзeмпляра",
+                                    "filter": "3",
+                                    "description": null
+                                },
+                                {
+                                    "name": "2 экзeмпляра",
+                                    "value": "08",
+                                    "amount": 3000000,
+                                    "title": "2 экзeмпляра",
+                                    "filter": "4",
+                                    "description": null
+                                },
+                                {
+                                    "name": "3 экзeмпляра",
+                                    "value": "09",
+                                    "amount": 4500000,
+                                    "title": "3 экзeмпляра",
+                                    "filter": "3",
+                                    "description": null
+                                },
+                                {
+                                    "name": "3 экзeмпляра",
+                                    "value": "09",
+                                    "amount": 4500000,
+                                    "title": "3 экзeмпляра",
+                                    "filter": "4",
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "error": null,
+                            "scan": null,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "anatomicá",
+                    "anatomica",
+                    "анатомика",
+                    "журнал анатомика",
+                    "anatomica",
+                    "medmedia"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "61935b9cd456a649579cbe4a",
+                "paycom_id": "61935b3d8053115670f002fb",
+                "name": "Subyektiv",
+                "organization": "ЧП «ZIYOXONOV JAMSHIDXON»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/e0e0d2aa72afe40d9d3a03a63e12fcaeb704370d.png",
+                "date": 1637047196880,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "coment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Izoh",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Ыгинулешм",
+                    "субьектив",
+                    "ZIYOXONOV JAMSHIDXON"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "62136810254d786693efd735",
+                "paycom_id": "621356e2ef83e39e2e3db3b9",
+                "name": "MUTAFFAKIR",
+                "organization": "ООО «ООО \"MUTAFAKKIR\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/44a88391ba085bb6731ea0f5e90f226b3d2c7326.png",
+                "date": 1645438992931,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "Type_of_service",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Xizmat turi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Издательство",
+                                    "value": "Izd",
+                                    "title": "Издательство",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Печатные услуги",
+                                    "value": "PU",
+                                    "title": "Печатные услуги",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Услуги Журнала",
+                                    "value": "UJ",
+                                    "title": "Услуги Журнала",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Книги MUTAFFAKIR",
+                    "Издательство",
+                    "Печатные услуги",
+                    "Мутафакир",
+                    "Ьгеафакир"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6298b4c1de19d6090bac4716",
+                "paycom_id": "6298b48e77fa5937e266c415",
+                "name": "YURIDA",
+                "organization": "ООО «YURIDA NYSA»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/953db18059bc9131874ad153085feef94bc9c98b.png",
+                "date": 1654174913900,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "login",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Login",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "work_place",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Ish joyi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "note",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Uchun to'lov",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "YURIDA",
+                    "Юрида",
+                    "Нгкшвф"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6329910475feb1ed5f22986a",
+                "paycom_id": "632990bdf8b15ea8112b6e19",
+                "name": "PROJECT-INNOVATION ",
+                "organization": "ООО «\"PROJECT-INNOVATION\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/d0396eeed85d220654cafd59d99ab6788b278f44.png",
+                "date": 1663668484126,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "PROJECT-INNOVATION",
+                    "Проджект-Инновэшн",
+                    "Проджект-Инноватион",
+                    "Зкщоусе-Шттщмфешщт"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "63ca393c9d9e2612eb6e7ddf",
+                "paycom_id": "63ca38df53a6022696bf0e3b",
+                "name": "YATT KOTENEVA E.V.",
+                "organization": "ЧП «KOTENEVA YEKATERINA»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/a3e2a00c18af0a70a28b74a2d6b316c4df96965e.png",
+                "date": 1674197308711,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "YATT KOTENEVA E.V.",
+                    "ЯТТ Котенева Е.В.",
+                    "Нфее Лщеутумф УюМю"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6433d4c0edabbd6b24e6e032",
+                "paycom_id": "6433d1238ee89704b5227775",
+                "name": "Self Growth Academy",
+                "organization": "ЧП «DADAJONOVA MAVLYUDA»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/7484c0ab037910ba9e34520e168fe6b7acdb3f99.png",
+                "date": 1681118400811,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov turi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "VIP",
+                                    "value": "1",
+                                    "title": "VIP",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Transformatsiya sessiyasi",
+                                    "value": "2",
+                                    "title": "Transformatsiya sessiyasi",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Fokusirovka",
+                                    "value": "3",
+                                    "title": "Fokusirovka",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Uchrashuv",
+                                    "value": "4",
+                                    "title": "Uchrashuv",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Shaxsiy konsultatsiya",
+                                    "value": "5",
+                                    "title": "Shaxsiy konsultatsiya",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "DADAJONOVA MAVLYUDA",
+                    "Self Growth Academy",
+                    "селф гровз",
+                    "дадажонова",
+                    "ыуда пкщцер фсфвуьн"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "643cf6ea3b2ea5dd250e554a",
+                "paycom_id": "643cf1a07eb779614cabe4c0",
+                "name": "BUKHARA HAMD PRINT",
+                "organization": "ООО «\"BUKHARA HAMD PRINT \" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/9816b70dee62dc6f217bff2d1cd95200d58c3dd8.png",
+                "date": 1681716970358,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Xizmatlar uchun to'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Услуги типографии",
+                                    "value": "1",
+                                    "title": "Услуги типографии",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Услуга библиотек и архивов",
+                                    "value": "2",
+                                    "title": "Услуга библиотек и архивов",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "BUKHARA HAMD PRINT ",
+                    "BUKHARA HAMD ",
+                    "HAMD "
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64be18b25b17f8b641a90c32",
+                "paycom_id": "64abf9e1277265fa82e0ebca",
+                "name": "Qayiq.uz",
+                "organization": "ООО «\"KEMA-FUTURE\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/93076b8468d7eac0827539ef739dd0996acbf76a.png",
+                "date": 1690179762713,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 10000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "kema future",
+                    "qayiq.uz",
+                    "кайик",
+                    "йфншй"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64cb88be08b7b2db7d536737",
+                "paycom_id": "64cb879cc5a099583175b0d1",
+                "name": "Service You",
+                "organization": "ООО «\"SERVICE YOU BUSINESS\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/83af680bb56c9150205fae2e1686b0f95a83604e.png",
+                "date": 1691060414716,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_type",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov maqsadi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Программное обеспечение",
+                                    "value": "1",
+                                    "title": "Программное обеспечение",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Услуга",
+                                    "value": "2",
+                                    "title": "Услуга",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "SERVICE YOU BUSINESS",
+                    "SERVISE YOU BUSINESS",
+                    "SERVIS YOU BUSINESS",
+                    "сервис ю",
+                    "сервис you",
+                    "ыукмшсу нщг"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64f6c35a7565023871198955",
+                "paycom_id": "64f0b8406e9d79e56c198d6e",
+                "name": "Vsales",
+                "organization": "ООО «ООО \"VENONS\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/75960de2ac9e34355247b4c301c539dc6ea7af16.png",
+                "date": 1693893466672,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "server_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "ID server",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "vsales",
+                    "всейлс",
+                    "мыфдуы"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "650c462f5240a8ca4dff1368",
+                "paycom_id": "650c45962918d26924fcaf01",
+                "name": "BILLZ Mobile",
+                "organization": "ИП ООО «\"SHOPPE GROUP\" MCHJ XK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/18b69b6b70b2cb2676fc3b96605fb13085eb73f9.png",
+                "date": 1695303215989,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "billz_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "BILLZ Mobile ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "billz",
+                    "биллз",
+                    "ишддя",
+                    "billz mobile"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65390189eb6ccae6f4e20388",
+                "paycom_id": "6539008a388fec2e459330c8",
+                "name": "AirExpress",
+                "organization": "ООО «\"AIREXPRESS\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/f53b290209b712d42b09221ddb01dc84ddda35d6.png",
+                "date": 1698234761077,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "AIREXPRESS",
+                    "AIREKSPRESS",
+                    "AIR EXPRES",
+                    "аир экспресс",
+                    "EXPRESS air"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6564661812bf499e637511f5",
+                "paycom_id": "6564647894dc4293bdd3c945",
+                "name": "Garant Textile",
+                "organization": "ООО «\"GARANT TEXTILE\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/8af657f8dffd2f67e8d1cedf94899d54307e55bc.png",
+                "date": 1701078552407,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "uchun to'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Мужские нательные майки",
+                                    "value": "1",
+                                    "title": "Мужские нательные майки",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Мужские футболки",
+                                    "value": "2",
+                                    "title": "Мужские футболки",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Garant",
+                    "GARANT TEXTILE",
+                    "гарант"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65827b7cd857dfafe0e9695b",
+                "paycom_id": "65827ace5c8188fb6e905faa",
+                "name": "Meest Export",
+                "organization": "ООО «\"MEEST EXPORT\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/67b08fff0e02af3ecf0e9b8118e56e22c15e08a5.png",
+                "date": 1703050108984,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "invoice_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Hisob-faktura raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Meest Export",
+                    "Меест экспорт",
+                    "Миист экспорт"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65dd962b88f9930638b5a2bb",
+                "paycom_id": "65dd94223c319dec9d8c52c0",
+                "name": "АLFAINVEST ",
+                "organization": "ЧП «NASIBULLIN ALFRED»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/884576f5c8b907585a9cd937fbf63e697123a7a0.png",
+                "date": 1709020715744,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "user_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Foydalanuvchi ID'si",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "alfainvest",
+                    "альфаинвест",
+                    "фдафштмуые",
+                    "fkmafbydtcn"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6602762912d57e0dca11eaff",
+                "paycom_id": "660275e65b347a44404c3e58",
+                "name": "3 kunlik intensive",
+                "organization": "ЧП «YUSUPDJANOV AKBARJON»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/b768b4126e2eb990b45e439937ea75ce5a5fe6a6.png",
+                "date": 1711437353713,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 99999999900,
+                        "require": "payment_for"
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "3 kunlik intensive",
+                                    "value": "3_days",
+                                    "title": "3 kunlik intensive",
+                                    "filter": null,
+                                    "amount": 3900000,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "3 kunlik intensive",
+                    "3 кунлик интенсив",
+                    "3 лгтдшл штеутышму"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6603e4e212d57e0dca11eee3",
+                "paycom_id": "6603e2945b347a44404c6664",
+                "name": "IT ALLIANCE SWS",
+                "organization": " «\"IT ALLIANCE SWS\" YSHB (UYUSHMA)»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/dbb3a0c20173956e08cc74ddfd543de3d329090d.png",
+                "date": 1711531234608,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "user_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Foydalanuvchi ID'si",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "order_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Buyurtma ID'si",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "IT ALLIANCE ",
+                    "IT ALLIANCE SWS",
+                    "\"IT ALLIANCE SWS\" YSHB (UYUSHMA) "
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "661391ae90823bcdf98bf7fd",
+                "paycom_id": "66139174abe7377ebe578ff2",
+                "name": "DIZAYN MARKET",
+                "organization": "СП «\"DIZAYN MARKET\" OK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/4cae5ee16dcefa4a81824188ccca47774d0386e6.png",
+                "date": 1712558510303,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "pay",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Uchun tolov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Издательско-полиграфические услуги",
+                                    "value": "1",
+                                    "title": "Издательско-полиграфические услуги",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "DIZAYN MARKET ",
+                    "СП «\"DIZAYN MARKET\" OK»",
+                    "дизайн маркет"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "662646587d6fb5f626ce67ea",
+                "paycom_id": "662646322eb76ec81b692b77",
+                "name": "marketing.uz",
+                "organization": "ООО «\"GREEN MARKETING SERVIS\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/37e321aa56c3e8e6c544b1300a0096200b8e3783.png",
+                "date": 1713784408200,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "brand",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Brend",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "marketing.uz",
+                    "маркетинг.уз",
+                    "ьфклуештпюгя",
+                    "vfhrtnbyu/ep",
+                    "marketing uz"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6639ebdb31cbad5e939feb82",
+                "paycom_id": "6639eb922eb76ec81b6a8184",
+                "name": "GIFTED ACCOUNTANT",
+                "organization": "ООО «\"GIFTED-ACCOUNTANT\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/a7555215dafd4a93d2323a51497fb349274f8970.png",
+                "date": 1715071963757,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "criteria",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Mezon",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "GIFTED ACCOUNTANT",
+                    "ПШАЕУВ ФССЩГТЕФТЕ",
+                    "гифтед аккаунтант",
+                    "ubantl frrfeynfyn"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "663de778af9a90fc9a153972",
+                "paycom_id": "663dc8e6fe41a3907df92319",
+                "name": "CENTRAL ASIA CERTIFICATION",
+                "organization": "ООО «\"CENTRAL ASIA CERTIFICATION\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/daf0cf7fea2fffc45f8dc83ec3084b9d38fbd85b.png",
+                "date": 1715332984421,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Kompaniya nomi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "CENTRAL ASIA CERTIFICATION",
+                    "централ азия сертификат",
+                    "сутекфд фышф сукешашсфешщт"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "66502e51b23b231bab8eecf6",
+                "paycom_id": "66502c2b0d43eb1d7266d368",
+                "name": "HR BARAKAGROUP ",
+                "organization": "ООО «\"HR BARAKAGROUP\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/e7d9d8f0e7cc73770e6b7de6e2530175adcc5a82.png",
+                "date": 1716530769893,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 99999999900,
+                        "require": "payment_for"
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Консультационные услуги",
+                                    "value": "123",
+                                    "amount": 620000000,
+                                    "title": "Консультационные услуги",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Familiyasi va ismi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "post",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Lavozim",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "company_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Kompaniya",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "e_mail",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "E-mail",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_or_tg",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "hr barakagroup",
+                    "рк ифкфлфпкщгз",
+                    "хр баракагроуп",
+                    "[h ,fhfrfuhjeg"
+                ],
+                "weight": 1.0444711805856203e-7,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5bebcc13f4239340c0208d83",
+                "paycom_id": "619e06df328ba73ec0fb44a5",
+                "name": "TNT Expess",
+                "organization": "ООО «Cargo Star»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/tnt.png",
+                "date": 1542179836597,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100000,
+                        "max": 100000000000
+                    },
+                    "account": [
+                        {
+                            "name": "invoice_id",
+                            "title": "Yukxat raqami",
+                            "content": "text",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "ете учзкуыы",
+                    "тнт экспресс",
+                    "тнт доставка"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5db05c3660753c412ac3b63b",
+                "paycom_id": "5daef25e7a1066cc7fe94884",
+                "name": "Idevelopers",
+                "organization": "ООО «Innovative developers»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/70f5153e53adf1ee8d6c7e35183292796ef4a08c.png",
+                "date": 1571839030392,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "error": null,
+                            "prefix": null,
+                            "replace": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "idevelopers",
+                    "idevelopers",
+                    "idevelopers"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5f104a1e343eb86f54d348a1",
+                "paycom_id": "5fc10d324602db17684d3c8f",
+                "name": "L-Factura",
+                "organization": "ООО «LAVINA TECH»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/c4eac5bb467193d596676aeef0f8dd94b7ede12c.png",
+                "date": 1594903070827,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 10000,
+                        "max": 1000000000
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "tin",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "STIR",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "счет фактура",
+                    "l-factura",
+                    "factura",
+                    "онлайн фактура",
+                    "lavina",
+                    "Д Афсегкф"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5f326acdc447727744caae38",
+                "paycom_id": "5f326a63ddff02e76ff401be",
+                "name": "SERVICE YOU LLC",
+                "organization": "ООО «SERVICE YOU»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/e4129a039ffd6ecb72b05009e250548b974a50ab.png",
+                "date": 1597139661935,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "cotract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": {
+                                "type": "static",
+                                "value": "SY/P",
+                                "output": true
+                            },
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "type_of",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Uchun to'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Программное обеспечение",
+                                    "value": "1",
+                                    "title": "Dasturiy ta'minot",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "c",
+                                    "value": "3",
+                                    "title": "Xizmat",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "service",
+                    "you",
+                    "сервис",
+                    "СЕРВИС ВАМ ООО",
+                    "service you"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5f3a8f3ae3e90a894c57388c",
+                "paycom_id": "5f351f88c4a7ff130588c90f",
+                "name": "mobisklad",
+                "organization": "ООО «UPGRADE»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/88da8dababc3f2260a98dc4a03f389893a29c656.png",
+                "date": 1597673274724,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.SH.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "period",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Davr",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": {
+                                "type": "static",
+                                "value": "+998",
+                                "output": false
+                            },
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "client_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Mijoz ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "upgrade",
+                    "up grade",
+                    "апгрейд",
+                    "upgrade",
+                    "мобисклад"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5f48ec805099c11c41f36580",
+                "paycom_id": "5f48b38e1d8bbeb111fb243b",
+                "name": "BEST-TAKSI",
+                "organization": "ООО «BEST-TAKSI GROUP»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/0c360ab67be476f1c3ccccfcca29105567cf3a53.png",
+                "date": 1598614656230,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "car_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Avtomobil raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "best-taksi",
+                    "best taksi",
+                    "бест такси",
+                    "перевозки",
+                    "BEST TAKSI GROUP"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5f49fb9e5099c11c41f365d8",
+                "paycom_id": "5f4794e31d8bbeb111fb1439",
+                "name": "FLEET MANAGEMENT SOLUTIONS ",
+                "organization": "ООО «FLEET MANAGEMENT SOLUTIONS»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/cdd99e401a19626c0d988ecd51d6ca720acc358e.png",
+                "date": 1598684062623,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "услуги",
+                    "менеджмент",
+                    "решения по управлению автопарком",
+                    "АДУУЕ ЬФТФПУЬУТЕ ЫЩДГЕШЩТЫ",
+                    "ЬФТФПУЬУТЕ ЫЩДГЕШЩТЫ"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5f646736f16460813551c2cf",
+                "paycom_id": "5f6465d10358bfd7352f5611",
+                "name": "in Science",
+                "organization": "ООО «ООО \"IN SCIENCE\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/a4be18722cb8dfb8b1934441951c2ab043ccc0d8.png",
+                "date": 1600415542352,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "transaction_param",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Мақола номи",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "in science",
+                    "ин сайнс",
+                    "онлайн сервис",
+                    "onlayn servis",
+                    "in Science",
+                    "шт ысшутсу",
+                    "в науке",
+                    "by cfqyc"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5f7c1b6a2af15d604f4c589e",
+                "paycom_id": "5f7af4ea4e196c50465b3103",
+                "name": " Grand Visa Center",
+                "organization": " Grand Visa Center",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/9f2380f084026dcb4b69ff6fbec499eac5e59cff.png",
+                "date": 1601969002810,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.SH.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "гранд виза центр",
+                    "grand visa center",
+                    "onlayn xizmat",
+                    "онлайн сервис"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "60055b4d84bdb89f3c126fb3",
+                "paycom_id": "600137828c0dbba78b3722e1",
+                "name": "B-PLAST COMPANY",
+                "organization": "ИП ООО «ООО \"B-PLAST COMPANY\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/f9ed62da390f8a89b1133b2ab956564f8f97d012.png",
+                "date": 1610963789059,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 10000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "FULL_NAME",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.SH.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "INN",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "STIR",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "услуга",
+                    "электронная",
+                    "би пласт",
+                    "И ЗДФЫЕ СЩЬЗФТН",
+                    "PLAST COMPANY"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "602111d984bdb89f3c127cc1",
+                "paycom_id": "601a50485a08a5dda944c484",
+                "name": "Aquabox",
+                "organization": "ООО «OOO \"RISE GROUP\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/189d3440febc234d2053217b291631922660eab1.png",
+                "date": 1612779993975,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 40000,
+                        "max": 5000000
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "terminal",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Apparati",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "№67   Ул. Амира Темура, д8",
+                                    "value": "864764031435296",
+                                    "title": "№67   Ул. Амира Темура, д8",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№63   Себзор, д9",
+                                    "value": "864369031546512",
+                                    "title": "№63   Себзор, д9",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№66   Чорсу, д10",
+                                    "value": "866262031525875",
+                                    "title": "№66   Чорсу, д10",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№64   Юнусабад 4, д63",
+                                    "value": "864369035127533",
+                                    "title": "№64   Юнусабад 4, д63",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№77   Юнус-Абад 4, д 67",
+                                    "value": "864369035383276",
+                                    "title": "№77   Юнус-Абад 4, д 67",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№74   Юнусабад 4, д5",
+                                    "value": "864713035839359",
+                                    "title": "№74   Юнусабад 4, д5",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№71   Юнус-абад 4, д21",
+                                    "value": "865472031836229",
+                                    "title": "№71   Юнус-абад 4, д21",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№72   Юнус-Абад 4, д45",
+                                    "value": "865210039801393",
+                                    "title": "№72   Юнус-Абад 4, д45",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№65   Юнус-абад 4, д10",
+                                    "value": "866262036790961",
+                                    "title": "№65   Юнус-абад 4, д10",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№70   Юнус-абад 4, д42",
+                                    "value": "865992031223888",
+                                    "title": "№70   Юнус-абад 4, д42",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№68   Юнусабад 17, д23",
+                                    "value": "864764030423145",
+                                    "title": "№68   Юнусабад 17, д23",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№69   Юнусабад 17, д8",
+                                    "value": "866029034684664",
+                                    "title": "№69   Юнусабад 17, д8",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№62   Юнусабад 17, д17",
+                                    "value": "865904028392683",
+                                    "title": "№62   Юнусабад 17, д17",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№59   Юнус-Абад 17, д1",
+                                    "value": "867858035971236",
+                                    "title": "№59   Юнус-Абад 17, д1",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№57   Юнус-Абад д2",
+                                    "value": "865472036177512",
+                                    "title": "№57   Юнус-Абад д2",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№60   Дархан, д8",
+                                    "value": "864713039967016",
+                                    "title": "№60   Дархан, д8",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№95   Юнус-Абад 11, д59",
+                                    "value": "865992034304156",
+                                    "title": "№95   Юнус-Абад 11, д59",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№97   Юнусабад 15, д23",
+                                    "value": "865210036351749",
+                                    "title": "№97   Юнусабад 15, д23",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№102   Юнус-абад 15, д75",
+                                    "value": "865472038590944",
+                                    "title": "№102   Юнус-абад 15, д75",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№90   Юнус-Абад 15, д14",
+                                    "value": "864369034600191",
+                                    "title": "№90   Юнус-Абад 15, д14",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№93   Юнус-абад 11, д41",
+                                    "value": "866029037220433",
+                                    "title": "№93   Юнус-абад 11, д41",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№92   Юнус-абад 11, д25",
+                                    "value": "865992033972227",
+                                    "title": "№92   Юнус-абад 11, д25",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "№96   Юнусабад 11, д26",
+                                    "value": "866029031128269",
+                                    "title": "№96   Юнусабад 11, д26",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "aquabox",
+                    "питьевая вода",
+                    "водичка",
+                    "аква бокс",
+                    "аквабокс",
+                    "фйгфищч"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "603cf15c2d127859d8d42d41",
+                "paycom_id": "603cefc032b9d27ba076c7a1",
+                "name": "RCS",
+                "organization": "ООО «\"REAL CONSULT-SERVICE\" MChJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/1048af9c688f36615a66562ae868e7c4ab91370e.png",
+                "date": 1614606684442,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.SH.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "adress",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Manzil",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "registration_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Ro'yxatdan o'tish raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "rcs",
+                    "real consult service",
+                    "реал консалт сервис",
+                    "consult service"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "60485e176692e73f84604e2b",
+                "paycom_id": "60485e176692e73f84604e2b",
+                "name": "INSON HUQUQLARI BO'YICHA O'ZBEKISTON RESPUBLIKASI MILLIY MARKAZI",
+                "organization": "ООО «Demokratlashtirish va inson huquqlari»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/0e9291370f5e687a2ef53e3bd7ec3bb283ef3021.png",
+                "date": 1615355652593,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "inson",
+                    "благотворительность",
+                    ",kfujndjhbntkmyjcnm",
+                    "huquqlari",
+                    "инсон",
+                    "НАЦИОНАЛЬНЫЙ ЦЕНТР ПРАВ ЧЕЛОВЕКА"
+                ],
+                "weight": 0,
+                "maintenance": "Ta'minotchi vaqtinchalik ishlamayapti, texnik ishlar olib borilmoqda.",
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "60754e15b8d597ed134d8a62",
+                "paycom_id": "60753467e928245e531ca47e",
+                "name": "SHAFRAN ",
+                "organization": "ООО «ЧП \"SOBIR OMAD\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/38f6b0499a55ad0c2f039720fc99b31e627b8393.png",
+                "date": 1618300437274,
+                "terminal": {
+                    "type": "link",
+                    "endpoint": "https://www.restoran-shafran.uz/",
+                    "link_type": "external"
+                },
+                "keywords": [
+                    "ресторан",
+                    "шафран",
+                    "restoran",
+                    "shafran",
+                    "ырфакфт",
+                    "ifahfy"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "60810272b8d597ed134d934f",
+                "paycom_id": "608101a1bb26196eba43b09f",
+                "name": "ABSOFT",
+                "organization": "ООО «ООО \"ABSOFT\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/122ac3932584a665af8e8bdecb47df3eddb59839.png",
+                "date": 1619067506182,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "purpose_of_payment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "to'lov maqsadi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "абсофт",
+                    "software",
+                    "программное обеспечение",
+                    "ФИЫЩАЕ"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6103d15f12950f485b3b11bf",
+                "paycom_id": "61025f36958486ea8f745d1d",
+                "name": "AGROONLINE",
+                "organization": "ООО «\"AGROONLINE\" MChJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/61c06a53ae8dbd352d54ecfd9b46248ff3fe77dc.png",
+                "date": 1627640159317,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 100000000,
+                        "min": 50000,
+                        "round": true
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "TIN",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "STIR",
+                            "type": "text",
+                            "validation": "^[0-9]{9,9}$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "AGROONLINE",
+                    "AGRO ONLINE",
+                    "агро онлайн",
+                    "продукты",
+                    "агроонлайн",
+                    "фпкщщтдшту",
+                    "fuhjjykfqy"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6182691de7c3186a3150b90e",
+                "paycom_id": "61c596aadb64a8255a3bbd05",
+                "name": "Alchiroq-Tournament",
+                "organization": "ООО «SYNERIKA»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/81606e6aee984e14d4a507449c306f7bf7a5cb54.png",
+                "date": 1635936541666,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 10000000000,
+                        "min": 50000,
+                        "round": true
+                    },
+                    "account": [
+                        {
+                            "content": "phone",
+                            "length": 9,
+                            "name": "key",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqamingiz",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": {
+                                "type": "static",
+                                "value": "+998",
+                                "output": true
+                            },
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Alchiroq-Tournament",
+                    "Al chiroq",
+                    "ал чирок",
+                    "алчирок",
+                    "SYNERIKA",
+                    "Фдсршкщй Ещгктфьуте",
+                    "ынтукшлф"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "61a5ba233605ed2b7405c396",
+                "paycom_id": "619cb0f7328ba73ec0fb1e5d",
+                "name": "GRUSHA",
+                "organization": "ООО «ООО \"AESTAS ENTERPRISES GROUP\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/0a905bb5e4f617a1c12fd74de2b07f3ae0e47cf1.png",
+                "date": 1638251043637,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 10000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "груша",
+                    "пкгырф",
+                    "aestas enterprises group",
+                    "uheif"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5936baa9ea49a9b6abed7355",
+                "paycom_id": "5bd6d730f35e919e532d5796",
+                "name": "FileCloud",
+                "organization": "ООО «SHADOW BOX»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/filecloud.png",
+                "date": 1399114284039,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 50000,
+                        "max": 100000000
+                    },
+                    "account": [
+                        {
+                            "name": "account_id",
+                            "title": "Akkaunt ID",
+                            "content": "text",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "облочное хранилище",
+                    "ашдусдщгв",
+                    "облачное хранилище",
+                    "FileCloud"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5cd14d859891d112648d7c49",
+                "paycom_id": "5ccc3c401722d50474387df2",
+                "name": "AGROSYSTEMS",
+                "organization": "OOO \"AGROSYSTEMS \"",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/5ccc3c401722d50474387df2.png",
+                "date": 1557220022464,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100000,
+                        "max": 99999999900
+                    },
+                    "account": [
+                        {
+                            "name": "account_id",
+                            "title": "Telefon raqami",
+                            "content": "text",
+                            "type": "text",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "error": null,
+                            "placeholder": "",
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "агросистемс",
+                    "гидрокуллеры",
+                    "фпкщыныеуьы",
+                    "AGROSYSTEMS"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5f8ed4c6ea62ccfa6119cb79",
+                "paycom_id": "5f92b050740f35d3638a83a7",
+                "name": "RABOCHIE-TETRADI.UZ",
+                "organization": "ООО «UNIQUE PRINT»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/4192a147650698d1f9d715dec6a0106cfb3c124d.png",
+                "date": 1603196102970,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 9999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "unique",
+                    "print",
+                    "принт",
+                    "унику",
+                    "гтшйгу",
+                    "зкште",
+                    "RABOCHIE-TETRADI.UZ"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "5ff31d0984bdb89f3c1267f8",
+                "paycom_id": "5ff31cb6dc00d62a48fad7af",
+                "name": "ULUG' YO'L",
+                "organization": "ООО «ANGREN ZIYO»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/68a6b2af27c1362c2d21ea7645eda47f7496a7fd.png",
+                "date": 1609768201096,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "phone",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Tolovchini F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "улуг йол",
+                    "онлайн сервис",
+                    "ulug yol",
+                    "onlayn xizmatlar",
+                    "ANGREN ZIYO",
+                    "ФТПКУТ ЯШНЩ"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "602a679084bdb89f3c127fe1",
+                "paycom_id": "602a66672f3eb10fc9859788",
+                "name": "ZIRA",
+                "organization": "ООО «ООО \"ZIRA CHEF\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/112e721ea46fcdb47efccd3ba4d1b602a3bad463.png",
+                "date": 1613391760819,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "type",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Uchun to'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Мастер Класс Zira",
+                                    "value": "1",
+                                    "title": "Мастер Класс Zira",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Кулинарный журнал Zira",
+                                    "value": "2",
+                                    "title": "Кулинарный журнал Zira",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Рекламу",
+                                    "value": "3",
+                                    "title": "Рекламу",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Аренду",
+                                    "value": "4",
+                                    "title": "Аренду",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "comment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Izoh",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "zira",
+                    "chef",
+                    "зира",
+                    "шеф"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "61014c8e12950f485b3b106f",
+                "paycom_id": "60efcf364be7164be6d93472",
+                "name": "VENONS",
+                "organization": "ООО «ООО \"VENONS\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/2b343b6db9162415b3ffb18d40493d42a34845fc.png",
+                "date": 1627475086922,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Xizmat",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Программное обеспечение",
+                                    "value": "Software",
+                                    "title": "Dasturiy ta'minot",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Поддержка",
+                                    "value": "Support",
+                                    "title": "Yordam",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "comment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Izoh",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Onlayn xizmatlar",
+                    "онлайн сервисы",
+                    "VENONS",
+                    "венонс",
+                    "МУТЩТЫ",
+                    "dtyjyc"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "618276eae7c3186a3150b958",
+                "paycom_id": "6182744b64198587b893fbb8",
+                "name": "O'zbekiston ovozi",
+                "organization": "ООО «O'ZBEKISTON OVOZI»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/182e5e37b1e9623711e8d58d33abfe003d88b671.png",
+                "date": 1635940074844,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 99999999900,
+                        "require": "Subscription_type"
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "Full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "Address",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Manzil",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "name": "Subscription_type",
+                            "title": "Obuna turi",
+                            "require": null,
+                            "type": "select",
+                            "prefix": null,
+                            "replace": null,
+                            "validation": null,
+                            "placeholder": "",
+                            "values": [
+                                {
+                                    "value": "Газета «Ўзбекистон овози» полугодовая",
+                                    "amount": 29250000,
+                                    "title": "«O'zbekiston ovozi» gazetasi yarim yillik",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "value": "Газета «Ўзбекистон овози» годовая",
+                                    "amount": 58500000,
+                                    "title": "«O'zbekiston ovozi» gazetasi yillik",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "O'ZBEKISTON OVOZI",
+                    "Ozbekiston",
+                    "ovozi",
+                    "uzbekiston",
+                    "узбекистан",
+                    "узб",
+                    "овози",
+                    "Щяиулшыещт щмщяш",
+                    "голос узбекистана"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "623c3c3e13f200ec5daec84a",
+                "paycom_id": "623c3bbabd1c329a32de7bfb",
+                "name": "ALOHIDA MAVZU",
+                "organization": "ООО «\"OSMONDAGI BOLALAR LOYIHASI\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/749fe28c629459dc17b8403589f7424ba26c3566.png",
+                "date": 1648114750442,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "comment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Izoh",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Благотворительность",
+                    "Фонды",
+                    "Фдщршвф Ьфмяг",
+                    "ALOHIDA MAVZU",
+                    "Алохида Мавзу"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "62877da844589c0316db50d7",
+                "paycom_id": "62877d03d7e616cbdee67b86",
+                "name": "NA SOKAH TASHKENT",
+                "organization": "ЧП «ERGASHBAYEV ILXOM»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/abf5c51bf8c6aa272ae3b84c7bbe345a44a0cbd1.png",
+                "date": 1653046696115,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "NA SOKAH TASHKENT",
+                    "На Соках Ташкент",
+                    "Тф Ыщлфр Ефырлуте"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "628f5cc2ddb5245414e3a6ec",
+                "paycom_id": "628f5c7710aeb2aeedaa4c7b",
+                "name": "ENG BOX",
+                "organization": "ООО «MCHJ ENG BOX»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/6a3fa06e7056880f34176c2e8b1c27bd6584daa6.png",
+                "date": 1653562562784,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Sharh",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "ENG BOX",
+                    "утп ищч",
+                    "engbox"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "629dc36aaa40a686d47ce973",
+                "paycom_id": "629dc3363cfcbb1628b3dba9",
+                "name": "ISTIQLOL-TV",
+                "organization": "ООО «\"ISTIQLOL-TV\" M.CH.J»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/d9caf8885e5ee9d5c1aa1641f0876e1b4974d2a0.png",
+                "date": 1654506346573,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "first_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Фамилия",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "ISTIQLOL-TV",
+                    "Истиклол-ТВ",
+                    "Шыешйдщд-ЕМ"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "62a0397baa40a686d47cf1f6",
+                "paycom_id": "62a03931c14e3c99ddcfd3a7",
+                "name": "NTV",
+                "organization": "ООО «ISTIQLOL-TV»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/d0f68d706afb7e397b57d8587ac4e3b3a210bb84.png",
+                "date": 1654667643571,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "NTV",
+                    "НТВ",
+                    "ТЕМ",
+                    "YND"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "62b012412abe8594b27f4efa",
+                "paycom_id": "62ac137811677afc6b111839",
+                "name": "ConsultMe",
+                "organization": "ООО «MCHJ SAYFULLOH GROUP 2020»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/4b7dc5a348cc907a8c0ecbc53c1bfc8cb4fa7871.png",
+                "date": 1655706177648,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "user_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Foydalanuvchi ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "ConsultMe",
+                    "СщтыгдеЬу",
+                    "консалтми",
+                    "консалтми"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "62b018cb2abe8594b27f503d",
+                "paycom_id": "62b018786a1a1d8d2dee86d4",
+                "name": "MAMAPHOTOGRAPHYRU",
+                "organization": "ООО «ЧП \"MAMAPHOTOGRAPHYRU\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/ec8f3d3f54f6e4b97310e24eeec93c28badfc6ed.png",
+                "date": 1655707851968,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "MAMAPHOTOGRAPHYRU",
+                    "Мамафотографиру",
+                    "Ьфьфзрщещпкфзрнкг"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "62d540160721155acbfdb4cc",
+                "paycom_id": "62d509d6420399cd046045e3",
+                "name": "10 PLUS MARKET 2022",
+                "organization": "ООО «\"10 PLUS MARKET 2022\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/0565e471a00fd5ef30671ef41bb6897f2e8438d3.png",
+                "date": 1658142742747,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 200000000,
+                        "min": 100000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "phone",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Foydalanuvchi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "10 PLUS MARKET",
+                    "10 plus market",
+                    "10 плюс маркет"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "62ed265d5a4746e92b379fac",
+                "paycom_id": "62ed25ef39c675be34e67199",
+                "name": "Myprint.uz ",
+                "organization": "ООО «\"THE NEXT DREAM\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/6f0fecbda538d44be17f11993aa2b03442846728.png",
+                "date": 1659709021871,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "id",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "receiver",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Manzil",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Afruz",
+                                    "value": "afruz",
+                                    "title": "Afruz",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "O’rda",
+                                    "value": "orda",
+                                    "title": "O’rda",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Myprint.uz ",
+                    "майпринт",
+                    "Myprint"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "62fdd31d05d1eba76a631c97",
+                "paycom_id": "62fdd12146dc858668f560d2",
+                "name": "REFOCUS",
+                "organization": "ООО «\"ILM-FAN VA INNOVATSIYALAR AKADEMIYASI\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/192e6b777b00b508f89a300c3608195e14297071.png",
+                "date": 1660801821465,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 10000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "name_of_the_article",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Maqola nomi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "REFOCUS",
+                    "refocus",
+                    "рефокус",
+                    "куащсгы",
+                    "сервисы"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "632af7af75feb1ed5f22a966",
+                "paycom_id": "632af6d126e0de443d6ec24d",
+                "name": "LEWORMAN",
+                "organization": "ЧП «TURSUNOV SINDORBEK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/d759f9d8f92543829b657a8cc994d0aee0340572.png",
+                "date": 1663760303842,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "LEWORMAN",
+                    "ЛЕВОРМАН",
+                    "Дуцщуьфт"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6332cee38c5b3960fce5fe39",
+                "paycom_id": "6332cea192bf46e26edd0593",
+                "name": "ALTO ENERGY",
+                "organization": "ООО «\"ALTO ENERGY SRL\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/f74b99da6495c4a496cb4d2ab91814de1483e7ec.png",
+                "date": 1664274147880,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "TIN",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "ALTO ENERGY",
+                    "ALTO ",
+                    "альто"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6343f1b21fe5cc9de25ec100",
+                "paycom_id": "6343f0e40c7921dcc839ba87",
+                "name": "ZAMAAN ",
+                "organization": "ООО «MCHJ KOSIMOV ART AND IT GROUP»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/da6ce9529fc830693b2a1432ecfb0b5e40b74312.png",
+                "date": 1665397170595,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": "^(\\+?998)?[0-9]{9}$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "ZAMAAN",
+                    "ЯФЬФФТ",
+                    "замаан",
+                    "pfvffy"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6346b6a81fe5cc9de25ec562",
+                "paycom_id": "6346b6723eaf684310f1e84f",
+                "name": "LDG EXPRESS",
+                "organization": "ООО «\"LDG EXPRESS\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/ba30ec81eb540072f847d1865320e86ad45df3c2.png",
+                "date": 1665578664383,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "LDG EXPRESS",
+                    "LDG",
+                    "лдг"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6371dff5921c171a36fade11",
+                "paycom_id": "6371dc5ce07cd29f146879a0",
+                "name": "BURHAN CONSULT ",
+                "organization": "ООО «\"MUBORAK BIZNES MAKTABI\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/8a0d7f113d68a7f79bad472fa07573b6cb7faccf.png",
+                "date": 1668407285937,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "BURHAN CONSULT",
+                    "ИГКРФТ СЩТЫГДЕ",
+                    ",eh[fy rjycfkn",
+                    "бурхан консалт"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6373388e4b9dae16dc8a1ceb",
+                "paycom_id": "6373382de07cd29f1468a9f6",
+                "name": "OLMALIQ HAYOTI",
+                "organization": "ООО «\"OLMALIQ HAYOTI  GAZETASI TAXRIRIYATI DAVLAT MUASSASASI\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/4b8de0bea88a0e1aecb3edada6971bca61783961.png",
+                "date": 1668495502721,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "address",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Manzil",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "place_work",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Ish joyi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "OLMALIQ HAYOTI",
+                    "olmaliq hayoti",
+                    "Olmaliq hayoti",
+                    "Олмалык хайот",
+                    "ОЛМАОЫК ХАЙОТ"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6373793912e3f0b8fca23d98",
+                "paycom_id": "6373782b4050a4f68531ffee",
+                "name": "OILA VA TABIAT GAZETASI",
+                "organization": "СП ООО «\"OILA VA TABIAT GAZETASI\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/f94870932cd3c5cebb697b7a23f13ad5ee4ca0c0.png",
+                "date": 1668512057486,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "adress",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Manzil",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "OILA VA TABIAT GAZETASI",
+                    "Оила ва табиат газетаси",
+                    "Щшдф мф ефишфе пфяуефыш"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "638706fb912b0e828a2c0d27",
+                "paycom_id": "638705134050a4f68534cb2f",
+                "name": "uPraktika.uz",
+                "organization": "ООО «PRAKTIKA ONE»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/913552ae6516eed100ea15deb88f42f9ef70746f.png",
+                "date": 1669793531067,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "email",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Login",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "uPraktika",
+                    "юпрактика",
+                    "упрактика",
+                    "PRAKTIKA ONE"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "63a4244dceaba24113c39421",
+                "paycom_id": "63a423db4b7facfd06c425ce",
+                "name": "SKS",
+                "organization": "ООО «\"DYNAMICC GLOBAL\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/b727233b22af4c6d910003e33d7a280b3ead2d3f.png",
+                "date": 1671701581328,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shirkat Nomi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "SKS",
+                    "скс",
+                    "ылы"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "63e62e0c5a05f76fd5a6c7a7",
+                "paycom_id": "63e62d56ed01190def7dd57d",
+                "name": "QASHQADARYO AHLI",
+                "organization": "ООО «\"KASHKADARYA GROUP\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/40927a22b5761aecc41a55b777e116d276ff95b9.png",
+                "date": 1676029452320,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": "^(\\+?998)?[0-9]{9}$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "QASHQADARYO AHLI",
+                    "ЙФЫРЙФВФКНЩ ФРДШ",
+                    "КАШКАДАРЁ АХЛИ",
+                    "RFIRFLFH~ F{KB"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "63fd90db6a689d2b4b956422",
+                "paycom_id": "63f4b2ee2c4604cfd1bd986c",
+                "name": "PIPE METAL",
+                "organization": "ООО «\"PIPE METAL\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/d08ef7ea71949861893c9108b8946ea037ee3a1a.png",
+                "date": 1677562075779,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "pipe metal",
+                    "пайп метал",
+                    "payp",
+                    "зшзу ьуефд",
+                    "gfqg vtnfk"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "640730666a689d2b4b9579ae",
+                "paycom_id": "64003ae0d28ccf3393d1d2b5",
+                "name": "Optochka",
+                "organization": "ООО «MOLLYSHOP»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/075b6046e185b01da8355319185d327b4525c178.png",
+                "date": 1678192742605,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 50000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "brand_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Brend ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Optochka",
+                    "Опточка",
+                    "Щзещсрлф",
+                    "Jgnjxrf"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64258cf26a689d2b4b9599b2",
+                "paycom_id": "642583a9fc0dc40f8260b0c8",
+                "name": "THE CONCERTS",
+                "organization": "ООО «\"THE CONCERTS\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/216eed90ffaff39a87536af8476bdd7ae09b2665.png",
+                "date": 1680182514654,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "email",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "EMAIL",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "THE CONCERTS",
+                    "concenrts",
+                    "концерт",
+                    "kansert",
+                    "consert",
+                    "concert",
+                    "сщтсукеы",
+                    "еру сщтсукеы"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "642e8dd6edabbd6b24e6dbbe",
+                "paycom_id": "64254d266420371977b5d395",
+                "name": "Mison",
+                "organization": "ООО «\"AUTOMATION SOURCE\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/cfcdf56045d1463fd4d412150e571a88fed1e959.png",
+                "date": 1680772566933,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 1000000000,
+                        "min": 100000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "ID Савдо нуктаси",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Mison",
+                    "vbcjy",
+                    "мисон"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6436b2ba758073ffaef3d190",
+                "paycom_id": "6436b1b78ee89704b522c2b9",
+                "name": "BIOREZONANS",
+                "organization": "ООО «ЧП \"BIOREZONANS\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/929bfae9eb07711f49561e7871aae422e883d0e6.png",
+                "date": 1681306298035,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "biorezonans",
+                    "биорезонанс",
+                    "ишщкуящтфты",
+                    "rezonans",
+                    "резонанс"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "643d1ffe3b2ea5dd250e56b3",
+                "paycom_id": "643d1e3a7eb779614cabea19",
+                "name": "ALTERA KTS",
+                "organization": "ООО «\"ALTERA KTS\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/dc759348fb338c3227edb8cbe67f4fbb255967eb.png",
+                "date": 1681727486563,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lovchining nomi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "inn_info",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lovchining STIR",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "ТЎЛОВ ТАВСИЛОТИ",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "ALTERA KTS",
+                    "алтера ктс",
+                    "фдеукф леы",
+                    "alter kts"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6448c980fdac8ead525c65e9",
+                "paycom_id": "6448c88a787e654c83af30a0",
+                "name": "Vades Prints",
+                "organization": "ООО «MASSIVE DYNAMICS GROUP MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/2e30f5191d00683a6ef01523d068205616f7c1ea.png",
+                "date": 1682491776617,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "company",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Tashkilot nomi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Vades Prints",
+                    "vade print",
+                    "print vades",
+                    "вадес принтс",
+                    "мфвуы зкштеы"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6450ef995a26a8829b865a04",
+                "paycom_id": "6450eaff6fd382828be2cf44",
+                "name": "Webcoders.uz",
+                "organization": "ЧП «RAJABOV ISKANDAR»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/dc725fb5801a5e9e6904e1f68565b820cd2c382c.png",
+                "date": 1683025817803,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "user_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Foydalanuvchi ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Webcoders",
+                    "Цуисщвукы",
+                    "вебкодерс",
+                    "dt,rjlthc"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "645cd0798367719e00a44914",
+                "paycom_id": "642ec15d69ec50f00a601285",
+                "name": "O‘ZBEKISTON KUZATUV KENGASHLARINING MUSTAQIL A’ZOLARI ASSOTSIATSIYASI",
+                "organization": "ННО «O‘ZBEKISTON KUZATUV KENGASHLARINING MUSTAQIL A’ZOLARI ASSOTSIATSIYASI»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/f50c7e5717450d0e25df72fa65ff86c9a1250501.png",
+                "date": 1683804281707,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_type",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov turi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "кириш ва аъзолик бадали",
+                                    "value": "1",
+                                    "title": "кириш ва аъзолик бадали",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "аъзолик бадали",
+                                    "value": "2",
+                                    "title": "аъзолик бадали",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "ҳомийлик",
+                                    "value": "3",
+                                    "title": "ҳомийлик",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "пуллик хизматлар",
+                                    "value": "4",
+                                    "title": "пуллик хизматлар",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "O'zbekiston kuzatuv assotsiatsiyasi",
+                    "ozbekiston",
+                    "kuzatuv assotsiatsiyasi",
+                    "kengash",
+                    "okkmaa"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6461d3e38367719e00a44dbb",
+                "paycom_id": "6461d2ef2cb83937a7544750",
+                "name": "YaTT Abrorov",
+                "organization": "ЧП «ABROROV SHUHRATJON»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/452ce34ff3b0c727be9ce7c851fd89aa9731bc56.png",
+                "date": 1684132835486,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "service",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Xizmat",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Консультация",
+                                    "value": "1",
+                                    "title": "Консультация",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "YaTT Abrorov",
+                    "Abrorov",
+                    "ABROROV SHUHRATJON MAMIRJONOVICH "
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64660982a85b193a201c3f7a",
+                "paycom_id": "646608cc2cb83937a754a532",
+                "name": "WECOSMOS TRANSFER",
+                "organization": "ООО «\"MOC CREATIVE ORG\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/a6a308d9b01001a7c0eb1cdf50fba05f0f874759.png",
+                "date": 1684408706001,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": []
+                },
+                "keywords": [
+                    "WECOSMOS TRANSFER",
+                    "Викосмос Трансфер",
+                    "Цусщыьщы Екфтыаук"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64675b5ca85b193a201c4300",
+                "paycom_id": "64257003fc0dc40f8260ae24",
+                "name": "ELBOP El TANLOVI",
+                "organization": "ООО «\"NILU ULUG' TO'LOV SERVIS\" XK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/81813cc9980714a51d42656b91c65fb23bc96483.png",
+                "date": 1684495196165,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "ID",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "ELBOP El TANLOVI",
+                    "ELBOP",
+                    "елбоп"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "646e0fa6d46ad0b8e075a46b",
+                "paycom_id": "646db0c92cb83937a7552eab",
+                "name": "CARDPLACE",
+                "organization": "ЧП «NAZARBAYEV DAURANBEK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/59ea33b9fba80394dd98c409699a180174375654.png",
+                "date": 1684934566039,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "cardplace",
+                    "kardplace",
+                    "кардплейс",
+                    "cardplays"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6475cafcc34b8a5ddef9994c",
+                "paycom_id": "6475bf5c2cb83937a755bcad",
+                "name": "Oila Hayot Tayanchi",
+                "organization": "ООО «ООО \"OILA HAYOT TAYANCHI\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/89a6ff893c91b328540843d7f4c757736b65199a.png",
+                "date": 1685441276147,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "Contract",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Oila Hayot Tayanchi",
+                    "Оила Хаёт Таяначи",
+                    "Оила Хает Таяначи",
+                    "Щшдф Рфнще Ефнфтфсрш"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "647d79afc34b8a5ddef9a548",
+                "paycom_id": "647d743691ddb4af598ceae4",
+                "name": "POST AND MAIL",
+                "organization": "ООО «\"POST AND MAIL\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/510f570d393e8d75008b0a04581cd0d1dd9bd853.png",
+                "date": 1685944751739,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "invoice",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Invoice",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "POST AND MAIL",
+                    "пост энд мэйл",
+                    "зщые фтв ьфшд",
+                    "gjcn 'yl v'qk",
+                    "APS express"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "647dd23dc34b8a5ddef9a66e",
+                "paycom_id": "647dc67991ddb4af598cf89f",
+                "name": "Форум \" Два Сердца\"",
+                "organization": "ООО «ЧП \"MAMAPHOTOGRAPHYRU\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/6d197f605f29b49d4d82f2bf79f68ea7f6ade3ee.png",
+                "date": 1685967421050,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Форум \" Два Сердца\"",
+                    "форум два сердца",
+                    "forum 2 serdca",
+                    "forum dva",
+                    "форум 2 сердца",
+                    "форум два серца"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6486fc34c34b8a5ddef9b2b8",
+                "paycom_id": "6486c52cf04ccd1a88978de0",
+                "name": "Loco Cofe Chocolocma",
+                "organization": "ООО «\"LOCO COFE\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/feaa4f31a4e1e5d7a3d89f2f5c92e32a1f39ff8f.png",
+                "date": 1686567988348,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 10000000000,
+                        "min": 50000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "order_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "order_id",
+                            "type": "text",
+                            "validation": "^[a-zA-Zа-яА-ЯёЁ0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Chocolocma LOCO COFE ",
+                    "Loco Cofe",
+                    "Loco Cofe Chocolocma"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6486fc6ec34b8a5ddef9b2be",
+                "paycom_id": "6486c4fa678a098574dd865f",
+                "name": "Loco Cofe Dreampizza",
+                "organization": "ООО «\"LOCO COFE\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/feaa4f31a4e1e5d7a3d89f2f5c92e32a1f39ff8f.png",
+                "date": 1686568046424,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 10000000000,
+                        "min": 50000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "order_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "order_id",
+                            "type": "text",
+                            "validation": "^[a-zA-Zа-яА-ЯёЁ0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Dreampizza LOCO COFE ",
+                    "LOCO COFE ",
+                    "Loco Cofe Dreampizza"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64a6a80e5b17f8b641a8e5bd",
+                "paycom_id": "64a504fb5dad647a1817d107",
+                "name": "THE SUNMEE",
+                "organization": "ООО «\"THE SUNMEE\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/6ba943133bd8fd97988dce879601caf03238d3db.png",
+                "date": 1688643598540,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "user_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Foydalanuvchi IDsi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "THE SUNMEE",
+                    "еру ыгтьуу",
+                    "зе сунмее"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64b6426b5b17f8b641a8ff06",
+                "paycom_id": "64b6353ce4e564c982857d48",
+                "name": "FINSOFT",
+                "organization": "ООО «\"FINSOFT\" XK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/679e2a97e194aa8b906a0921dc41a543fc8fb2c2.png",
+                "date": 1689666155544,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Оплата за",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Программное обеспечение",
+                                    "value": "1",
+                                    "title": "Программное обеспечение",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "ИТС",
+                                    "value": "2",
+                                    "title": "ИТС",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Услуга",
+                                    "value": "3",
+                                    "title": "Услуга",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "finsoft",
+                    "финсофт",
+                    "fin soft"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64bfb5a25b17f8b641a91010",
+                "paycom_id": "64bfb512e4e564c982863d96",
+                "name": "GPTuz",
+                "organization": "ЧП «GORBATOV ROMAN»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/05eab0f3bd97daf3370fbfaf468e7191392db500.png",
+                "date": 1690285474571,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 99999999900,
+                        "require": "subscribtion"
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "order_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Foydalanuvchi IDsi",
+                            "type": "text",
+                            "validation": "^[0-15]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "subscribtion",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Obunani tanlang:",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Обычная",
+                                    "value": "1",
+                                    "amount": 3500000,
+                                    "title": "Обычная",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "GPTuz",
+                    "ГПТ",
+                    "ChatGpt"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64d0b9cd90741bb8be230e31",
+                "paycom_id": "64ab9a97e4e564c9828497f1",
+                "name": "ABV",
+                "organization": "ООО «B2B SPACE»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/066630c04772974f6de121505f2a57b51f5962ac.png",
+                "date": 1691400653889,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100000,
+                        "round": true
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "tin",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "STIR",
+                            "type": "text",
+                            "validation": "^[0-9]{9,14}$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "ABV-PAY ",
+                    "abv",
+                    "B2B SPACE "
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64d0dfd890741bb8be230f11",
+                "paycom_id": "6479806e1e8ba13c13ac863c",
+                "name": "UzMbApps",
+                "organization": "ЧП «ASHIRMETOV SARDOR»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/dc63c3a45419d29c33343297937bb1c5db847e42.png",
+                "date": 1691410392522,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 10000000,
+                        "min": 100000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "user_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqam",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "product_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "App id",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "uzmbapps",
+                    "узмбаппс",
+                    "гяьифззы"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64d21f9bf9d1730016a3ac95",
+                "paycom_id": "64b92a56277265fa82e1e70b",
+                "name": "INFORABOTA",
+                "organization": "ООО «\"INFORABOTA\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/4b64c370566877adb30761dadc70a64be6266378.png",
+                "date": 1691492251116,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 9999999600,
+                        "min": 100000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "key",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "ID",
+                            "type": "text",
+                            "validation": "^[0-9]{0,10}$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "INFORABOTA",
+                    "Jobo",
+                    "джобо",
+                    "joba",
+                    "info rabota"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64d9eb9871e0baa108e0c54e",
+                "paycom_id": "64d9ea1ca8a1f5ec97d1c14a",
+                "name": "Allfresh",
+                "organization": "ЧП «XAMRAYEV SANDJAR»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/7daf7ff6ba91e7f99e2c0dbb96a6e71ca57d9821.png",
+                "date": 1692003224603,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "allfresh",
+                    "alresh",
+                    "akkfresh",
+                    "allresk",
+                    "allfrash",
+                    "all frash"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64e480f57c8935bad9a8f131",
+                "paycom_id": "64e4528db4485bf84412e687",
+                "name": "Стихия",
+                "organization": "ООО «ООО «The Unidentified Projects Company»»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/d088c4ac5284f5fe55c51dc19959a7e4eb87dd24.png",
+                "date": 1692696821252,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 99999999900,
+                        "require": "payment_for"
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov maqsadi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Билет по 100 000",
+                                    "value": "bilet100",
+                                    "amount": 10000000,
+                                    "title": "Билет по 100 000",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Стихия",
+                    "стихиа",
+                    "стехия",
+                    "stihia",
+                    "stihiya"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "64f8687aa0bff07717e1c0af",
+                "paycom_id": "64f867cec9498cfa6a9bc1d3",
+                "name": "Prisma Digital",
+                "organization": "ООО «\"PRISMA DIGITAL\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/3eb3915eeb17a1388ba1e5742399edf0eafaa51a.png",
+                "date": 1694001274896,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "organization_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Korxona nomi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "direction",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Yo'nalish",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Маркетинговые услуги",
+                                    "value": "1",
+                                    "title": "Маркетинговые услуги",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Консультационные услуги",
+                                    "value": "2",
+                                    "title": "Консультационные услуги",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "prisma digital",
+                    "призма дижитал",
+                    "зкшыьф вшпшефд"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "650442eefbc79ecb396abd89",
+                "paycom_id": "6504412bfa828fc4a2e42ca9",
+                "name": "babai",
+                "organization": "ЧП «YaTT Asomiddinov»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/10b7721a5670535527156e4a5dccc43b4b52f085.png",
+                "date": 1694778094752,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov maqsadi",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "1 месяц",
+                                    "value": "1_mes",
+                                    "title": "1 месяц",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "3 месяц",
+                                    "value": "3_mes",
+                                    "title": "3 месяц",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "1 год",
+                                    "value": "1_god",
+                                    "title": "1 год",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "babai",
+                    "babay",
+                    "бабай",
+                    "бабаи"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6515529a5240a8ca4dff2141",
+                "paycom_id": "651551612918d26924fd42e1",
+                "name": "Imperiya Pechati",
+                "organization": "ООО «\"IMPERIYA PECHATI\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/d2b233a44f164b8258c9c4f6b7cda052f2d95780.png",
+                "date": 1695896218250,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov maqsadi :",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Услуги типографии",
+                                    "value": "1",
+                                    "title": "Услуги типографии",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Услуги рекламы",
+                                    "value": "2",
+                                    "title": "Услуги рекламы",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "IMPERIYA PECHATI",
+                    "империя печати",
+                    "PECHAT IMPERIYA "
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "652526dd1ff1e7cb8e16a5ac",
+                "paycom_id": "652526b51dbb2b13f1736816",
+                "name": "O'zbegim Choyxonasi",
+                "organization": "ООО «\"ULASH BOBO 777\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/ba2076eb97af5c0660fa16b73961c9618add02a0.png",
+                "date": 1696933597282,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Uzbegim ",
+                    "O'zbegim ",
+                    "Choyxonasi"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "652937054c0c6f03e2a704f5",
+                "paycom_id": "652935adf67194aa76c651ce",
+                "name": "Comfort Auto Hamkor",
+                "organization": "ООО «\"COMFORT AUTO HAMKOR\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/5bbbac5185bf21a0f687c93ec2538957401df2b3.png",
+                "date": 1697199877292,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Comfort Auto Hamkor",
+                    "komfort Auto Hamkor",
+                    "Comfort Avto Hamkor",
+                    "Comfort Auto xamkor"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "652d329e4c0c6f03e2a7089e",
+                "paycom_id": "652934dcf67194aa76c6519c",
+                "name": "Ish Bor",
+                "organization": "ООО «\"CENTRAL REALTY\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/495716690dc803afb35c11dddcf8fc003cc2c58f.png",
+                "date": 1697460894302,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Ish Bor",
+                    "Iw Bor",
+                    "иш бор",
+                    "IshBor",
+                    "ищ бор",
+                    "ищбор"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "653226624c0c6f03e2a713f3",
+                "paycom_id": "652d13933ad464cc74d282cd",
+                "name": "Business.Hujjat.uz",
+                "organization": "ООО «RealSoft»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/a3d40ea812f670854b2e271b756a35fb1ff2a2aa.png",
+                "date": 1697785442217,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 1000000000,
+                        "min": 50000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "account_id",
+                            "placeholder": "Format AA123456",
+                            "replace": "[ -]",
+                            "title": "Hisob raqam ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Business Hujjat.uz",
+                    "Business.Hujjat.uz",
+                    "Business Hujjat uz",
+                    "Bizness hujjat uz",
+                    "Bisnes Hujat uz",
+                    "Бизнес хужжат уз"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6541f760cbc3052122210956",
+                "paycom_id": "6541f6b4388fec2e4593c8f0",
+                "name": "J.Steffany",
+                "organization": "ООО «\"BIZCON GROUP\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/892f6d66b104737965d54926b967af6599025b56.png",
+                "date": 1698821984733,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "age_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "yoshi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "J.Steffany",
+                    "J.Steffani",
+                    "Дж.Стеффани"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6549de8ecbc305212221156d",
+                "paycom_id": "6549de5241a367e34fca14df",
+                "name": "Умный продавец",
+                "organization": "ООО «\"U-TV PLUS\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/a2d5433c28e84be3515403aed58ad8b5fe66a9f9.png",
+                "date": 1699339918619,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 99999999900,
+                        "require": "payment_for"
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": "^[0-9\\+\\ ]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Hisobot",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Отчёт по UZUM",
+                                    "value": "1",
+                                    "amount": 9900000,
+                                    "title": "Отчёт по UZUM",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Smart Seller",
+                    "смарт селлер",
+                    "смартт селер",
+                    "Умный продавец",
+                    "Aqlli sotuvchi"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "655339b224e7240c6f2e44ec",
+                "paycom_id": "6553386e39ff72a59f4de7d3",
+                "name": "TIMOSHA KIDS",
+                "organization": "ЧП «NORMANOVA DILDORA»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/27400073ed58b8f67d877f85cd2c46c7fdca4968.png",
+                "date": 1699953074468,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "adress",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Manzil",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "timosha kids",
+                    "тимоша кидс",
+                    "ешьщырф лшвы"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "655c96d52810c550170378c2",
+                "paycom_id": "655c966391be401f38bceb5e",
+                "name": "Instavibe",
+                "organization": "ООО «\"INSTAVIBE\" XK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/71fec2a4e8a8799c9521af1f0b8dc1b75ed82f05.png",
+                "date": 1700566741901,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract_date",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Qaysi yil uchun",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Instavibe",
+                    "\"INSTAVIBE\" XK ",
+                    "ООО «\"INSTAVIBE\" XK»"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "656862f0157e836acba05ba7",
+                "paycom_id": "6568624094dc4293bdd4170c",
+                "name": "Sangzor Internation",
+                "organization": "ООО «\"SANGZOR INTERNATION\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/8ee88cf71b4ac04dd4abfba6ce69396db706e04f.png",
+                "date": 1701339888635,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh. yoki tadbirkorlik sub'ektining nomi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "quantity_goods",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Tovarlar miqdori",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Sangzor Internation",
+                    "Сангзор Интернэшнл",
+                    "Sangzor International"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "656db41c157e836acba0659b",
+                "paycom_id": "656d9b9494dc4293bdd47168",
+                "name": "inMODA ",
+                "organization": "ООО «\"INMODA\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/b0e976055feb99ec69cf725957e06f88e721bbb3.png",
+                "date": 1701688348400,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "email",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "E-mail",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "inmoda",
+                    "инмода",
+                    "штьщвф"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "657020957aff6eaacc085fc9",
+                "paycom_id": "65701e76426e85bd8dd8380c",
+                "name": "DECOR",
+                "organization": "ООО «ЧП \"BIOREZONANS\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/1f5d4045cacff8a769a2fbfec13a0766252f2ab2.png",
+                "date": 1701847189199,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "DECOR",
+                    "DECORr",
+                    "deccor",
+                    "dekor",
+                    "декор"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65818279d857dfafe0e96819",
+                "paycom_id": "65817f105c8188fb6e90514b",
+                "name": "Dr-Web ",
+                "organization": "ООО «\"ITDOTCOM\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/c43785e9ba129fdff1d4a9bf1d893a31381cb439.png",
+                "date": 1702986361537,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 99999999900,
+                        "require": "nominal"
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "emaill",
+                            "placeholder": "Необходимо указать активный email для отгрузки лицензии",
+                            "replace": "[ -]",
+                            "title": "E-mail manzili",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": "^(\\+?998)?[0-9]{9}$",
+                            "prefix": {
+                                "type": "static",
+                                "value": "+998",
+                                "output": true
+                            },
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "nominal",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Xizmatni tanlang",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "12 месяцев на 1 ПК для новых пользователей",
+                                    "amount": 8500000,
+                                    "value": "1",
+                                    "title": "12 месяцев на 1 ПК для новых пользователей",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "12 месяцев на 2 ПК для новых пользователей",
+                                    "amount": 16400000,
+                                    "value": "2",
+                                    "title": "12 месяцев на 2 ПК для новых пользователей",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "12 месяцев на 3 ПК для новых пользователей",
+                                    "amount": 22350000,
+                                    "value": "3",
+                                    "title": "12 месяцев на 3 ПК для новых пользователей",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "12 месяцев на 4 ПК для новых пользователей",
+                                    "amount": 27500000,
+                                    "value": "4",
+                                    "title": "12 месяцев на 4 ПК для новых пользователей",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "12 месяцев на 5 ПК для новых пользователей",
+                                    "amount": 32500000,
+                                    "value": "5",
+                                    "title": "12 месяцев на 5 ПК для новых пользователей",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Продление лицензии на 1 ПК на 12 месяцев",
+                                    "amount": 6180000,
+                                    "value": "6",
+                                    "title": "Продление лицензии на 1 ПК на 12 месяцев",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Продление лицензии на 2 ПК на 12 месяцев",
+                                    "amount": 11100000,
+                                    "value": "7",
+                                    "title": "Продление лицензии на 2 ПК на 12 месяцев",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Продление лицензии на 3 ПК на 12 месяцев",
+                                    "amount": 15700000,
+                                    "value": "8",
+                                    "title": "Продление лицензии на 3 ПК на 12 месяцев",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Продление лицензии на 4 ПК на 12 месяцев",
+                                    "amount": 19680000,
+                                    "value": "9",
+                                    "title": "Продление лицензии на 4 ПК на 12 месяцев",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Продление лицензии на 5 ПК на 12 месяцев",
+                                    "amount": 23100000,
+                                    "value": "10",
+                                    "title": "Продление лицензии на 5 ПК на 12 месяцев",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Dr-Web",
+                    "Доктер веб",
+                    "Docter web"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6581955bd857dfafe0e96897",
+                "paycom_id": "658195255c8188fb6e905539",
+                "name": "Dr-Web for Android",
+                "organization": "ООО «\"ITDOTCOM\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/e8bbeef9ebc64ea4d6b8504e739bde3fdba148b3.png",
+                "date": 1702991195734,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 99999999900,
+                        "require": "account"
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "emaill",
+                            "placeholder": "Необходимо указать активный email для отгрузки лицензии",
+                            "replace": "[ -]",
+                            "title": "E-mail manzili",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": "^(\\+?998)?[0-9]{9}$",
+                            "prefix": {
+                                "type": "static",
+                                "value": "+998",
+                                "output": true
+                            },
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "account",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Nominal",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "На 1 смартфон",
+                                    "amount": 2050000,
+                                    "value": "1",
+                                    "title": "На 1 смартфон",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "На 2 смартфон",
+                                    "amount": 3900000,
+                                    "value": "2",
+                                    "title": "На 2 смартфон",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "На 3 смартфон",
+                                    "amount": 5290000,
+                                    "value": "3",
+                                    "title": "На 3 смартфон",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "На 4 смартфон",
+                                    "amount": 6500000,
+                                    "value": "4",
+                                    "title": "На 4 смартфон",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "На 5 смартфонов",
+                                    "value": "5",
+                                    "amount": 8500000,
+                                    "title": "На 5 смартфонов",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Dr-Web Security Space for Android",
+                    "Dr-Web",
+                    "Dr-Web for Android",
+                    "Докетер веб"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "659e5f6cdd5445e8fefd89da",
+                "paycom_id": "659e5ef35c8188fb6e92671e",
+                "name": "BOOKIE",
+                "organization": "ООО «\"BOOKY NUKUS\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/2c6c22c0597934d27b53971b2963e0ec42eefb07.png",
+                "date": 1704877932230,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Uchun to'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "физ.лицо",
+                                    "value": "fiz",
+                                    "title": "физ.лицо",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "юридич.лицо",
+                                    "value": "ur",
+                                    "title": "юридич.лицо",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "optional": true,
+                            "visible": {
+                                "require": "payment_for",
+                                "value": "^fiz$"
+                            },
+                            "error": null,
+                            "scan": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "optional": true,
+                            "visible": {
+                                "require": "payment_for",
+                                "value": "^fiz$"
+                            },
+                            "error": null,
+                            "scan": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "company_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Корхона номи",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "optional": true,
+                            "visible": {
+                                "require": "payment_for",
+                                "value": "^ur"
+                            },
+                            "error": null,
+                            "scan": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "tin",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "СТИР",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "optional": true,
+                            "visible": {
+                                "require": "payment_for",
+                                "value": "^ur$"
+                            },
+                            "error": null,
+                            "scan": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "full_payment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma boyicha to'liq tolov swmmasi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "optional": true,
+                            "visible": {
+                                "require": "payment_for",
+                                "value": "^fiz|ur$"
+                            },
+                            "error": null,
+                            "scan": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "BOOKIE",
+                    "KITOB",
+                    "БУКМЕКЕР"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65a1078991578e6d2d800a15",
+                "paycom_id": "65a1065ac9a68d35404e4327",
+                "name": "EMGU",
+                "organization": "ООО «\"EMGU\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/f1cf82a39ef5d7b91e4874e292dfa99a40c326f8.png",
+                "date": 1705052041138,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "min": 100,
+                        "max": 99999999900,
+                        "require": "payment_for"
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "company director kompaniya direktori",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment_for",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "uchun to'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Silve",
+                                    "amount": 400000000,
+                                    "value": "1",
+                                    "title": "Silver",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Gold",
+                                    "amount": 600000000,
+                                    "value": "2",
+                                    "title": "Gold",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Premium",
+                                    "amount": 1000000000,
+                                    "value": "3",
+                                    "title": "Premium",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "EMGU",
+                    "ЕМГУ",
+                    "УЬПГ"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65a13e0791578e6d2d800bd2",
+                "paycom_id": "65a13d9dc9a68d35404e5242",
+                "name": "SAXOVAT BROYLER",
+                "organization": "ООО «\"SAXOVAT BROYLER\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/fc9b84845378b7fcf2255149d2fd9a832c520df0.png",
+                "date": 1705065991842,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "contractor_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Pudratchi nomi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "SAXOVAT BROYLER",
+                    "САВОЗАТ БРОЙЛЕР",
+                    "савозат бройлер"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65b8d279664f9dee6dfe38c9",
+                "paycom_id": "65b8cfb43c319dec9d89391b",
+                "name": "Millenimus Print",
+                "organization": "ООО «\"MILLENIUMUS PRINT\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/13ce2e8ea8cee3b421488232e037a2bdf38d31f0.png",
+                "date": 1706611321851,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Uchun tolov:",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Научный",
+                                    "value": "1",
+                                    "title": "Ilmiy",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Художественный",
+                                    "value": "2",
+                                    "title": "Badiiy",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Монография",
+                                    "value": "4",
+                                    "title": "Monografiya",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Учебник",
+                                    "value": "5",
+                                    "title": "Darslik",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Методическое пособие",
+                                    "value": "6",
+                                    "title": "O`quv qo`llanma",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Коллекция",
+                                    "value": "7",
+                                    "title": "To`plam",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Словарь",
+                                    "value": "8",
+                                    "title": "Lug`at",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Другой",
+                                    "value": "3",
+                                    "title": "Boshqa",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "kop",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Nusxalar soni",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Millenimus Print",
+                    "Print",
+                    "милениус"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65d4483bb62990a4d27a4703",
+                "paycom_id": "65d447ac3c319dec9d8b92ac",
+                "name": "kidsafe.uz",
+                "organization": "ООО «\"MEHRZOD BUSINESS GROUP\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/cafda794df61d513915aec251e5ef15e64719dd2.png",
+                "date": 1708410939627,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "kidsafe.uz",
+                    "kidsafeuz",
+                    "kidsafe uz",
+                    "kid safe uz"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65df0d3388f9930638b5a81e",
+                "paycom_id": "65df0b5f3c319dec9d8c72e3",
+                "name": "AIKA",
+                "organization": "ООО «\"AIKA\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/4886d98ed7ae4f693e6eb85283e0ba9d0ca4061c.png",
+                "date": 1709116723766,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_num",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "e_mail",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "E-Mail",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "diary",
+                            "placeholder": "Qish / Bahor / Yoz / Kuz",
+                            "replace": "[ -]",
+                            "title": "Kundalikni tanlang",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "diary_lng",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Kundaliklar tili",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Не выбрано",
+                                    "value": "11",
+                                    "title": "Tanlanmagan",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Русский",
+                                    "value": "22",
+                                    "title": "Rus tili",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Узбекский",
+                                    "value": "33",
+                                    "title": "O'zbek tili",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "delivery_address",
+                            "placeholder": "Yetkazib berish kunlari: chorshanba va shanba",
+                            "replace": "[ -]",
+                            "title": "Yetkazib berish manzili",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "aika",
+                    "айка",
+                    "фшлф",
+                    "fqrf"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65e7141688f9930638b5b992",
+                "paycom_id": "65e7133c3c319dec9d8d28d5",
+                "name": "NEWLOOK",
+                "organization": "ЧП «G‘ULOMOVA MUNISABONU»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/f2fb8439794e285d850f024118819e72ff41a952.png",
+                "date": 1709642774697,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "client_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Mijozning to'liq ismi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Женская одежда",
+                                    "value": "women_clothing",
+                                    "title": "Женская одежда",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "NEWLOOK",
+                    "ТУЦДЩЩЛ",
+                    "ньюлук",
+                    "ym.ker"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65e9bb6c88f9930638b5c0dd",
+                "paycom_id": "65e49169de9e0abfa2a8b4da",
+                "name": "SEENUZ.UZ",
+                "organization": "ЧП «RASULOV XOJIAKBAR»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/aa1344ac6d8603aa21cf005929aec99381c1cab0.png",
+                "date": 1709816684318,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 1000000000,
+                        "min": 100000,
+                        "round": true
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "order_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Abonent ID",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "seenuz uz",
+                    "синуз уз",
+                    "ыуутгя гя"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65eed25d88f9930638b5c34b",
+                "paycom_id": "65eeb4983c319dec9d8dbfef",
+                "name": "VOLTIVA",
+                "organization": "ООО «\"VOLTIVA\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/74f1818ba4a74515680cb0ea66833578d6894f1f.png",
+                "date": 1710150237747,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "wallet_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Hamyon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "volvita",
+                    "волвита",
+                    "мщдмшеф"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "65f8163b12d57e0dca11d997",
+                "paycom_id": "65f44c7087d100894404b30e",
+                "name": "Smart IT",
+                "organization": "ООО «SMART IT SUPPORT MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/fd5a86288e5085b7f137e93c56712507f1ec9497.png",
+                "date": 1710757435038,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Smart It ",
+                    "SmartIT",
+                    "смарт айти"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6603c7bf12d57e0dca11ee99",
+                "paycom_id": "65e854863c319dec9d8d44bd",
+                "name": "ALADDIN TAXI",
+                "organization": "ООО «\"DALER SUPER TAXI\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/f68fe79aeef2cbf20734c4ef7b3742db94417bd1.png",
+                "date": 1711523775542,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "driver_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Haydochi IDsi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "aladdin taxi",
+                    "аладдин такси",
+                    "фдфввшт ефчш"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "661e5f0de08b752620c60f14",
+                "paycom_id": "65c4c4b03c319dec9d8a4605",
+                "name": "Tabula",
+                "organization": "ООО «\"OVERSETTA LISHENG DESIGN\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/77a40f47031a6c36296592a48067d4bc58d390a0.png",
+                "date": 1713266445083,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "user_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Foydalanuvchi ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "OVERSETTA LISHENG DESIGN",
+                    "OVERSETTA",
+                    "OVERSETTALISHENG",
+                    "Tabula",
+                    "табула",
+                    "ефигдф"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "66212032e08b752620c61756",
+                "paycom_id": "66211fbf2aafa476603e2fc5",
+                "name": "Domvent",
+                "organization": "ЧП «Axmedjanov Sobir»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/35fe89c8a0a8f04f8ecda73df7586321d7094cd3.png",
+                "date": 1713446962206,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Uchun tolov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Очиститель воздуха",
+                                    "value": "1",
+                                    "title": "Очиститель воздуха",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Услуги по изготовлению и проектированию макетов",
+                                    "value": "2",
+                                    "title": "Услуги по изготовлению и проектированию макетов",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Прочие вытяжки (кроме вентиляторов всех видов и кухонных вытяжек)",
+                                    "value": "3",
+                                    "title": "Прочие вытяжки (кроме вентиляторов всех видов и кухонных вытяжек)",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Куханная вытяжка (всех видов)",
+                                    "value": "4",
+                                    "title": "Куханная вытяжка (всех видов)",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Domvent",
+                    "Axmedjanov Sobir Mamurovich ",
+                    "ЧП «Axmedjanov Sobir»"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "66277df8e90d731d6a283991",
+                "paycom_id": "66027f1c33187ead44b36094",
+                "name": "AUTOPULSE",
+                "organization": "ЧП «QURBONOV ISMOIL»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/e47b4efed9f944ab5b58bde08d7f5110fd0df783.png",
+                "date": 1713864184249,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100000,
+                        "round": true
+                    },
+                    "account": [
+                        {
+                            "content": "number",
+                            "name": "key",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "ID Magazin",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "AutoPulse",
+                    "avtopulse",
+                    "avtopluse",
+                    "автопульс",
+                    "Auto Pulse"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6639bd2edb7c028962a043b1",
+                "paycom_id": "661cb54e067bde847bea9b00",
+                "name": "YOUR COFFEE",
+                "organization": "ООО «\"YOUR COFFEE\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/c140ef67935c5a30860506a5ba0e7ae55c63f9d9.png",
+                "date": 1715060014895,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "credit",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "YOUR COFFEE",
+                    "YOUR COFEE",
+                    "YOR COFFEE",
+                    "ёр коффе"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "663a2f57c658f5483808ea88",
+                "paycom_id": "663a2e052eb76ec81b6a9496",
+                "name": "Chocolocma FONDYU ",
+                "organization": "ООО «\"FON DYU\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/9b88645466315d71116e0813cb5d35e3aa5f88d5.png",
+                "date": 1715089239346,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "order_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "order_id",
+                            "type": "text",
+                            "validation": "^[a-zA-Zа-яА-ЯёЁ0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Chocolocma FONDYU ",
+                    "Шоколадное Фондю",
+                    "чоколат фондю"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "663a2fd7c658f5483808ea9d",
+                "paycom_id": "663a2dd82eb76ec81b6a9488",
+                "name": "Dreampizza FONDYU ",
+                "organization": "ООО «\"FON DYU\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/9b88645466315d71116e0813cb5d35e3aa5f88d5.png",
+                "date": 1715089367333,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "order_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "order_id",
+                            "type": "text",
+                            "validation": "^[a-zA-Zа-яА-ЯёЁ0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Dreampizza FONDYU ",
+                    "Дримпизза фондю",
+                    "сказачнаяпицца фондю",
+                    "Вкуьзшяяф АЩТВНГ"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6644b85fa9c8601ee8ad273b",
+                "paycom_id": "6644b834fe41a3907df9b18a",
+                "name": "Zarnews.uz",
+                "organization": "ННО «\"\"ZARAFSHON\" VA \"SAMARKANDSKIY VESTNIK\" GAZETALARI TAHRIRIYATI\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/730a411ee1927e1779ecc3ce5a31089881cbb7f9.png",
+                "date": 1715779679563,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "address",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Manzilni kiriting",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh. kiriting",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "zarnews.uz",
+                    "зарньюс",
+                    "яфктуцы"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "664dca7b7767b648d5399d42",
+                "paycom_id": "652e2f9542f8406877ca7df9",
+                "name": "SOLIQ SERVIS - ЭҲФ",
+                "organization": "ГУП «O`ZBEKISTON RESPUBLIKASI DAVLAT SOLIQ QO`MITASI HUZURIDAGI SOLIQ SERVIS DAVLAT U»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/a82dc373062d0c3c34fac8dbecdacb28b44d0212.png",
+                "date": 1716374139954,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "terminal_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Fiskal modul raqami",
+                            "type": "text",
+                            "validation": "^[a-zA-Zа-яА-ЯёЁ0-9]{0,14}$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "virtual kassa",
+                    "виртуал касса",
+                    "dbhnefk rfccf"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "66546c67b23b231bab8ef475",
+                "paycom_id": "66546c2b0d43eb1d726714bd",
+                "name": "Fenix Consulting",
+                "organization": "ООО «FENIX GROUP AND COMPANIES»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/b4edd0332c7f5eff02769686af755cce4e05b380.png",
+                "date": 1716808807610,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "contract",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract_date",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma sanasi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Fenix Consulting",
+                    "Аутшч Сщтыгдештп",
+                    "феникс консалтинг",
+                    "atybrc rjycfknbyu"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "66548bcdb23b231bab8ef555",
+                "paycom_id": "66548b35431772b04b799e17",
+                "name": "Tchibo",
+                "organization": "ООО «ООО \"WHITE KNIGHT GROUP\"»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/22dcdf31b04284f62d3807ec8cfec08ae803a4e2.png",
+                "date": 1716816845205,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "thcibo",
+                    "тчибо",
+                    "есршищ"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6655c125b23b231bab8ef88d",
+                "paycom_id": "6655c00c431772b04b79b266",
+                "name": "Junior IT Academy",
+                "organization": "ООО «\"DGTL CAMP\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/680eb0d16f8f0ce3d82ac261d442a3732cead1e8.png",
+                "date": 1716896037706,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Junior IT Academy",
+                    "вшпшефд сфьз",
+                    "lbl;bnfk rfvg",
+                    "жуниор айти академи"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "665970bcb23b231bab8f0283",
+                "paycom_id": "66583053431772b04b79de17",
+                "name": "INSAN",
+                "organization": "ООО «\"INSAN ACADEMY GROUP\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/34edecf4b3712c2abb3ea48987e937e1da5761e5.png",
+                "date": 1717137596165,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "insan",
+                    "инсан",
+                    "штыфт"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "66606a01629617b3f17c27ea",
+                "paycom_id": "636a60612cfb25761a99a1ae",
+                "name": "I-HAMKOR",
+                "organization": "ООО «ООО «DEFEN FINANCIAL»»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/6f4b40501c12f87196e898dab4a7a74e87b5f66c.png",
+                "date": 1717594625739,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 10000000000,
+                        "min": 100000,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "param",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami/login/invoys",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "ihamkor",
+                    "i hamkor",
+                    "i-hamkor",
+                    "DEFEN FINANCIAL",
+                    "DEfFEN FINANCIAL",
+                    "хамкор"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "66606ad4629617b3f17c27f9",
+                "paycom_id": "66606a88506c1cb0b522337b",
+                "name": "TextileFinds.com",
+                "organization": "ООО «\"TRUSTED TEXTILE MARKETPLACE\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/10e2e1a50469f86372b8f865d96c0a5fee78d9ef.png",
+                "date": 1717594836068,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "company",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Tashkilot nomi",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "full_name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "phone_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "details",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Tafsilotlar",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "textilefinds.com",
+                    "текстиль файндс",
+                    "еучешдуаштвы"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6662b7756704653b30d6b94b",
+                "paycom_id": "6662b733d97287f99f278f29",
+                "name": "OILTECH SERVICE",
+                "organization": "СП ООО «\"OILTECH SERVICE\" MCHJ QK»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/4b93f463cd25497f6ecf4cd571ba36e571da5173.png",
+                "date": 1717745525641,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Shartnoma raqami",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "payment",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "To'lov",
+                            "type": "select",
+                            "validation": null,
+                            "values": [
+                                {
+                                    "name": "Дорожный битум",
+                                    "value": "1",
+                                    "title": "Yo'l bitumi",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Рубероид",
+                                    "value": "2",
+                                    "title": "Tom yopish materiallari",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Битумный гидроизоляционный материал",
+                                    "value": "3",
+                                    "title": "Bitumli gidroizolyatsiya materiali",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Мастики из асфальта и прочие битумные мастики",
+                                    "value": "4",
+                                    "title": "Asfalt mastikasi va boshqa bitumli mastikalar",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Бензин марки АИ - 92",
+                                    "value": "5",
+                                    "title": "AI-92 benzini",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Бензин марки АИ - 95",
+                                    "value": "6",
+                                    "title": "AI-95 benzini",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Газолин",
+                                    "value": "7",
+                                    "title": "Gazolin",
+                                    "filter": null,
+                                    "description": null
+                                },
+                                {
+                                    "name": "Керосин технический",
+                                    "value": "8",
+                                    "title": "Kerosin texnik",
+                                    "filter": null,
+                                    "description": null
+                                }
+                            ],
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "OILTECH SERVICE",
+                    "ЩШДЕУСР ЫУКМШСУ",
+                    "оилтек сервис",
+                    "jbkntr cthdbc"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6662da586704653b30d6b99e",
+                "paycom_id": "65e0246ca10775d0a7016de7",
+                "name": "Smart Up",
+                "organization": "ООО «Smartup»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/a58cf1291a23b3c756a431fe0b85142c67c9f789.png",
+                "date": 1717754456059,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "instance_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Server ID",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "contract_number",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Kontakt raqami",
+                            "type": "text",
+                            "validation": "^[a-zA-Zа-яА-ЯёЁ0-9\\/]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "smart up",
+                    "смарт ап",
+                    "ыьфке гз",
+                    "smartup"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "666ad6bf7927fa3ad91c65dd",
+                "paycom_id": "666ad632b20e10153eaaf441",
+                "name": "Bushido Malika z",
+                "organization": "ООО «\"EASTMEN\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/3aaaab798f2260fb5e5364888de686142dc78e81.png",
+                "date": 1718277823212,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "ind",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "ID",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "Bushido gaming",
+                    "Bushido gaming z",
+                    "Bushido gaming z Malika"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "6674218b267a224208a876de",
+                "paycom_id": "667421553bf7348996c0c631",
+                "name": "SOFTMEDIA",
+                "organization": "ООО «\"SOFTMEDIA\" MCHJ»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/8836957307eb3a0a68558b8bfb5ae5869dc46316.png",
+                "date": 1718886795631,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "name",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "F.I.Sh.",
+                            "type": "text",
+                            "validation": null,
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        },
+                        {
+                            "content": "text",
+                            "name": "organizationposition",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Telefon raqami",
+                            "type": "text",
+                            "validation": "^[0-9\\+]{10,13}$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "SOFTMEDIA",
+                    "ЫЩАЕЬУВШФ",
+                    "софтмедиа",
+                    "cjanvtlbf"
+                ],
+                "weight": 0,
+                "options": {
+                    "prompts": {
+                        "amount_disabled": false,
+                        "requisite_disabled": false
+                    }
+                }
+            },
+            {
+                "_id": "667561a0267a224208a87ab2",
+                "paycom_id": "666b1fb8dcd22ac1ff5366ce",
+                "name": "REVO SMM",
+                "organization": "ЧП «CHORIYEV NODIR»",
+                "active": true,
+                "type": 225,
+                "logo": "https://cdn.payme.uz/merchants/e13731d196cf00e824cfe34dd7a259c94349a8f5.png",
+                "date": 1718968736988,
+                "terminal": {
+                    "type": "form",
+                    "amount": {
+                        "max": 99999999900,
+                        "min": 100,
+                        "round": false
+                    },
+                    "account": [
+                        {
+                            "content": "text",
+                            "name": "telegram_user_id",
+                            "placeholder": "",
+                            "replace": "[ -]",
+                            "title": "Kabinet ID:",
+                            "type": "text",
+                            "validation": "^[0-9]+$",
+                            "prefix": null,
+                            "require": null,
+                            "error": null,
+                            "scan": null,
+                            "optional": false,
+                            "visible": null
+                        }
+                    ]
+                },
+                "keywords": [
+                    "REVO SMM",
+                    "rvvo smm",
+                    "revosmm",
+                    "ревосмм",
+                    "рево смм"
                 ],
                 "weight": 0,
                 "options": {
