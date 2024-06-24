@@ -9,6 +9,8 @@ import TVandOnline from './TVandOnline'
 import OnlineServices from './OnlineServices'
 import Advertising from './Advertising'
 import WriteOffLoans from './WriteOffLoans'
+import Kredit from './Kredit'
+import Transport from './Transport'
 
 
 const Payment = ({ home, payment, setInput1, setInput2, setImage, setLogoname, setServicetype, setNumber }) => {
@@ -39,6 +41,8 @@ const Payment = ({ home, payment, setInput1, setInput2, setImage, setLogoname, s
       <OnlineServices home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>
       <Advertising home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>
       <WriteOffLoans home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>
+      <Kredit home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>
+      <Transport home={home} payment={payment} setInput1={setInput1} setInput2={setInput2}  setImage={setImage} setLogoname={setLogoname} setServicetype={setServicetype} setNumber={setNumber}/>
       <Footer home={home}/>
     </Grid>
   )

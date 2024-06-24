@@ -1,6 +1,6 @@
 import { Box, Button, Card, CardMedia, Dialog, Grid, IconButton, InputBase,  Typography } from "@mui/material"
-import { reklama } from '../data/reklama'
-import { reklamaru } from '../data/reklama'
+import { transport } from '../data/transport'
+import { transportru } from '../data/transport'
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react"
 import { styled } from '@mui/material/styles';
@@ -9,9 +9,9 @@ import FormattedInput from "./FormattedInput"
 import { useNavigate } from "react-router-dom"
 
 
-const Advertising = ({ home, payment, setInput1, setInput2, setImage, setLogoname, setNumber, setServicetype }) => {
-    const mobile_operators = payment && payment.types[8]
-    const internetproviders = home.APRIL === "Aprel" ? reklama.result.merchants : reklamaru.result.merchants
+const Transport = ({ home, payment, setInput1, setInput2, setImage, setLogoname, setNumber, setServicetype }) => {
+    const mobile_operators = payment && payment.types[11]
+    const internetproviders = home.APRIL === "Aprel" ? transport.result.merchants : transportru.result.merchants
 
 
     const [hide, setHide] = useState(false)
@@ -143,7 +143,7 @@ const Advertising = ({ home, payment, setInput1, setInput2, setImage, setLogonam
                             <Typography variant='h6'>
                                 {`${mobile_operators.title} `}
                                 <span style={{ color: "#666" }}>
-                                    {mobile_operators.cache_size}
+                                    392
                                 </span>
                             </Typography>
                         </Grid>
@@ -257,4 +257,4 @@ const Advertising = ({ home, payment, setInput1, setInput2, setImage, setLogonam
     )
 }
 
-export default Advertising
+export default Transport

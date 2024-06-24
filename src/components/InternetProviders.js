@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 
 const InternetProviders = ({ home, payment, setInput1, setInput2, setImage, setLogoname, setServicetype, setNumber }) => {
-    const mobile_operators = payment && payment.types[9]
+    const mobile_operators = payment && payment.types[2]
     const internetproviders = home.APRIL === "Aprel" ? providers.result.merchants : providersru.result.merchants
     const [hide, setHide] = useState(false)
     const [open, setOpen] = useState(false)
