@@ -1,9 +1,8 @@
-import { Box, Button, Card, CardMedia, Dialog, Grid, IconButton, InputBase,  Typography } from "@mui/material"
+import { Box, Button, Card, CardMedia, Dialog, Grid, IconButton, Typography } from "@mui/material"
 import { transport } from '../data/transport'
 import { transportru } from '../data/transport'
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react"
-import { styled } from '@mui/material/styles';
 import React from "react"
 import FormattedInput from "./FormattedInput"
 import { useNavigate } from "react-router-dom"
@@ -101,38 +100,6 @@ const Transport = ({ home, payment, setInput1, setInput2, setImage, setLogoname,
         setSumma(formattedInputValue)
     }
 
-    const BootstrapInput = styled(InputBase)(({ theme }) => ({
-        'label + &': {
-            marginTop: theme.spacing(3),
-        },
-        '& .MuiInputBase-input': {
-            borderRadius: 4,
-            position: 'relative',
-            backgroundColor: theme.palette.background.paper,
-            borderWidth: '1px',
-            borderStyle: 'solid',
-            borderColor: '#b8b2b2',
-            fontSize: 16,
-            padding: '6px 26px 6px 12px',
-            width: '254px',
-            transition: theme.transitions.create(['border-color', 'box-shadow']),
-            // Use the system font instead of the default Roboto font.
-            fontFamily: [
-                '-apple-system',
-                'BlinkMacSystemFont',
-                '"Segoe UI"',
-                'Roboto',
-                '"Helvetica Neue"',
-                'Arial',
-                'sans-serif',
-                '"Apple Color Emoji"',
-                '"Segoe UI Emoji"',
-                '"Segoe UI Symbol"',
-            ].join(','),
-        },
-    }));
-
-    console.log(internetproviders)
 
     return (
         <>
