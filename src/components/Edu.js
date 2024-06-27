@@ -21,7 +21,6 @@ const Edu = ({ home, payment, setInput1, setInput2, setImage, setLogoname, setSe
     const [filtervalue, setFiltervalue] = useState("")
     const [phoneNumber, setPhoneNumber] = useState("")
     const [summa, setSumma] = useState("")
-    const [taxtype, setTaxtype] = useState("")
     const [sumlength, setSumlength] = useState(false)
     const [text, setText] = useState("")
     const [phonetext, setPhonetext] = useState("")
@@ -50,16 +49,14 @@ const Edu = ({ home, payment, setInput1, setInput2, setImage, setLogoname, setSe
             }
         }
 
-        if (filtervalue.length === 0) {
-            setFormatSelect(true)
-        } else if (select.length === 0) {
+        if (select.length === 0) {
             setFormat2Select(true)
-        } else if (taxtype.length === 0) {
-            setFormattaxtype(true)
-        } else if (phoneNumber.length === 0) {
+        } 
+        if (phoneNumber.length === 0) {
             setFormatphone(true)
             setPhonetext(home.INPUT_ERROR_REQUIRED)
-        } else if (phoneNumber.length > 0 && Number(summa.replace(/\D/g, "")) > min && Number(summa.replace(/\D/g, "")) < max) {
+        } 
+        if ( Number(summa.replace(/\D/g, "")) > min && Number(summa.replace(/\D/g, "")) < max) {
             navigate("/checkout")
             setInput1(phoneNumber)
             setInput2(summa.replace(/\D/g, ""))
@@ -162,7 +159,7 @@ const Edu = ({ home, payment, setInput1, setInput2, setImage, setLogoname, setSe
                                     setPhoneNumber("")
                                     setSumma("")
                                     setFiltervalue()
-                                    setTaxtype()
+                                    setSelect("")
                                     setOpen(true)
                                     setLogomo(provider.logo)
                                     setNamemo(provider.organization)
@@ -258,6 +255,7 @@ const Edu = ({ home, payment, setInput1, setInput2, setImage, setLogoname, setSe
                                             </Typography>}
                                         </Grid>
                                     :
+                                     item.visible !== null ?
                                      item.visible.value.includes(filtervalue) &&
                                     <Grid item sx={{ mr: "auto", ml: "auto", mb: 1 }}>
                                         <Typography>
@@ -273,6 +271,21 @@ const Edu = ({ home, payment, setInput1, setInput2, setImage, setLogoname, setSe
                                             {home.INPUT_ERROR_REQUIRED}
                                         </Typography>}
                                     </Grid>
+                                    :
+                                    <Grid item sx={{ mr: "auto", ml: "auto", mb: 1 }}>
+                                    <Typography>
+                                        <Typography><small>{item.title}</small></Typography>
+                                    </Typography>
+                                    <input className='regtrinput' style={{ borderColor: formatphone ? "#dc3545" : "", height: "30px" }}
+                                        type={item.type}
+                                        placeholder={item.placeholder}
+                                        onChange={(e) => setPhoneNumber(e.target.value)}
+                                        onFocus={() => setFormatphone(false)}
+                                    />
+                                    {formatphone && <Typography sx={{ color: "#dc3545" }}>
+                                        {home.INPUT_ERROR_REQUIRED}
+                                    </Typography>}
+                                </Grid>
 
                                 }
 
